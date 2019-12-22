@@ -5,7 +5,8 @@
 #ifndef EX3__LEXER_H_
 #define EX3__LEXER_H_
 
-#define LEXER_SEPERATE_CHAR ' '
+#define CONNECT_CONTROL_CLIENT "ConnectControlClient"
+#define OPEN_DATA_SERVER "OpenDataServer"
 
 #include <string>
 #include <vector>
@@ -18,6 +19,9 @@ class Lexer{
   vector<string>* lexer(string filename);
   void addCommands(string s, vector<string>* commands);
   void handleSpecialSubstr(string s, string special, vector<string>* commands, bool shouldAddSpecial);
+  string noSpaces(string s);
+  bool startsWith(string s, string start);
+  bool caseInsensitiveMatch(string s1, string s2);
 };
 
 #endif //EX3__LEXER_H_
