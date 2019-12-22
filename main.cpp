@@ -11,7 +11,7 @@ int main() {
   vector<string> *commands = l.lexer("fly.txt");
 
   for (auto const &i : *commands) {
-    std::cout << "start," << i << ",end" << endl;
+    std::cout << "*" << i << "*" << endl;
   }
 }
 
