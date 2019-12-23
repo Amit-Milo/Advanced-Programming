@@ -14,7 +14,6 @@ class VarCommand : public Command {
   unordered_map<string, SimulatorVar *> *simulatorVars;
  public:
   VarCommand(unordered_map<string, SimulatorVar*> *prog_vars, unordered_map<string, SimulatorVar*> *simulator_vars);
-  int execute() override;
 };
 
 #endif //EX3_COMMANDS_VARCOMMAND_H_
