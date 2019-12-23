@@ -5,7 +5,7 @@
 #include "RightArrowVarCommand.h"
 
 int RightArrowVarCommand::execute() {
-  return 0;
+  return JUMP_VAl;
 }
 RightArrowVarCommand::RightArrowVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
                                            unordered_map<string, SimulatorVar *> *simulator_vars)

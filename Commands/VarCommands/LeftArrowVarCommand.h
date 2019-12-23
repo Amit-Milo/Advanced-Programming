@@ -6,6 +6,7 @@
 #define EX3_COMMANDS_VARCOMMANDS_LEFTARROWVARCOMMAND_H_
 
 #include "../VarCommand.h"
+#define JUMP_VAl 5
 
 class LeftArrowVarCommand:public VarCommand{
  public:

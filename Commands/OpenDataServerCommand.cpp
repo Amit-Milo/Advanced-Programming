@@ -5,5 +5,5 @@
 #include "OpenDataServerCommand.h"
 
 int OpenDataServerCommand::execute() {
-  return 0;
+  return JUMP_VAl;
 }

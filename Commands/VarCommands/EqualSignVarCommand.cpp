@@ -5,7 +5,7 @@
 #include "EqualSignVarCommand.h"
 
 int EqualSignVarCommand::execute() {
-  return 0;
+  return JUMP_VAl;
 }
 EqualSignVarCommand::EqualSignVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
                                          unordered_map<string, SimulatorVar *> *simulator_vars) : VarCommand(prog_vars,

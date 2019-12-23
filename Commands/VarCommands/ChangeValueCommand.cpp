@@ -5,7 +5,7 @@
 #include "ChangeValueCommand.h"
 
 int ChangeValueCommand::execute() {
-  return 0;
+  return JUMP_VAl;
 }
 ChangeValueCommand::ChangeValueCommand(unordered_map<string, SimulatorVar *> *prog_vars,
                                        unordered_map<string, SimulatorVar *> *simulator_vars) : VarCommand(prog_vars,

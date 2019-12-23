@@ -6,6 +6,7 @@
 #define EX3_COMMANDS_VARCOMMANDS_EQUALSIGNVARCOMMAND_H_
 
 #include "../VarCommand.h"
+#define JUMP_VAl 4
 
 class EqualSignVarCommand:public VarCommand{
  public:

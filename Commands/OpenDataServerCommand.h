@@ -6,6 +6,7 @@
 #define EX3_COMMANDS_OPENDATASERVERCOMMAND_H_
 
 #include "Command.h"
+#define JUMP_VAl 2
 
 
 class OpenDataServerCommand:public Command{

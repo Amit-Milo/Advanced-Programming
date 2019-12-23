@@ -22,7 +22,7 @@
 using namespace std;
 class Parser {
  private:
-  unordered_map<string, pair<Command *, int>> commandsMap; //pair is (related command,places to jump in commands vector)
+  unordered_map<string, Command *> commandsMap;
   ///////////////////////////////////move to another class (the friend one)
   unordered_map<string, SimulatorVar *> progVars;
   unordered_map<string, SimulatorVar *> simulatorVars;

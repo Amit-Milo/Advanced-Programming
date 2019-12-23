@@ -5,7 +5,7 @@
 #include "LeftArrowVarCommand.h"
 
 int LeftArrowVarCommand::execute() {
-  return 0;
+  return JUMP_VAl;
 }
 LeftArrowVarCommand::LeftArrowVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
                                          unordered_map<string, SimulatorVar *> *simulator_vars) : VarCommand(prog_vars,

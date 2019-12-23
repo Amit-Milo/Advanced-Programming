@@ -5,5 +5,5 @@
 #include "ConnectControlClientCommand.h"
 
 int ConnectControlClientCommand::execute() {
-  return 0;
+  return JUMP_VAl;
 }
