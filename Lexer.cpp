@@ -30,7 +30,7 @@ void Lexer::addCommands(string s, vector<string> *commands) {
   //else, handle the command:
 
 
-  //first, handle two special commands: OpenDataServer and ConnectControlClient:
+  //first, handle special commands: OpenDataServer and ConnectControlClient:
   if (startsWith(s, OPEN_DATA_SERVER)) {
     commands->push_back(string(OPEN_DATA_SERVER));
     int openBracesIndex = s.find("(");
@@ -54,22 +54,10 @@ void Lexer::addCommands(string s, vector<string> *commands) {
     this->addCommands(s.substr(0, begin), commands);
     commands->push_back(s.substr(begin, end - begin + 1));
     this->addCommands(s.substr(end + 1), commands);
-  } else if (s.find("!=") != string::npos) { //condition
-    handleSpecialSubstr(s, "!=", commands, true);
-  } else if (s.find("==") != string::npos) { //condition
-    handleSpecialSubstr(s, "==", commands, true);
-  } else if (s.find("<=") != string::npos) { //condition
-    handleSpecialSubstr(s, "<=", commands, true);
-  } else if (s.find(">=") != string::npos) { //condition
-    handleSpecialSubstr(s, ">=", commands, true);
-  } else if (s.find("<-") != string::npos) { //wrap
-    handleSpecialSubstr(s, "<-", commands, true);
-  } else if (s.find("->") != string::npos) { //wrap
-    handleSpecialSubstr(s, "->", commands, true);
-  } else if (s.find(">") != string::npos) { //condition
-    handleSpecialSubstr(s, ">", commands, true);
-  } else if (s.find("<") != string::npos) { //condition
-    handleSpecialSubstr(s, "<", commands, true);
+  } else if (handleArrow(s, commands)) {
+    return;
+  } else if (handleCondition(s, commands)) {
+    return;
   } else if (s.find("=") != string::npos) { //add everything after the equal sign with no spaces
     this->addCommands(s.substr(0, s.find("=")), commands);
     commands->push_back("=");
@@ -122,5 +110,56 @@ bool Lexer::caseInsensitiveMatch(string s1, string s2) {
   return s1.compare(s2) == 0;
 }
 
+bool Lexer::handleCondition(string s, vector<string> *commands) {
+  //check if first word is "while" or "if"
+  string firstWord("");
+  if (startsWith(s, "if ")) {
+    firstWord = "if";
+  } else if (startsWith(s, "while ")) {
+    firstWord = "while";
+  }
+  if (firstWord.compare("") == 0) {
+    return false;
+  }
+  commands->push_back(firstWord);
 
+  string condition("");
+  if (s.find("!=") != string::npos) {
+    condition = "!=";
+  } else if (s.find("==") != string::npos) {
+    condition = "==";
+  } else if (s.find("<=") != string::npos) {
+    condition = "<=";
+  } else if (s.find(">=") != string::npos) {
+    condition = ">=";
+  } else if (s.find(">") != string::npos) {
+    condition = ">";
+  } else if (s.find("<") != string::npos) {
+    condition = "<";
+  }
+  if (condition.compare("") == 0) {
+    throw "error, line starts with while/if but no condition sign";
+  }
+  commands->push_back(noSpaces(s.substr(firstWord.length(), s.find(condition) - firstWord.length())));
+  commands->push_back(condition);
+  commands->push_back(noSpaces(s.substr(s.find(condition) + condition.length(),
+                                        s.find("{") - (s.find(condition) + condition.length()))));
+  commands->push_back(string("{"));
+
+  return true;
+}
+
+bool Lexer::handleArrow(string s, vector<string> *commands) {
+  string arrow("");
+  if (s.find("<-") != string::npos) {
+    arrow = "<-";
+  } else if (s.find("->") != string::npos) {
+    arrow = "->";
+  }
+  if (arrow.compare("") != 0) {
+    handleSpecialSubstr(s, arrow, commands, true);
+    return true;
+  }
+  return false;
+}
 
