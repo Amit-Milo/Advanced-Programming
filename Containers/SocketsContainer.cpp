@@ -10,5 +10,5 @@ SocketsContainer::SocketsContainer() {
 
   // Equivalent to check (server_socket == -1) or (client_socket == -1)
   if (!(server_socket + 1) * (client_socket + 1))
-    throw "Coulldn't allocate socket.";
+    throw "Couldn't allocate socket.";
 }

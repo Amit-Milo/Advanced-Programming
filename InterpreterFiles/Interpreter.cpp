@@ -15,6 +15,12 @@ Interpreter::~Interpreter() {
   delete variables;
 }
 
+///////////
+double Interpreter::evaluate(string s) {
+  return this->interpret(s)->calculate();
+}
+///////////
+
 Expression *Interpreter::interpret(string s) {
   //string to tokens list
   CalculationTokensCreatorChecker cvcc;
@@ -26,6 +32,16 @@ Expression *Interpreter::interpret(string s) {
   delete tokens;
   return result;
 }
+
+void Interpreter::addVar(string name, double value) {
+  this->variables->insert({name, value});
+}
+void Interpreter::changeVar(string name, double newValue) {
+  this->variables->at(name) = newValue;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////
 
 void Interpreter::setVariables(string s) {
   VarsSetter vs;

@@ -17,19 +17,19 @@
 #include "Commands/VarCommands/EqualSignVarCommand.h"
 #include "Commands/VarCommands/RightArrowVarCommand.h"
 #include "Commands/VarCommands/LeftArrowVarCommand.h"
+#include "Commands/BlockCommand.h"
 #include "SimulatorVar.h"
+
+
+#define NEW_VALUE_COMMAND string("newValueCommand")
+#define VAR_KEYWORD string("var")
 
 using namespace std;
 class Parser {
- private:
-  unordered_map<string, Command *> commandsMap;
-  ///////////////////////////////////move to another class (the friend one)
-  unordered_map<string, SimulatorVar *> progVars;
-  unordered_map<string, SimulatorVar *> simulatorVars;
-  void setCommandsMap();
+  friend class BlockCommand;
  public:
   Parser();
-  void parse(vector<string> *commands);
+  void parse(vector<string> *commands, Container &container);
 };
 
 #endif //EX3__PARSER_H_

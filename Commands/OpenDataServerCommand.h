@@ -1,17 +1,25 @@
 //
-// Created by yoav on 21/12/2019.
+// Created by amit on 24/12/2019.
 //
 
-#ifndef EX3_COMMANDS_OPENDATASERVERCOMMAND_H_
-#define EX3_COMMANDS_OPENDATASERVERCOMMAND_H_
+#ifndef EX3__OPENDATASERVERCOMMAND_H_
+#define EX3__OPENDATASERVERCOMMAND_H_
 
+#include <netinet/in.h>
+#include <string>
+#include <thread>
+#include <vector>
+
+#include "../Containers/Container.h"
 #include "Command.h"
-#define JUMP_VAl 2
 
+using namespace std;
 
-class OpenDataServerCommand:public Command{
+class OpenDataServerCommand: public Command {
+  static void run_server(Container& container);
+
  public:
-  int execute() override;
+  int execute(vector<string>& params, int start, Container& container);
 };
 
-#endif //EX3_COMMANDS_OPENDATASERVERCOMMAND_H_
+#endif //EX3__OPENDATASERVERCOMMAND_H_

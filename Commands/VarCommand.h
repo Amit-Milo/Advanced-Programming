@@ -10,10 +10,8 @@
 #include "../SimulatorVar.h"
 
 class VarCommand : public Command {
-  unordered_map<string, SimulatorVar *> *progVars;
-  unordered_map<string, SimulatorVar *> *simulatorVars;
  public:
-  VarCommand(unordered_map<string, SimulatorVar*> *prog_vars, unordered_map<string, SimulatorVar*> *simulator_vars);
+  VarCommand();
 };
 
 #endif //EX3_COMMANDS_VARCOMMAND_H_

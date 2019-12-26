@@ -1,15 +1,19 @@
 //
-// Created by yoav on 21/12/2019.
+// Created by amit on 24/12/2019.
 //
 
 #ifndef EX3_COMMANDS_CONNECTCONTROLCLIENTCOMMAND_H_
 #define EX3_COMMANDS_CONNECTCONTROLCLIENTCOMMAND_H_
 
+#include <arpa/inet.h>
+#include <string>
+#include <vector>
+
 #include "Command.h"
-#define JUMP_VAl 3
-class ConnectControlClientCommand: public Command{
+
+class ConnectControlClientCommand : public Command {
  public:
-  int execute() override;
+  int execute(vector<string> &params, int start, Container &container);
 };
 
 #endif //EX3_COMMANDS_CONNECTCONTROLCLIENTCOMMAND_H_

@@ -13,6 +13,8 @@ int main() {
   for (auto const &i : *commands) {
     std::cout << "*" << i << "*" << endl;
   }
+
+  delete commands;
 }
 
 

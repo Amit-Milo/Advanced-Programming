@@ -8,7 +8,6 @@
 #define CONNECT_CONTROL_CLIENT "ConnectControlClient"
 #define OPEN_DATA_SERVER "OpenDataServer"
 
-
 #include <string>
 #include <vector>
 #include <fstream>
