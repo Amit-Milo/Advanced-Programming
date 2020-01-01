@@ -4,4 +4,4 @@
 
 #include "VarCommand.h"
 
-VarCommand::VarCommand() {}
+VarCommand::VarCommand(Container *container) : Command(container) {}

@@ -4,9 +4,9 @@
 
 #include "ChangeValueCommand.h"
 
-int ChangeValueCommand::execute() {
-  return JUMP_VAl;
+
+//////////////////////////////////////////should complete
+int ChangeValueCommand::execute(vector<string> &params, int start) {
+  return 0;
 }
-ChangeValueCommand::ChangeValueCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                                       unordered_map<string, SimulatorVar *> *simulator_vars) : VarCommand(prog_vars,
-                                                                                                           simulator_vars) {}
+ChangeValueCommand::ChangeValueCommand(Container *container) : VarCommand(container) {}

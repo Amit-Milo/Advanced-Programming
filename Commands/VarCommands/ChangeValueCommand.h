@@ -10,9 +10,8 @@
 
 class ChangeValueCommand:public VarCommand{
  public:
-  int execute() override;
-  ChangeValueCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                     unordered_map<string, SimulatorVar *> *simulator_vars);
+  int execute(vector<string> &params, int start) override;
+  ChangeValueCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_CHANGEVALUECOMMAND_H_

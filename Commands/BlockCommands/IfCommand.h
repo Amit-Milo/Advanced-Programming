@@ -8,7 +8,9 @@
 #include "../BlockCommand.h"
 
 class IfCommand:public BlockCommand{
-  int execute(vector<string> &params, int start, Container &container) override;
+  int execute(vector<string> &params, int start) override;
+ public:
+  IfCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_BLOCKCOMMANDS_IFCOMMAND_H_

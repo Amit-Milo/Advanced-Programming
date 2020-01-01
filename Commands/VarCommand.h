@@ -11,7 +11,7 @@
 
 class VarCommand : public Command {
  public:
-  VarCommand();
+  VarCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_VARCOMMAND_H_

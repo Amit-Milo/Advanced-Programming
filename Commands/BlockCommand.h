@@ -9,8 +9,9 @@
 
 class BlockCommand : Command {
  public:
-  void executeBlock(vector<string> &commands, int index, Container& container);
-  bool parseCondition(vector<string> &commands, int index, Container& container);
+  void executeBlock(vector<string> &commands, int index);
+  bool parseCondition(vector<string> &commands, int index);
+  BlockCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_VARCOMMANDS_BLOCKCOMMAND_H_

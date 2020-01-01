@@ -10,9 +10,8 @@
 
 class RightArrowVarCommand : public VarCommand {
  public:
-  int execute() override;
-  RightArrowVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                       unordered_map<string, SimulatorVar *> *simulator_vars);
+  int execute(vector<string> &params, int start) override;
+  RightArrowVarCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_RIGHTARROWVARCOMMAND_H_

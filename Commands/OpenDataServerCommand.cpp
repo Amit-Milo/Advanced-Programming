@@ -7,7 +7,7 @@
 // execute of this class needs only 1 param.
 #define RETURN_VALUE 2
 
-int OpenDataServerCommand::execute(vector<string>& params, int start, Container& container) {
+int OpenDataServerCommand::execute(vector<string> &params, int start) {
   // Address family.
   container.sockets.server_address.sin_family = AF_INET;
 
@@ -18,38 +18,40 @@ int OpenDataServerCommand::execute(vector<string>& params, int start, Container&
   container.sockets.server_address.sin_port = htons(stoi(params[start]));
 
   // Try to bind server.
-  if (bind(container.sockets.server_socket, (struct sockaddr*) &container.sockets.server_address, sizeof(container.sockets.server_address)) != -1) {
+  /////////////////////////////////it's yoav, i changed the container to pointer, please check if the . and -> are correct
+  if (bind(container->sockets.server_socket,
+           (struct sockaddr *) container->sockets.server_address,
+           sizeof(container->sockets.server_address)) != -1) {
 
     // Run server in a new thread.
-    thread(&OpenDataServerCommand::run_server, this, &container).detach();
+    thread(&OpenDataServerCommand::run_server, this, container).detach();
 
     // TODO Set a temporarily blocking variable.
 
     // Return the expected return value.
     return RETURN_VALUE;
-  }
-  else {
+  } else {
     throw "Couldn't bind server.";
   }
 }
-void OpenDataServerCommand::run_server(Container* container) {
+void OpenDataServerCommand::run_server(Container *container) {
   // A buffer for reading data sent from the simulator.
-  char *buffer = (char *)malloc(sizeof(char) * this->maxSize);
+  char *buffer = (char *) malloc(sizeof(char) * this->maxSize);
 
   // Receive the amount of data sent by the simulator.
   int dataSize;
 
   // A vector of values of vars.
-  float *values = (float *)malloc(sizeof(float) * this->simVarsAmount);
+  float *values = (float *) malloc(sizeof(float) * this->simVarsAmount);
 
   int server_socket = container->sockets.server_socket;
   sockaddr_in server_address = container->sockets.server_address;
 
   while (true) {
-    if(listen(server_socket, 1) == -1)
+    if (listen(server_socket, 1) == -1)
       continue;
 
-    int client_socket = accept(server_socket, (struct sockaddr*) &server_address, (socklen_t*) &server_address);
+    int client_socket = accept(server_socket, (struct sockaddr *) &server_address, (socklen_t *) &server_address);
 
     if (client_socket == -1)
       continue;

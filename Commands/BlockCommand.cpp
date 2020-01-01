@@ -8,19 +8,19 @@
 //////////////////////////////////////////////////////////////////maybe handle scope vars
 
 ///////////////////////////////////////////this is a copy of Parser::parse. change if changed
-void BlockCommand::executeBlock(vector<string> &commands, int index, Container &container) {
+void BlockCommand::executeBlock(vector<string> &commands, int index) {
   while (index < commands.size() && commands.at(index).compare("}") != 0) {
-    if (container.maps.commandsMap.count(commands.at(index)) != 0) {
+    if (container->maps.commandsMap.count(commands.at(index)) != 0) {
       if (commands.at(index).compare(VAR_KEYWORD) == 0) {
-        Command *c = container.maps.commandsMap.at(commands.at(index + 2));
-        index += c->execute(commands, index, container);
+        Command *c = container->maps.commandsMap.at(commands.at(index + 2));
+        index += c->execute(commands, index);
       } else {
-        Command *c = container.maps.commandsMap.at(commands.at(index));
-        index += c->execute(commands, index, container);
+        Command *c = container->maps.commandsMap.at(commands.at(index));
+        index += c->execute(commands, index);
       }
-    } else if (container.maps.progVars.count(commands.at(index)) != 0) { //should be a var name
-      Command *c = container.maps.commandsMap.at(NEW_VALUE_COMMAND);
-      index += c->execute(commands, index, container);
+    } else if (container->maps.progVars.count(commands.at(index)) != 0) { //should be a var name
+      Command *c = container->maps.commandsMap.at(NEW_VALUE_COMMAND);
+      index += c->execute(commands, index);
     } else { //error or something we did not think about
       string message(commands.at(index) + " is not a command");
       throw message.c_str();
@@ -28,9 +28,9 @@ void BlockCommand::executeBlock(vector<string> &commands, int index, Container &
   }
 }
 
-bool BlockCommand::parseCondition(vector<string> &commands, int index, Container &container) {
-  double left = container.interpreter.evaluate(commands.at(index + 1));
-  double right = container.interpreter.evaluate(commands.at(index + 3));
+bool BlockCommand::parseCondition(vector<string> &commands, int index) {
+  double left = container->interpreter.evaluate(commands.at(index + 1));
+  double right = container->interpreter.evaluate(commands.at(index + 3));
   //now check the condition:
   string condition = commands.at(index + 2);
   if (condition.compare("==") == 0) {
@@ -50,3 +50,5 @@ bool BlockCommand::parseCondition(vector<string> &commands, int index, Container
     throw err.c_str();
   }
 }
+
+BlockCommand::BlockCommand(Container *container) : Command(container) {}

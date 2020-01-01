@@ -4,9 +4,9 @@
 
 #include "LeftArrowVarCommand.h"
 
-int LeftArrowVarCommand::execute() {
-  return JUMP_VAl;
+//////////////////////////////////////////should complete
+int LeftArrowVarCommand::execute(vector<string> &params, int start) {
+  return 0;
 }
-LeftArrowVarCommand::LeftArrowVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                                         unordered_map<string, SimulatorVar *> *simulator_vars) : VarCommand(prog_vars,
-                                                                                                             simulator_vars) {}
+
+LeftArrowVarCommand::LeftArrowVarCommand(Container *container) : VarCommand(container) {}

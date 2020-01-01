@@ -10,9 +10,8 @@
 
 class LeftArrowVarCommand:public VarCommand{
  public:
-  int execute() override;
-  LeftArrowVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                      unordered_map<string, SimulatorVar *> *simulator_vars);
+  int execute(vector<string> &params, int start) override;
+  LeftArrowVarCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_VARCOMMANDS_LEFTARROWVARCOMMAND_H_

@@ -4,9 +4,8 @@
 
 #include "EqualSignVarCommand.h"
 
-int EqualSignVarCommand::execute() {
-  return JUMP_VAl;
+//////////////////////////////////////////should complete
+int EqualSignVarCommand::execute(vector<string> &params, int start) {
+  return 0;
 }
-EqualSignVarCommand::EqualSignVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                                         unordered_map<string, SimulatorVar *> *simulator_vars) : VarCommand(prog_vars,
-                                                                                                             simulator_vars) {}
+EqualSignVarCommand::EqualSignVarCommand(Container *container) : VarCommand(container) {}

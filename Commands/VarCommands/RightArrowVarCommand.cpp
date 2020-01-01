@@ -4,9 +4,14 @@
 
 #include "RightArrowVarCommand.h"
 
-int RightArrowVarCommand::execute() {
-  return JUMP_VAl;
+
+
+
+
+//////////////////////////////////////////////////////////////should complete
+int RightArrowVarCommand::execute(vector<string> &params, int start) {
+  return 0;
 }
-RightArrowVarCommand::RightArrowVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                                           unordered_map<string, SimulatorVar *> *simulator_vars)
-    : VarCommand(prog_vars, simulator_vars) {}
+
+
+RightArrowVarCommand::RightArrowVarCommand(Container *container) : VarCommand(container) {}

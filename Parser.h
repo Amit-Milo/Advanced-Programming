@@ -29,7 +29,7 @@ class Parser {
   friend class BlockCommand;
  public:
   Parser();
-  void parse(vector<string> *commands, Container &container);
+  void parse(vector<string> *commands, Container *container);
 };
 
 #endif //EX3__PARSER_H_

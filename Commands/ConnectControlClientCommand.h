@@ -10,10 +10,12 @@
 #include <vector>
 
 #include "../Containers/Container.h"
+#include "Command.h"
 
-class ConnectControlClientCommand {
+class ConnectControlClientCommand : Command{
  public:
-  int execute(vector<string>& params, int start, Container& container);
+  int execute(vector<string>& params, int start);
+  ConnectControlClientCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_CONNECTCONTROLCLIENTCOMMAND_H_

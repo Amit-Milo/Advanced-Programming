@@ -10,9 +10,8 @@
 
 class EqualSignVarCommand:public VarCommand{
  public:
-  int execute() override;
-  EqualSignVarCommand(unordered_map<string, SimulatorVar *> *prog_vars,
-                      unordered_map<string, SimulatorVar *> *simulator_vars);
+  int execute(vector<string> &params, int start) override;
+  EqualSignVarCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_VARCOMMANDS_EQUALSIGNVARCOMMAND_H_

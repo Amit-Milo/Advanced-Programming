@@ -10,8 +10,9 @@
 #include <list>
 
 class WhileCommand : public BlockCommand {
-  int execute(vector<string> &params, int start, Container &container) override;
-
+  int execute(vector<string> &params, int start) override;
+ public:
+  WhileCommand(Container *container);
 };
 
 #endif //EX3_COMMANDS_BLOCKCOMMANDS_WHILECOMMAND_H_
