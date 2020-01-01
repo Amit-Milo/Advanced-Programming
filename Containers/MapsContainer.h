@@ -7,23 +7,10 @@
 
 #include <string>
 #include <unordered_map>
+
+
 #include "../SimulatorVar.h"
 #include "../Commands/Command.h"
-
-#include "../Commands/OpenDataServerCommand.h"
-#include "../Commands/ConnectControlClientCommand.h"
-
-#include "../Commands/VarCommand.h"
-#include "../Commands/VarCommands/ChangeValueCommand.h"
-#include "../Commands/VarCommands/EqualSignVarCommand.h"
-#include "../Commands/VarCommands/RightArrowVarCommand.h"
-#include "../Commands/VarCommands/LeftArrowVarCommand.h"
-#include "../Commands/BlockCommand.h"
-
-#include "../Commands/BlockCommands/WhileCommand.h"
-#include "../Commands/BlockCommands/IfCommand.h"
-
-#include "SimulatorVar.h"
 
 #define NEW_VALUE_COMMAND string("newValueCommand")
 #define VAR_KEYWORD string("var")
@@ -36,16 +23,22 @@ class MapsContainer {
   friend class OpenDataServerCommand;
   friend class Parser;
   friend class VarCommand;
+  friend class Interpreter;
+  friend class CalculationTokensCreatorChecker;
+  friend class TokensToExpressionConverter;
+  friend class VarsSetter;
 
   unordered_map<string, Command *> commands;
   unordered_map<string, SimulatorVar *> vars;
+
+  Container* container;
 
   void setCommandsMap();
 
  public:
   MapsContainer();
   ///////////////////////////////////maybe maps dont release the pointers in the values
- void WriteProgVar(string key);
+  void WriteProgVar(string key);
   void WriteSimulatorVar(string key);
 };
 

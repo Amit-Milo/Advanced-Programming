@@ -5,12 +5,16 @@
 #ifndef EX1__INTERPRETER_H_
 #define EX1__INTERPRETER_H_
 
+#include <regex>
+#include <iostream>
 #include <string>
 #include <map>
 #include <list>
 #include "../Expressions/Expression.h"
-#include "VarsSetter.h"
 #include "../Containers/MapsContainer.h"
+#include "CalculationTokensCreatorChecker.h"
+#include "TokensToExpressionConverter.h"
+#include "VarsSetter.h"
 
 #define BRACE 1
 #define OPERATOR 2
@@ -18,17 +22,15 @@
 
 class Interpreter {
  private:
-  map<string, double> *variables;
+  Container* container;
  public:
-  Interpreter();
+  Interpreter(Container *container);
   /////////main func
   double evaluate(string s);
+  void setVariables(string s);
   /////////
   Expression *interpret(string s);
-  void setVariables(string s);
-  virtual ~Interpreter();
   void printVariables();
-  void replaceVarsWithNums(list<pair<string, int>> *tokens);
 };
 
 #endif //EX1__INTERPRETER_H_

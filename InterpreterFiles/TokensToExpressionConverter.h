@@ -10,15 +10,21 @@
 #include <map>
 #include <stack>
 #include <deque>
-#include "VarsSetter.h"
 #include "../Expressions/Expression.h"
 #include "CalculationTokensCreatorChecker.h"
 
+#include "../Expressions/Value.h"
+#include "../Expressions/BinOperators/Mul.h"
+#include "../Expressions/BinOperators/Div.h"
+#include "../Expressions/BinOperators/Plus.h"
+#include "../Expressions/BinOperators/Minus.h"
+#include "../Expressions/Variable.h"
+
 class TokensToExpressionConverter {
  public:
-  Expression *tokensToExpression(list<pair<string, int>> *tokens, map<string,double>* variables);
+  Expression *tokensToExpression(list<pair<string, int>> *tokens, Container* container);
   stack<pair<string,int>>* tokensToStack(list<pair<string, int>> *tokens);
-  Expression *stackToExpression(stack<pair<string,int>>* calcStack, map<string,double>* variables);
+  Expression *stackToExpression(stack<pair<string,int>>* calcStack, Container* container);
   int compareOperators(string s1, string s2);
   void printStack(stack<pair<string,int>>* s);
 };

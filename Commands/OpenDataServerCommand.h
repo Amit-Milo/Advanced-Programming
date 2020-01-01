@@ -15,6 +15,8 @@
 #include "../Containers/Container.h"
 #include "../Containers/MapsContainer.h"
 
+#include "Command.h"
+
 using namespace std;
 
 class OpenDataServerCommand : public Command {
@@ -31,11 +33,11 @@ class OpenDataServerCommand : public Command {
   void run_server(Container *container);
 
  public:
-
-  /////////////////////////////////it's yoav, maybe you should add the container to this constructor
-  OpenDataServerCommand(int simulatorVarsAmount) {
+  OpenDataServerCommand(Container *container, int sim_vars_amount)
+      : Command(container), simVarsAmount(sim_vars_amount) {
     this->simVarsAmount = simulatorVarsAmount;
     this->maxSize = this->simVarsAmount * this->maxSize + this->simVarsAmount + 1;
+
   }
 
   int execute(vector<string> &params, int start);

@@ -5,12 +5,7 @@
 
 
 #include "TokensToExpressionConverter.h"
-#include "../Expressions/Value.h"
-#include "../Expressions/BinOperators/Mul.h"
-#include "../Expressions/BinOperators/Div.h"
-#include "../Expressions/BinOperators/Plus.h"
-#include "../Expressions/BinOperators/Minus.h"
-#include "../Expressions/Variable.h"
+
 
 /**
  * works only for /,*,-,+
@@ -47,14 +42,14 @@ int TokensToExpressionConverter::compareOperators(string s1, string s2) {
   }
 }
 
-Expression *TokensToExpressionConverter::tokensToExpression(list<pair<string, int>> *tokens,
-                                                            map<string, double> *variables) {
+Expression *TokensToExpressionConverter::tokensToExpression(list<pair<string, int>> *tokens, Container *container) {
   stack<pair<string, int>> *s = tokensToStack(tokens);
   //printStack(s);
-  Expression *exp = stackToExpression(s, variables);
+  Expression *exp = stackToExpression(s, container);
   delete s;
   return exp;
 }
+
 
 /**
  * just implementation of shunting-yard algorithm from wikipedia
@@ -106,7 +101,7 @@ stack<pair<string, int>> *TokensToExpressionConverter::tokensToStack(list<pair<s
 
 
 Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, int>> *calcStack,
-                                                           map<string, double> *variables) {
+                                                           Container* container) {
   if (calcStack->size() == 1) {
     return new Value(stod(calcStack->top().first));
   }
@@ -115,8 +110,8 @@ Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, in
     string o = calcStack->top().first;
     calcStack->pop();
     //expression are switched on purpose
-    Expression *right = stackToExpression(calcStack, variables);
-    Expression *left = stackToExpression(calcStack, variables);
+    Expression *right = stackToExpression(calcStack, container);
+    Expression *left = stackToExpression(calcStack, container);
     if (o.compare("*") == 0) {
       return new Mul(left, right);
     } else if (o.compare("/") == 0) {
@@ -134,7 +129,7 @@ Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, in
     if (top.second == NUMBER) {
       return new Value(stod(top.first));
     } else if (top.second == VARIABLE) {
-      return new Variable(top.first, variables->at(top.first));
+      return new Variable(top.first, container->maps.vars.at(top.first)->GetValue());
     } else {
       throw "error in vars/numbers";
     }

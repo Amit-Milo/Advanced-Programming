@@ -27,10 +27,10 @@ bool CalculationTokensCreatorChecker::isNumber(string s) {
   return regex_match(s, number);
 }
 
-list<pair<string, int>> *CalculationTokensCreatorChecker::createTokensList(string s, map<string, double> *variables) {
+list<pair<string, int>> *CalculationTokensCreatorChecker::createTokensList(string s, Container *container) {
   list<pair<string, int>> *tokens = new list<pair<string, int>>;
   tokensSplitter(s, tokens);
-  if (!checkValidTokens(tokens, variables)) {
+  if (!checkValidTokens(tokens, container)) {
     throw "illegal calculation line";
   }
   return tokens;
@@ -48,7 +48,7 @@ void CalculationTokensCreatorChecker::tokensSplitter(string s, list<pair<string,
     tokens->push_back(pair<string, int>("0", NUMBER));
   }
   string prev = "0";
-  int sLength = (int)s.length();
+  int sLength = (int) s.length();
   while (i < sLength) {
     string c = string(1, s.at(i));
     if (isOperator(c)) {
@@ -99,8 +99,8 @@ void CalculationTokensCreatorChecker::printTokensList(list<pair<string, int>> *l
  * @return
  */
 bool CalculationTokensCreatorChecker::checkValidTokens(list<pair<string, int>> *tokens,
-                                                       map<string, double> *variables) {
-  return checkBraces(tokens) && checkAdjOperators(tokens) && checkValidVars(tokens, variables)
+                                                       Container *container) {
+  return checkBraces(tokens) && checkAdjOperators(tokens) && checkValidVars(tokens, container)
       && checkNoOperatorsInEnds(tokens);
 }
 
@@ -133,10 +133,10 @@ bool CalculationTokensCreatorChecker::checkAdjOperators(list<pair<string, int>> 
   return true;
 }
 
-bool CalculationTokensCreatorChecker::checkValidVars(list<pair<string, int>> *tokens, map<string, double> *variables) {
+bool CalculationTokensCreatorChecker::checkValidVars(list<pair<string, int>> *tokens, Container *container) {
   for (const auto &myPair : *tokens) {
     if (myPair.second == VARIABLE) {
-      if (variables->count(myPair.first) == 0) {
+      if (container->maps.vars.count(myPair.first) == 0) {
         throw "illegal calculation: var name is illegal or unset";
       }
     }

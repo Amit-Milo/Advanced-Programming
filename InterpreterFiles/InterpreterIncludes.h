@@ -7,7 +7,6 @@
 
 #include "CalculationTokensCreatorChecker.h"
 #include "TokensToExpressionConverter.h"
-#include "VarsSetter.h"
 #include "Interpreter.h"
 
 #endif //EX3_INTERPRETERFILES_INTERPRETERINCLUDES_H_

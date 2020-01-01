@@ -11,7 +11,6 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "InterpreterFiles/VarsSetter.h"
 
 using namespace std;
 class Lexer {

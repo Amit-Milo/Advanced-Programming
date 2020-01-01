@@ -4,7 +4,7 @@
 
 #include "VarsSetter.h"
 
-void VarsSetter::setVariables(string s, map<string, double> *variables) {
+void VarsSetter::setVariables(string s, Container *container) {
   if (!checkValidVars(s)) {
     throw "invalid variables list";
   }
@@ -12,16 +12,16 @@ void VarsSetter::setVariables(string s, map<string, double> *variables) {
     s = s.substr(0, s.length() - 1);
   }
   if (findNextChar(s, ';', INDEX_FOR_STRING_START_SEARCH) == -1) { //there is only one var
-    addNewVar(s, variables);
+    addNewVar(s, container);
   } else {
     int prevIndex = INDEX_FOR_STRING_START_SEARCH;
     int index = findNextChar(s, ';', INDEX_FOR_STRING_START_SEARCH);
     while (index != -1) {
-      addNewVar(s.substr(prevIndex + 1, index - prevIndex - 1), variables);
+      addNewVar(s.substr(prevIndex + 1, index - prevIndex - 1), container);
       prevIndex = index;
       index = findNextChar(s, ';', index);
     }
-    addNewVar(s.substr(prevIndex + 1, s.length() - prevIndex - 1), variables);
+    addNewVar(s.substr(prevIndex + 1, s.length() - prevIndex - 1), container);
   }
 }
 bool VarsSetter::checkValidVars(string s) {
@@ -47,13 +47,14 @@ int VarsSetter::findNextChar(string s, char c, int startIndex) {
   return -1;
 }
 
-void VarsSetter::addNewVar(string varDef, map<string, double> *variables) {
+void VarsSetter::addNewVar(string varDef, Container *container) {
   int equalSignIndex = findNextChar(varDef, '=', 0);
   string varName = varDef.substr(0, equalSignIndex);
   double varValue = stod(varDef.substr(equalSignIndex + 1, varDef.length()));
 
-  if (variables->count(varName) == 1) {
-    variables->at(varName) = varValue;
+  if (container->maps.vars.count(varName) == 1) {
+    container->maps.vars.at(varName)->SetValue(varValue);
+  } else {
+    container->maps.vars.insert(new SimulatorVar(varValue, varName));
   }
-  variables->insert(pair<string, double>(varName, varValue));
 }

@@ -12,6 +12,7 @@
 #include <stack>
 #include <regex>
 #include "../Expressions/Expression.h"
+#include "../Containers/Container.h"
 
 #define BRACE 1
 #define OPERATOR 2
@@ -22,7 +23,7 @@
 class CalculationTokensCreatorChecker{
  public:
   //main
-  list<pair<string, int>>* createTokensList(string s, map<string, double> *variables);
+  list<pair<string, int>>* createTokensList(string s, Container* container);
   //split string to list
   void tokensSplitter(string s, list<pair<string, int>>* tokens);
   bool isOperator(string s);
@@ -31,10 +32,10 @@ class CalculationTokensCreatorChecker{
   bool isNumber(string s);
   void printTokensList(list<pair<string,int>>* l);
   //check valid list
-  bool checkValidTokens(list<pair<string, int>>* tokens, map<string, double> *variables);
+  bool checkValidTokens(list<pair<string, int>>* tokens, Container* container);
   bool checkBraces(list<pair<string, int>>* tokens);
   bool checkAdjOperators(list<pair<string, int>>* tokens);
-  bool checkValidVars(list<pair<string, int>>* tokens, map<string, double> *variables);
+  bool checkValidVars(list<pair<string, int>>* tokens, Container* container);
   bool checkNoOperatorsInEnds(list<pair<string,int>>* tokens);
 };
 

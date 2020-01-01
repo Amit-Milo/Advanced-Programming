@@ -12,7 +12,6 @@ vector<string> *Lexer::lexer(string fileName) {
     throw "could not open file";
   }
   vector<string> *commands = new vector<string>;
-  VarsSetter vs;
   /////////////////////////////////
   string line;
   while (getline(f, line)) {

@@ -7,7 +7,7 @@
 
 #include "Command.h"
 
-class BlockCommand : Command {
+class BlockCommand : public Command {
  public:
   void executeBlock(vector<string> &commands, int index);
   bool parseCondition(vector<string> &commands, int index);

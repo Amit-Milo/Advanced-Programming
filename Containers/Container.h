@@ -14,6 +14,10 @@ class Container {
   friend class OpenDataServerCommand;
   friend class BlockCommand;
   friend class Parser;
+  friend class Interpreter;
+  friend class CalculationTokensCreatorChecker;
+  friend class TokensToExpressionConverter;
+  friend class VarsSetter;
 
   Interpreter interpreter;
   MapsContainer maps;

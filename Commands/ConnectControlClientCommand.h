@@ -12,7 +12,7 @@
 #include "../Containers/Container.h"
 #include "Command.h"
 
-class ConnectControlClientCommand : Command{
+class ConnectControlClientCommand : public Command{
  public:
   int execute(vector<string>& params, int start);
   ConnectControlClientCommand(Container *container);
