@@ -19,6 +19,13 @@ class MapsContainer {
 
   unordered_map<string, SimulatorVar*> progVars;
   unordered_map<string, SimulatorVar*> simulatorVars;
+
+ public:
+  SimulatorVar* ReadProgVar(string key);
+  SimulatorVar* ReadSimulatorVar(string key);
+
+  void WriteProgVar(string key);
+  void WriteSimulatorVar(string key);
 };
 
 #endif //EX3__MAPSCONTAINER_H_
