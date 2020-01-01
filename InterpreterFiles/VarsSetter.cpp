@@ -28,6 +28,7 @@ bool VarsSetter::checkValidVars(string s) {
   regex p("([_a-zA-Z][\\w]*=\\-?[\\d]+(\\.[\\d]+)?)(;([_a-zA-Z][\\w]*=\\-?[\\d]+(\\.[\\d]+)?))*;?");
   return regex_match(s, p);
 }
+
 /**
  * @param s the string to search c in
  * @param c the char to search
@@ -45,6 +46,7 @@ int VarsSetter::findNextChar(string s, char c, int startIndex) {
   }
   return -1;
 }
+
 void VarsSetter::addNewVar(string varDef, map<string, double> *variables) {
   int equalSignIndex = findNextChar(varDef, '=', 0);
   string varName = varDef.substr(0, equalSignIndex);

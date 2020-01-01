@@ -25,9 +25,6 @@ class Interpreter {
   double evaluate(string s);
   /////////
   Expression *interpret(string s);
-  void addVar(string name, double value); ////////////////call this when adding a var to progVars
-  void changeVar(string name, double newValue); ////////////////call this when changing a var in progVars
-
   void setVariables(string s);
   virtual ~Interpreter();
   void printVariables();

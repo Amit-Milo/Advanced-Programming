@@ -18,7 +18,7 @@ void Parser::parse(vector<string> *commands, Container &container) {
         Command *c = container.maps.commandsMap.at(commands->at(index));
         index += c->execute(*commands, index, container);
       }
-    } else if (container.maps.progVars.count(commands->at(index)) != 0) { //should be a var name
+    } else if (container.maps.inVars(commands->at(index))) { //should be a var name
       Command *c = container.maps.commandsMap.at(NEW_VALUE_COMMAND);
       index += c->execute(*commands, index, container);
     } else { //error or something we did not think about

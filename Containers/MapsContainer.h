@@ -37,15 +37,16 @@ class MapsContainer {
   friend class Parser;
   friend class VarCommand;
 
-  unordered_map<string, Command *> commandsMap;
-  unordered_map<string, SimulatorVar *> progVars;
-  unordered_map<string, SimulatorVar *> simulatorVars;
+  unordered_map<string, Command *> commands;
+  unordered_map<string, SimulatorVar *> vars;
 
   void setCommandsMap();
 
  public:
   MapsContainer();
   ///////////////////////////////////maybe maps dont release the pointers in the values
+ void WriteProgVar(string key);
+  void WriteSimulatorVar(string key);
 };
 
 #endif //EX3__MAPSCONTAINER_H_
