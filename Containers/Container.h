@@ -7,11 +7,19 @@
 
 #include "MapsContainer.h"
 #include "SocketsContainer.h"
+#include "../InterpreterFiles/Interpreter.h"
 
 class Container {
   friend class ConnectControlClientCommand;
   friend class OpenDataServerCommand;
+  friend class BlockCommand;
+  friend class Parser;
+  friend class Interpreter;
+  friend class CalculationTokensCreatorChecker;
+  friend class TokensToExpressionConverter;
+  friend class VarsSetter;
 
+  Interpreter interpreter;
   MapsContainer maps;
   SocketsContainer sockets;
 };
