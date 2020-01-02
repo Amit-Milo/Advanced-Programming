@@ -35,7 +35,6 @@ class OpenDataServerCommand : public Command {
  public:
   OpenDataServerCommand(Container *container, int sim_vars_amount)
       : Command(container), simVarsAmount(sim_vars_amount) {
-    this->simVarsAmount = simulatorVarsAmount;
     this->maxSize = this->simVarsAmount * this->maxSize + this->simVarsAmount + 1;
 
   }
