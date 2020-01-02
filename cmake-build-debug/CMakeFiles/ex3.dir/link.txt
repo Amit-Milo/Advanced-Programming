@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o  -o ex3 
