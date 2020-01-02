@@ -5,15 +5,9 @@
 #ifndef EX3__MAPSCONTAINER_H_
 #define EX3__MAPSCONTAINER_H_
 
+#include <mutex>
 #include <string>
 #include <unordered_map>
-
-
-#include "../SimulatorVar.h"
-#include "../Commands/Command.h"
-
-#define NEW_VALUE_COMMAND string("newValueCommand")
-#define VAR_KEYWORD string("var")
 
 using namespace std;
 
@@ -23,23 +17,20 @@ class MapsContainer {
   friend class OpenDataServerCommand;
   friend class Parser;
   friend class VarCommand;
-  friend class Interpreter;
-  friend class CalculationTokensCreatorChecker;
-  friend class TokensToExpressionConverter;
-  friend class VarsSetter;
 
-  unordered_map<string, Command *> commands;
-  unordered_map<string, SimulatorVar *> vars;
+  mutex readers_lock;
+  mutex writers_lock;
 
-  Container* container;
+  unordered_map<string, SimulatorVar*> vars;
+  unordered_map<string, Map*>
 
-  void setCommandsMap();
 
  public:
-  MapsContainer();
-  ///////////////////////////////////maybe maps dont release the pointers in the values
-  void WriteProgVar(string key);
-  void WriteSimulatorVar(string key);
+  SimulatorVar* ReadVar(string key);
+
+  void WriteVar(string key, double value);
+
+  bool InVars(string index);
 };
 
 #endif //EX3__MAPSCONTAINER_H_
