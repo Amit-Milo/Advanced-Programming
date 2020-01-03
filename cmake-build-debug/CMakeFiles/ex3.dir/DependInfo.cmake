@@ -4,10 +4,36 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/amit/CLionProjects/ex3/Commands/BlockCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o"
   "/home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o"
   "/home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/VarCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o"
+  "/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o"
   "/home/amit/CLionProjects/ex3/Containers/MapsContainer.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o"
   "/home/amit/CLionProjects/ex3/Containers/SocketsContainer.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/BinaryOperator.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Div.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Minus.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Mul.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Plus.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/UnOperators/UMinus.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UMinus.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/UnOperators/UPlus.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UPlus.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/UnOperators/UnaryOperator.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UnaryOperator.cpp.o"
+  "/home/amit/CLionProjects/ex3/Expressions/Value.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/Value.cpp.o"
+  "/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o"
+  "/home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o"
+  "/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o"
+  "/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o"
+  "/home/amit/CLionProjects/ex3/Lexer.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Lexer.cpp.o"
+  "/home/amit/CLionProjects/ex3/Parser.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o"
+  "/home/amit/CLionProjects/ex3/SimulatorVar.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o"
+  "/home/amit/CLionProjects/ex3/StringOperations.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/StringOperations.cpp.o"
+  "/home/amit/CLionProjects/ex3/main.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

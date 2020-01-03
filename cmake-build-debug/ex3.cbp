@@ -84,6 +84,27 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/Command.h">
+			<Option target="ex3"/>
+		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
@@ -94,6 +115,36 @@
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Containers/Container.h">
@@ -109,6 +160,117 @@
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Containers/SocketsContainer.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/ExpressionsIncludes.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UMinus.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UMinus.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UPlus.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UPlus.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UnaryOperator.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UnaryOperator.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Value.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Value.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/InterpreterIncludes.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Lexer.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Lexer.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Parser.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Parser.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/SimulatorVar.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/SimulatorVar.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/StringOperations.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/StringOperations.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/main.cpp">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/CMakeLists.txt">

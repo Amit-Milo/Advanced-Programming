@@ -19,11 +19,12 @@ int ConnectControlClientCommand::execute(vector<string>& params, int start) {
   container->sockets.client_address.sin_port = htons(stoi(params[start + 1]));
 
 
-  /////////////////////////////////it's yoav, i changed the container to pointer, please check if the . and -> are correct
-  if (!connect(container->sockets.client_socket, (struct sockaddr*) container.sockets.client_address, sizeof(container->sockets.client_address)))
-    return RETURN_VALUE;
-  else
+
+}
+void ConnectControlClientCommand::ConnectToServer(Container *container) {
+  while (!container->serverConnected)
+    continue;
+
+  if (!(connect(container->sockets.client_socket, (struct sockaddr*) &(container->sockets.client_address), sizeof(container->sockets.client_address)) + 1))
     throw "Couldn't connect to server.";
 }
-
-ConnectControlClientCommand::ConnectControlClientCommand(Container *container) : Command(container) {}

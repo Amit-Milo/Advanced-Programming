@@ -13,9 +13,11 @@
 #include "Command.h"
 
 class ConnectControlClientCommand : public Command{
+  void ConnectToServer(Container *container);
+
  public:
   int execute(vector<string>& params, int start);
-  ConnectControlClientCommand(Container *container);
+  ConnectControlClientCommand(Container *container) :Command(container){}
 };
 
 #endif //EX3_COMMANDS_CONNECTCONTROLCLIENTCOMMAND_H_

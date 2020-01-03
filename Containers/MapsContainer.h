@@ -9,11 +9,15 @@
 #include <string>
 #include <unordered_map>
 
+#include "../Commands/Command.h"
+#include "../SimulatorVar.h"
+
 using namespace std;
 
 class MapsContainer {
   // Those classes need to use the maps.
   friend class ConnectControlClientCommand;
+  friend class Interpreter;
   friend class OpenDataServerCommand;
   friend class Parser;
   friend class VarCommand;
@@ -22,7 +26,7 @@ class MapsContainer {
   mutex writers_lock;
 
   unordered_map<string, SimulatorVar*> vars;
-  unordered_map<string, Map*>
+  unordered_map<string, Command*> commands;
 
 
  public:
