@@ -52,9 +52,9 @@ void VarsSetter::addNewVar(string varDef, Container *container) {
   string varName = varDef.substr(0, equalSignIndex);
   double varValue = stod(varDef.substr(equalSignIndex + 1, varDef.length()));
 
-  if (container->maps.vars.count(varName) == 1) {
-    container->maps.vars.at(varName)->SetValue(varValue);
+  if (container->maps->vars.count(varName) == 1) {
+    container->maps->vars.at(varName)->SetValue(varValue);
   } else {
-    container->maps.vars.insert({varName, new SimulatorVar(varValue, varName)});
+    container->maps->AddVar(varName, new SimulatorVar(varValue, varName));
   }
 }

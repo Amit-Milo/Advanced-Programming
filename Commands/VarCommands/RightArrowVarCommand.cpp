@@ -4,14 +4,11 @@
 
 #include "RightArrowVarCommand.h"
 
+#define RETURN_VALUE 5
 
-
-
-
-//////////////////////////////////////////////////////////////should complete
 int RightArrowVarCommand::execute(vector<string> &params, int start) {
-  return 0;
+  arrowCommand(params, start, PROG_TO_SIM);
+  return RETURN_VALUE;
 }
-
 
 RightArrowVarCommand::RightArrowVarCommand(Container *container) : VarCommand(container) {}

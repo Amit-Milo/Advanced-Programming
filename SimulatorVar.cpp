@@ -18,7 +18,17 @@ double SimulatorVar::GetValue() const {
   return value;
 }
 void SimulatorVar::SetValue(double value) {
-  SimulatorVar::value = value;
+  if (SimulatorVar::wrapping == NONE) {
+    SimulatorVar::value = value;
+  } else if (SimulatorVar::wrapping == PROG_TO_SIM) {
+    SimulatorVar::value = value;
+    // TODO also change the var value in the simulator
+  } else if (SimulatorVar::wrapping == SIM_TO_PROG) {
+    //then the simulator changes the prog var, so just change the value.
+    SimulatorVar::value = value;
+  } else {
+    throw "error with SimulatorVar.SetValue";
+  }
 }
 const string &SimulatorVar::GetProgName() const {
   return progName;

@@ -13,6 +13,8 @@ int WhileCommand::execute(vector<string> &params, int start) {
   while (parseCondition(params, start)) {
     executeBlock(params, insideBlockIndex);
   }
+
+  return returnJump(params,start);
 }
 
 WhileCommand::WhileCommand(Container *container) : BlockCommand(container) {}

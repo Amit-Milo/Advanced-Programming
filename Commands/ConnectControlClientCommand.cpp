@@ -7,7 +7,7 @@
 
 #include "ConnectControlClientCommand.h"
 
-int ConnectControlClientCommand::execute(vector<string>& params, int start) {
+int ConnectControlClientCommand::execute(vector<string> &params, int start) {
 
   // Address family.
   container->sockets.client_address.sin_family = AF_INET;
@@ -18,13 +18,15 @@ int ConnectControlClientCommand::execute(vector<string>& params, int start) {
   // Set port as given by the parameters.
   container->sockets.client_address.sin_port = htons(stoi(params[start + 1]));
 
-
-
+  return RETURN_VALUE;
 }
+
 void ConnectControlClientCommand::ConnectToServer(Container *container) {
   while (!container->serverConnected)
     continue;
 
-  if (!(connect(container->sockets.client_socket, (struct sockaddr*) &(container->sockets.client_address), sizeof(container->sockets.client_address)) + 1))
+  if (!(connect(container->sockets.client_socket,
+                (struct sockaddr *) &(container->sockets.client_address),
+                sizeof(container->sockets.client_address)) + 1))
     throw "Couldn't connect to server.";
 }

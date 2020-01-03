@@ -20,6 +20,7 @@
 #include "../Expressions/BinOperators/Minus.h"
 #include "../Expressions/Variable.h"
 #include "../Containers/Container.h"
+#include "../Containers/MapsContainer.h"
 
 class TokensToExpressionConverter {
  public:
@@ -29,5 +30,6 @@ class TokensToExpressionConverter {
   int compareOperators(string s1, string s2);
   void printStack(stack<pair<string,int>>* s);
 };
+
 
 #endif //EX1__TOKENSTOEXPRESSIONCONVERTER_H_

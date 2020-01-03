@@ -6,7 +6,6 @@
 #define EX3_COMMANDS_CHANGEVALUECOMMAND_H_
 
 #include "../VarCommand.h"
-#define JUMP_VAl 3
 
 class ChangeValueCommand:public VarCommand{
  public:

@@ -3,9 +3,10 @@
 //
 
 #include "EqualSignVarCommand.h"
+#define RETURN_VALUE 4
 
 //////////////////////////////////////////should complete
 int EqualSignVarCommand::execute(vector<string> &params, int start) {
-  return 0;
+  return RETURN_VALUE;
 }
 EqualSignVarCommand::EqualSignVarCommand(Container *container) : VarCommand(container) {}

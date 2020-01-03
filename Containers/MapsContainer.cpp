@@ -4,6 +4,36 @@
 
 #include "MapsContainer.h"
 
+#include "../Commands/ConnectControlClientCommand.h"
+#include "../Commands/OpenDataServerCommand.h"
+#include "../Commands/SleepCommand.h"
+#include "../Commands/PrintCommand.h"
+#include "../Commands/BlockCommands/WhileCommand.h"
+#include "../Commands/BlockCommands/IfCommand.h"
+#include "../Commands/VarCommands/ChangeValueCommand.h"
+#include "../Commands/VarCommands/EqualSignVarCommand.h"
+#include "../Commands/VarCommands/RightArrowVarCommand.h"
+#include "../Commands/VarCommands/LeftArrowVarCommand.h"
+#include "../Parser.h"
+
+#define SHOULD_CHANGE_ERROR_AMIT -2
+
+void MapsContainer::createCommandsMap(Container *container) {
+  this->AddCommand("openDataServer", new OpenDataServerCommand(container, SHOULD_CHANGE_ERROR_AMIT));
+  this->AddCommand("connectControlClient", new ConnectControlClientCommand(container));
+  this->AddCommand("Sleep", new SleepCommand(container));
+  this->AddCommand("Print", new PrintCommand(container));
+  this->AddCommand("while", new WhileCommand(container));
+  this->AddCommand("if", new IfCommand(container));
+  this->AddCommand(NEW_VALUE_COMMAND, new ChangeValueCommand(container));
+  this->AddCommand("=", new EqualSignVarCommand(container));
+  this->AddCommand("->", new RightArrowVarCommand(container));
+  this->AddCommand("<-", new LeftArrowVarCommand(container));
+}
+
+MapsContainer::MapsContainer(Container *container) {
+  createCommandsMap(container);
+}
 
 SimulatorVar *MapsContainer::ReadVar(string key) {
   // We want to prevent only writers from changing our map. Readers are accepted.
@@ -26,7 +56,6 @@ void MapsContainer::WriteVar(string key, double value) {
   this->readers_lock.unlock();
 }
 
-
 bool MapsContainer::InVars(string index) {
   // We want to prevent only writers from changing our map. Readers are accepted.
   this->writers_lock.lock();
@@ -35,4 +64,12 @@ bool MapsContainer::InVars(string index) {
 
   this->writers_lock.unlock();
   return inVars;
+}
+
+void MapsContainer::AddVar(string key, SimulatorVar *value) {
+  this->vars.insert({key, value});
+}
+
+void MapsContainer::AddCommand(string key, Command *value) {
+  this->commands.insert({key, value});
 }

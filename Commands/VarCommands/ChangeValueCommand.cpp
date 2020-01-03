@@ -3,10 +3,10 @@
 //
 
 #include "ChangeValueCommand.h"
-
+#define RETURN_VALUE 3
 
 //////////////////////////////////////////should complete
 int ChangeValueCommand::execute(vector<string> &params, int start) {
-  return 0;
+  return RETURN_VALUE;
 }
 ChangeValueCommand::ChangeValueCommand(Container *container) : VarCommand(container) {}

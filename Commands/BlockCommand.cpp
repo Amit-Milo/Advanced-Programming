@@ -11,16 +11,16 @@
 ///////////////////////////////////////////this is a copy of Parser::parse. change if changed
 void BlockCommand::executeBlock(vector<string> &commands, int index) {
   while (index < commands.size() && commands.at(index).compare("}") != 0) {
-    if (container->maps.commands.count(commands.at(index)) != 0) {
+    if (container->maps->commands.count(commands.at(index)) != 0) {
       if (commands.at(index).compare(VAR_KEYWORD) == 0) {
-        Command *c = container->maps.commands.at(commands.at(index + 2));
+        Command *c = container->maps->commands.at(commands.at(index + 2));
         index += c->execute(commands, index);
       } else {
-        Command *c = container->maps.commands.at(commands.at(index));
+        Command *c = container->maps->commands.at(commands.at(index));
         index += c->execute(commands, index);
       }
-    } else if (container->maps.InVars(commands.at(index))) { //should be a var name
-      Command *c = container->maps.commands.at(NEW_VALUE_COMMAND);
+    } else if (container->maps->InVars(commands.at(index))) { //should be a var name
+      Command *c = container->maps->commands.at(NEW_VALUE_COMMAND);
       index += c->execute(commands, index);
     } else { //error or something we did not think about
       string message(commands.at(index) + " is not a command");
@@ -52,4 +52,16 @@ bool BlockCommand::parseCondition(vector<string> &commands, int index) {
   }
 }
 
-BlockCommand::BlockCommand(Container *container) : Command(container) {}
+BlockCommand::BlockCommand(Container *container) : Command(container) {
+
+}
+
+int BlockCommand::returnJump(vector<string> &commands, int start) {
+  int curr = start;
+  //get to the index of "}"
+  while (commands.at(curr).compare("}") != 0) {
+    curr++;
+  }
+  //now it is at "}". return the distance on the vector from start to current place
+  return curr - start + 1;
+}

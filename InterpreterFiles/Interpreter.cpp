@@ -27,7 +27,7 @@ Expression *Interpreter::interpret(string s) {
 /////////////////////////////////////////////////////////////////////////////////
 
 void Interpreter::printVariables() {
-  for (const auto &myPair : container->maps.vars) {
+  for (const auto &myPair : container->maps->vars) {
     std::cout << myPair.first << "," << myPair.second->GetValue() << "\n";
   }
 }

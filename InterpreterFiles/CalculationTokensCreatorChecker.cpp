@@ -136,7 +136,7 @@ bool CalculationTokensCreatorChecker::checkAdjOperators(list<pair<string, int>> 
 bool CalculationTokensCreatorChecker::checkValidVars(list<pair<string, int>> *tokens, Container *container) {
   for (const auto &myPair : *tokens) {
     if (myPair.second == VARIABLE) {
-      if (container->maps.vars.count(myPair.first) == 0) {
+      if (container->maps->vars.count(myPair.first) == 0) {
         throw "illegal calculation: var name is illegal or unset";
       }
     }

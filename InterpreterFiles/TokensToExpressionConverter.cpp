@@ -129,7 +129,7 @@ Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, in
     if (top.second == NUMBER) {
       return new Value(stod(top.first));
     } else if (top.second == VARIABLE) {
-      return new Variable(top.first, container->maps.vars.at(top.first)->GetValue());
+      return new Variable(top.first, container->maps->vars.at(top.first)->GetValue());
     } else {
       throw "error in vars/numbers";
     }

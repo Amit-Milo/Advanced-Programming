@@ -4,9 +4,11 @@
 
 #include "LeftArrowVarCommand.h"
 
-//////////////////////////////////////////should complete
+#define RETURN_VALUE 5
+
 int LeftArrowVarCommand::execute(vector<string> &params, int start) {
-  return 0;
+  arrowCommand(params, start, SIM_TO_PROG);
+  return RETURN_VALUE;
 }
 
 LeftArrowVarCommand::LeftArrowVarCommand(Container *container) : VarCommand(container) {}

@@ -15,6 +15,7 @@ class BlockCommand : public Command {
  public:
   void executeBlock(vector<string> &commands, int index);
   bool parseCondition(vector<string> &commands, int index);
+  int returnJump(vector<string> &commands, int start);
   BlockCommand(Container *container);
 };
 

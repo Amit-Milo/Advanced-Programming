@@ -19,20 +19,29 @@ class Container {
   friend class CalculationTokensCreatorChecker;
   friend class TokensToExpressionConverter;
   friend class VarsSetter;
+  friend class PrintCommand;
+  friend class VarCommand;
 
-  Interpreter* interpreter;
-  MapsContainer maps;
+  Interpreter *interpreter;
+  MapsContainer *maps;
   SocketsContainer sockets;
 
   bool serverConnected = false;
 
  public:
-  explicit Container(Interpreter* inter) : interpreter(inter) {}
+  explicit Container(Interpreter *inter, MapsContainer *maps_container) : interpreter(inter), maps(maps_container) {}
+  explicit Container() : interpreter(nullptr), maps(nullptr) {}
   void SetInterpreter(Interpreter *interpreter) {
     Container::interpreter = interpreter;
   }
   Interpreter *GetInterpreter() const {
     return interpreter;
+  }
+  MapsContainer *GetMaps() const {
+    return maps;
+  }
+  void SetMaps(MapsContainer *maps) {
+    Container::maps = maps;
   }
 
 };

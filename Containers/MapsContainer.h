@@ -14,8 +14,10 @@
 
 using namespace std;
 
+class Container;
+
 class MapsContainer {
-  // Those classes need to use the maps.
+  // Those classes need to use the maps
   friend class ConnectControlClientCommand;
   friend class Interpreter;
   friend class OpenDataServerCommand;
@@ -29,16 +31,22 @@ class MapsContainer {
   mutex readers_lock;
   mutex writers_lock;
 
-  unordered_map<string, SimulatorVar*> vars;
-  unordered_map<string, Command*> commands;
+  unordered_map<string, SimulatorVar *> vars;
+  unordered_map<string, Command *> commands;
 
+  void createCommandsMap(Container *container);
 
  public:
-  SimulatorVar* ReadVar(string key);
+  MapsContainer(Container *container);
+
+  SimulatorVar *ReadVar(string key);
 
   void WriteVar(string key, double value);
 
   bool InVars(string index);
+
+  void AddVar(string key, SimulatorVar *value);
+  void AddCommand(string key, Command * value);
 };
 
 #endif //EX3__MAPSCONTAINER_H_
