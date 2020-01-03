@@ -5,6 +5,7 @@
 #include "Expressions/ExpressionsIncludes.h"
 #include "InterpreterFiles/InterpreterIncludes.h"
 #include "Lexer.h"
+#include "Containers/ContainerCreator.h"
 
 int main() {
   /*
@@ -19,36 +20,38 @@ int main() {
    */
 
 
-  // 1
+  ContainerCreator cc;
+  Container* container = cc.createContainer();
 
-  Container * container = new Container;
+
 
 
   // 4
-  Interpreter *i1 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e4 = nullptr;
   try {
-    e4 = i1->interpret("-(2*(3+4))");
+    e4 = container->GetInterpreter()->interpret("-(2*(3+4))");
     std::cout << "4: " << e4->calculate() << std::endl;//-14
     delete e4;
-    delete i1;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e4 != nullptr) {
       delete e4;
     }
-    if (i1 != nullptr) {
-      delete i1;
+    if (container->GetInterpreter() != nullptr) {
+      delete container->GetInterpreter();
     }
     std::cout << e << std::endl;
   }
 
+
   // 5
-  Interpreter *i2 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e5 = nullptr;
   try {
-    i2->setVariables("x=2;y=4");
-    i2->setVariables("x=3");
-    e5 = i2->interpret("2*(-(x+y))");
+    container->GetInterpreter()->setVariables("x=2;y=4");
+    container->GetInterpreter()->setVariables("x=3");
+    e5 = container->GetInterpreter()->interpret("2*(-(x+y))");
     std::cout << "5: " << e5->calculate() << std::endl;//-14
     delete e5;
   } catch (const char *e) {
@@ -59,44 +62,33 @@ int main() {
   }
 
   // 6
-  Interpreter *i3 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e6 = nullptr;
   try {
-    i3->setVariables("x=1.5;y=8.5");
-    i2->setVariables("x=3");
-    e6 = i3->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
+    container->GetInterpreter()->setVariables("x=1.5;y=8.5");
+    e6 = container->GetInterpreter()->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
     std::cout << "6: " << e6->calculate() << std::endl;//-10
     delete e6;
-    delete i2;
-    delete i3;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e6 != nullptr) {
       delete e6;
     }
-    if (i2 != nullptr) {
-      delete i2;
-    }
-    if (i3 != nullptr) {
-      delete i3;
-    }
     std::cout << e << std::endl;
   }
 
-  Interpreter *i4 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e7 = nullptr;
   try {
     // 7
-    i4->setVariables("x2=@;y=8.5");//error
-    e7 = i4->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
+    container->GetInterpreter()->setVariables("x2=@;y=8.5");//error
+    e7 = container->GetInterpreter()->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
     std::cout << "7: " << e7->calculate() << std::endl;
     delete e7;
-    delete i4;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e7 != nullptr) {
       delete e7;
-    }
-    if (i4 != nullptr) {
-      delete i4;
     }
     std::cout << e << std::endl;
   }
@@ -115,60 +107,57 @@ int main() {
   }
 
   // 9
-  Interpreter *i6 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e9 = nullptr;
   try {
-    e9 = i6->interpret("1.0-(-(-16.0))");
+    e9 = container->GetInterpreter()->interpret("1.0-(-(-16.0))");
     std::cout << "9: " << e9->calculate() << std::endl;// -15
     delete e9;
-    delete i6;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e9 != nullptr) {
       delete e9;
     }
-    if (i6 != nullptr) {
-      delete i6;
-    }
     std::cout << e << std::endl;
   }
   // 10
-  Interpreter *i7 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e10 = nullptr;
   try {
-    i7->setVariables("x=1;y=2;z=3");
-    e10 = i7->interpret("-(-(-((z+0.5)*(y+(-3.5)))))");
+    container->GetInterpreter()->setVariables("x=1;y=2;z=3");
+    e10 = container->GetInterpreter()->interpret("-(-(-((z+0.5)*(y+(-3.5)))))");
     std::cout << "10: " << e10->calculate() << std::endl;// 5.25
     delete e10;
-    delete i7;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e10 != nullptr) {
       delete e10;
     }
-    if (i7 != nullptr) {
-      delete i7;
+    if (container->GetInterpreter() != nullptr) {
+      delete container->GetInterpreter();
     }
     std::cout << e << std::endl;
   }
 
-  Interpreter *i8 = new Interpreter(container);
+  container->SetInterpreter(new Interpreter(container));
   Expression *e11 = nullptr;
   try {
     // 11
-    i8->setVariables("x2=14;y=8.5");
-    e11 = i8->interpret("-(-(-((x+0.5)**(y+(-3.5)))))"); //error
+    container->GetInterpreter()->setVariables("x2=14;y=8.5");
+    e11 = container->GetInterpreter()->interpret("-(-(-((x+0.5)**(y+(-3.5)))))"); //error
     std::cout << "11: " << e11->calculate() << std::endl;
     delete e11;
-    delete i8;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e11 != nullptr) {
       delete e11;
     }
-    if (i8 != nullptr) {
-      delete i8;
-    }
     std::cout << e << std::endl;
   }
   return 0;
+
+
+
 }
 
 
@@ -220,31 +209,33 @@ int main() {
   }
 
 
+
   // 4
-  Interpreter *i1 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e4 = nullptr;
   try {
-    e4 = i1->interpret("-(2*(3+4))");
+    e4 = container->GetInterpreter()->interpret("-(2*(3+4))");
     std::cout << "4: " << e4->calculate() << std::endl;//-14
     delete e4;
-    delete i1;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e4 != nullptr) {
       delete e4;
     }
-    if (i1 != nullptr) {
-      delete i1;
+    if (container->GetInterpreter() != nullptr) {
+      delete container->GetInterpreter();
     }
     std::cout << e << std::endl;
   }
 
+
   // 5
-  Interpreter *i2 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e5 = nullptr;
   try {
-    i2->setVariables("x=2;y=4");
-    i2->setVariables("x=3");
-    e5 = i2->interpret("2*(-(x+y))");
+    container->GetInterpreter()->setVariables("x=2;y=4");
+    container->GetInterpreter()->setVariables("x=3");
+    e5 = container->GetInterpreter()->interpret("2*(-(x+y))");
     std::cout << "5: " << e5->calculate() << std::endl;//-14
     delete e5;
   } catch (const char *e) {
@@ -255,44 +246,33 @@ int main() {
   }
 
   // 6
-  Interpreter *i3 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e6 = nullptr;
   try {
-    i3->setVariables("x=1.5;y=8.5");
-    i2->setVariables("x=3");
-    e6 = i3->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
+    container->GetInterpreter()->setVariables("x=1.5;y=8.5");
+    e6 = container->GetInterpreter()->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
     std::cout << "6: " << e6->calculate() << std::endl;//-10
     delete e6;
-    delete i2;
-    delete i3;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e6 != nullptr) {
       delete e6;
     }
-    if (i2 != nullptr) {
-      delete i2;
-    }
-    if (i3 != nullptr) {
-      delete i3;
-    }
     std::cout << e << std::endl;
   }
 
-  Interpreter *i4 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e7 = nullptr;
   try {
     // 7
-    i4->setVariables("x2=@;y=8.5");//error
-    e7 = i4->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
+    container->GetInterpreter()->setVariables("x2=@;y=8.5");//error
+    e7 = container->GetInterpreter()->interpret("-(-(-((x+0.5)*(y+(-3.5)))))");
     std::cout << "7: " << e7->calculate() << std::endl;
     delete e7;
-    delete i4;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e7 != nullptr) {
       delete e7;
-    }
-    if (i4 != nullptr) {
-      delete i4;
     }
     std::cout << e << std::endl;
   }
@@ -311,56 +291,50 @@ int main() {
   }
 
   // 9
-  Interpreter *i6 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e9 = nullptr;
   try {
-    e9 = i6->interpret("1.0-(-(-16.0))");
+    e9 = container->GetInterpreter()->interpret("1.0-(-(-16.0))");
     std::cout << "9: " << e9->calculate() << std::endl;// -15
     delete e9;
-    delete i6;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e9 != nullptr) {
       delete e9;
     }
-    if (i6 != nullptr) {
-      delete i6;
-    }
     std::cout << e << std::endl;
   }
   // 10
-  Interpreter *i7 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e10 = nullptr;
   try {
-    i7->setVariables("x=1;y=2;z=3");
-    e10 = i7->interpret("-(-(-((z+0.5)*(y+(-3.5)))))");
+    container->GetInterpreter()->setVariables("x=1;y=2;z=3");
+    e10 = container->GetInterpreter()->interpret("-(-(-((z+0.5)*(y+(-3.5)))))");
     std::cout << "10: " << e10->calculate() << std::endl;// 5.25
     delete e10;
-    delete i7;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e10 != nullptr) {
       delete e10;
     }
-    if (i7 != nullptr) {
-      delete i7;
+    if (container->GetInterpreter() != nullptr) {
+      delete container->GetInterpreter();
     }
     std::cout << e << std::endl;
   }
 
-  Interpreter *i8 = new Interpreter();
+  container->SetInterpreter(new Interpreter(container));
   Expression *e11 = nullptr;
   try {
     // 11
-    i8->setVariables("x2=14;y=8.5");
-    e11 = i8->interpret("-(-(-((x+0.5)**(y+(-3.5)))))"); //error
+    container->GetInterpreter()->setVariables("x2=14;y=8.5");
+    e11 = container->GetInterpreter()->interpret("-(-(-((x+0.5)**(y+(-3.5)))))"); //error
     std::cout << "11: " << e11->calculate() << std::endl;
     delete e11;
-    delete i8;
+    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e11 != nullptr) {
       delete e11;
-    }
-    if (i8 != nullptr) {
-      delete i8;
     }
     std::cout << e << std::endl;
   }

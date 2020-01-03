@@ -20,7 +20,7 @@ void MapsContainer::WriteVar(string key, double value) {
   this->readers_lock.lock();
   this->writers_lock.lock();
 
-  this->vars[key].SetValue(value);
+  this->vars[key]->SetValue(value);
 
   this->writers_lock.unlock();
   this->readers_lock.unlock();

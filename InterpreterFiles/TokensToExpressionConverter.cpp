@@ -144,6 +144,7 @@ void TokensToExpressionConverter::printStack(stack<pair<string, int>> *s) {
   }
 
 }
+
 /*
 while there are tokens to be read do:
     read a token.

@@ -19,6 +19,7 @@
 #include "../Expressions/BinOperators/Plus.h"
 #include "../Expressions/BinOperators/Minus.h"
 #include "../Expressions/Variable.h"
+#include "../Containers/Container.h"
 
 class TokensToExpressionConverter {
  public:

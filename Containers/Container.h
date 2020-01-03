@@ -7,7 +7,8 @@
 
 #include "MapsContainer.h"
 #include "SocketsContainer.h"
-#include "../InterpreterFiles/Interpreter.h"
+
+class Interpreter;
 
 class Container {
   friend class ConnectControlClientCommand;
@@ -19,9 +20,21 @@ class Container {
   friend class TokensToExpressionConverter;
   friend class VarsSetter;
 
-  Interpreter interpreter;
+  Interpreter* interpreter;
   MapsContainer maps;
   SocketsContainer sockets;
+
+  bool serverConnected = false;
+
+ public:
+  explicit Container(Interpreter* inter) : interpreter(inter) {}
+  void SetInterpreter(Interpreter *interpreter) {
+    Container::interpreter = interpreter;
+  }
+  Interpreter *GetInterpreter() const {
+    return interpreter;
+  }
+
 };
 
 #endif //EX3_CMAKE_BUILD_DEBUG_CONTAINER_H_

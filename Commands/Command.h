@@ -9,7 +9,9 @@
 #include <string>
 
 
-#include "../Containers/Container.h"
+using namespace std;
+
+class Container;
 
 class Command{
  protected:
