@@ -339,6 +339,87 @@ Commands/VarCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommand.cpp.s
 .PHONY : Commands/VarCommand.cpp.s
 
+Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.o: Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
+
+.PHONY : Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.o
+
+# target to build an object file
+Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
+.PHONY : Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
+
+Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.i: Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i
+
+.PHONY : Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.i
+
+# target to preprocess a source file
+Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i
+.PHONY : Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i
+
+Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.s: Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s
+
+.PHONY : Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.s
+
+# target to generate assembly for a file
+Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s
+.PHONY : Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s
+
+Commands/VarCommands/ArrowCommands/RightArrowVarCommand.o: Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
+
+.PHONY : Commands/VarCommands/ArrowCommands/RightArrowVarCommand.o
+
+# target to build an object file
+Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
+.PHONY : Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
+
+Commands/VarCommands/ArrowCommands/RightArrowVarCommand.i: Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i
+
+.PHONY : Commands/VarCommands/ArrowCommands/RightArrowVarCommand.i
+
+# target to preprocess a source file
+Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i
+.PHONY : Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i
+
+Commands/VarCommands/ArrowCommands/RightArrowVarCommand.s: Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s
+
+.PHONY : Commands/VarCommands/ArrowCommands/RightArrowVarCommand.s
+
+# target to generate assembly for a file
+Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s
+.PHONY : Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s
+
+Commands/VarCommands/ArrowVarCommand.o: Commands/VarCommands/ArrowVarCommand.cpp.o
+
+.PHONY : Commands/VarCommands/ArrowVarCommand.o
+
+# target to build an object file
+Commands/VarCommands/ArrowVarCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
+.PHONY : Commands/VarCommands/ArrowVarCommand.cpp.o
+
+Commands/VarCommands/ArrowVarCommand.i: Commands/VarCommands/ArrowVarCommand.cpp.i
+
+.PHONY : Commands/VarCommands/ArrowVarCommand.i
+
+# target to preprocess a source file
+Commands/VarCommands/ArrowVarCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.i
+.PHONY : Commands/VarCommands/ArrowVarCommand.cpp.i
+
+Commands/VarCommands/ArrowVarCommand.s: Commands/VarCommands/ArrowVarCommand.cpp.s
+
+.PHONY : Commands/VarCommands/ArrowVarCommand.s
+
+# target to generate assembly for a file
+Commands/VarCommands/ArrowVarCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s
+.PHONY : Commands/VarCommands/ArrowVarCommand.cpp.s
+
 Commands/VarCommands/ChangeValueCommand.o: Commands/VarCommands/ChangeValueCommand.cpp.o
 
 .PHONY : Commands/VarCommands/ChangeValueCommand.o
@@ -392,60 +473,6 @@ Commands/VarCommands/EqualSignVarCommand.s: Commands/VarCommands/EqualSignVarCom
 Commands/VarCommands/EqualSignVarCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.s
 .PHONY : Commands/VarCommands/EqualSignVarCommand.cpp.s
-
-Commands/VarCommands/LeftArrowVarCommand.o: Commands/VarCommands/LeftArrowVarCommand.cpp.o
-
-.PHONY : Commands/VarCommands/LeftArrowVarCommand.o
-
-# target to build an object file
-Commands/VarCommands/LeftArrowVarCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o
-.PHONY : Commands/VarCommands/LeftArrowVarCommand.cpp.o
-
-Commands/VarCommands/LeftArrowVarCommand.i: Commands/VarCommands/LeftArrowVarCommand.cpp.i
-
-.PHONY : Commands/VarCommands/LeftArrowVarCommand.i
-
-# target to preprocess a source file
-Commands/VarCommands/LeftArrowVarCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.i
-.PHONY : Commands/VarCommands/LeftArrowVarCommand.cpp.i
-
-Commands/VarCommands/LeftArrowVarCommand.s: Commands/VarCommands/LeftArrowVarCommand.cpp.s
-
-.PHONY : Commands/VarCommands/LeftArrowVarCommand.s
-
-# target to generate assembly for a file
-Commands/VarCommands/LeftArrowVarCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.s
-.PHONY : Commands/VarCommands/LeftArrowVarCommand.cpp.s
-
-Commands/VarCommands/RightArrowVarCommand.o: Commands/VarCommands/RightArrowVarCommand.cpp.o
-
-.PHONY : Commands/VarCommands/RightArrowVarCommand.o
-
-# target to build an object file
-Commands/VarCommands/RightArrowVarCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o
-.PHONY : Commands/VarCommands/RightArrowVarCommand.cpp.o
-
-Commands/VarCommands/RightArrowVarCommand.i: Commands/VarCommands/RightArrowVarCommand.cpp.i
-
-.PHONY : Commands/VarCommands/RightArrowVarCommand.i
-
-# target to preprocess a source file
-Commands/VarCommands/RightArrowVarCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.i
-.PHONY : Commands/VarCommands/RightArrowVarCommand.cpp.i
-
-Commands/VarCommands/RightArrowVarCommand.s: Commands/VarCommands/RightArrowVarCommand.cpp.s
-
-.PHONY : Commands/VarCommands/RightArrowVarCommand.s
-
-# target to generate assembly for a file
-Commands/VarCommands/RightArrowVarCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.s
-.PHONY : Commands/VarCommands/RightArrowVarCommand.cpp.s
 
 Containers/ContainerCreator.o: Containers/ContainerCreator.cpp.o
 
@@ -1074,18 +1101,21 @@ help:
 	@echo "... Commands/VarCommand.o"
 	@echo "... Commands/VarCommand.i"
 	@echo "... Commands/VarCommand.s"
+	@echo "... Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.o"
+	@echo "... Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.i"
+	@echo "... Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.s"
+	@echo "... Commands/VarCommands/ArrowCommands/RightArrowVarCommand.o"
+	@echo "... Commands/VarCommands/ArrowCommands/RightArrowVarCommand.i"
+	@echo "... Commands/VarCommands/ArrowCommands/RightArrowVarCommand.s"
+	@echo "... Commands/VarCommands/ArrowVarCommand.o"
+	@echo "... Commands/VarCommands/ArrowVarCommand.i"
+	@echo "... Commands/VarCommands/ArrowVarCommand.s"
 	@echo "... Commands/VarCommands/ChangeValueCommand.o"
 	@echo "... Commands/VarCommands/ChangeValueCommand.i"
 	@echo "... Commands/VarCommands/ChangeValueCommand.s"
 	@echo "... Commands/VarCommands/EqualSignVarCommand.o"
 	@echo "... Commands/VarCommands/EqualSignVarCommand.i"
 	@echo "... Commands/VarCommands/EqualSignVarCommand.s"
-	@echo "... Commands/VarCommands/LeftArrowVarCommand.o"
-	@echo "... Commands/VarCommands/LeftArrowVarCommand.i"
-	@echo "... Commands/VarCommands/LeftArrowVarCommand.s"
-	@echo "... Commands/VarCommands/RightArrowVarCommand.o"
-	@echo "... Commands/VarCommands/RightArrowVarCommand.i"
-	@echo "... Commands/VarCommands/RightArrowVarCommand.s"
 	@echo "... Containers/ContainerCreator.o"
 	@echo "... Containers/ContainerCreator.i"
 	@echo "... Containers/ContainerCreator.s"

@@ -330,31 +330,31 @@ CMakeFiles/ex3.dir/SimulatorVar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/SimulatorVar.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.cpp -o CMakeFiles/ex3.dir/SimulatorVar.cpp.s
 
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o -c /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o -c /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
 
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.cpp > CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.i
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp > CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i
 
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.cpp -o CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.s
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s
 
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o -c /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o -c /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
 
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp > CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.i
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp > CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i
 
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp -o CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.s
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.cpp
@@ -499,6 +499,19 @@ CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/Commands/PrintCommand.cpp -o CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.s
 
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o -c /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.cpp
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.cpp > CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.i
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.cpp -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s
+
 # Object files for target ex3
 ex3_OBJECTS = \
 "CMakeFiles/ex3.dir/main.cpp.o" \
@@ -522,8 +535,8 @@ ex3_OBJECTS = \
 "CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o" \
 "CMakeFiles/ex3.dir/SimulatorVar.cpp.o" \
-"CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o" \
-"CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" \
@@ -534,7 +547,8 @@ ex3_OBJECTS = \
 "CMakeFiles/ex3.dir/StringOperations.cpp.o" \
 "CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o" \
-"CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o"
+"CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o"
 
 # External object files for target ex3
 ex3_EXTERNAL_OBJECTS =
@@ -560,8 +574,8 @@ ex3: CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/SimulatorVar.cpp.o
-ex3: CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o
-ex3: CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o
@@ -573,9 +587,10 @@ ex3: CMakeFiles/ex3.dir/StringOperations.cpp.o
 ex3: CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/build.make
 ex3: CMakeFiles/ex3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable ex3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

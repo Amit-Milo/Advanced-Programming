@@ -80,6 +80,32 @@ CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../SimulatorVar.h
 
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../SimulatorVar.h
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../SimulatorVar.h
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../SimulatorVar.h
+
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommands/ChangeValueCommand.cpp
@@ -110,21 +136,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Interprete
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../SimulatorVar.h
 
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/Command.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.cpp
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Containers/Container.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../SimulatorVar.h
-
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/Command.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.cpp
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../SimulatorVar.h
-
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/ContainerCreator.cpp
@@ -154,10 +165,11 @@ CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/OpenDataServerCom
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/PrintCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/SleepCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
-CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.h
-CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/MapsContainer.cpp
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/MapsContainer.h
@@ -276,10 +288,11 @@ CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/OpenDataServerCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
-CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.h
-CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/SocketsContainer.h

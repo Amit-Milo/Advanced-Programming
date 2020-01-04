@@ -135,6 +135,24 @@
 		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
 		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
@@ -145,18 +163,6 @@
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.cpp">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/Container.h">

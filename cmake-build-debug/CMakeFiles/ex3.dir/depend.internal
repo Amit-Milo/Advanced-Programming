@@ -80,6 +80,32 @@ CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
  /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
  /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
+ /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
+ /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
+ /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.cpp
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
@@ -109,21 +135,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/Interpreter.h
  /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/TokensToExpressionConverter.h
  /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/VarsSetter.h
- /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o
- /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
- /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
- /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
- /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o
- /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.cpp
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
@@ -155,10 +166,11 @@ CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/PrintCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/SleepCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
  /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.cpp
  /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
@@ -277,10 +289,11 @@ CMakeFiles/ex3.dir/Parser.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/ConnectControlClientCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/OpenDataServerCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
- /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
  /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
  /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
