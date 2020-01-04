@@ -117,10 +117,40 @@
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h">
 			<Option target="ex3"/>
 		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/PrintCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/PrintCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/SleepCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/SleepCommand.h">
+			<Option target="ex3"/>
+		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.cpp">
@@ -135,19 +165,13 @@
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.h">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.cpp">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.h">
-			<Option target="ex3"/>
-		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Containers/Container.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Containers/ContainerCreator.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Containers/ContainerCreator.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Containers/MapsContainer.cpp">
@@ -217,6 +241,12 @@
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Value.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Variable.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Variable.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.cpp">

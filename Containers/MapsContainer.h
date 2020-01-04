@@ -8,33 +8,92 @@
 #include <mutex>
 #include <string>
 #include <unordered_map>
+#include <list>
 
 #include "../Commands/Command.h"
 #include "../SimulatorVar.h"
 
 using namespace std;
 
+class Container;
+
 class MapsContainer {
-  // Those classes need to use the maps.
+  // Those classes need to use the maps
   friend class ConnectControlClientCommand;
   friend class Interpreter;
   friend class OpenDataServerCommand;
   friend class Parser;
   friend class VarCommand;
+  friend class CalculationTokensCreatorChecker;
+  friend class TokensToExpressionConverter;
+  friend class VarsSetter;
+  friend class BlockCommand;
 
   mutex readers_lock;
   mutex writers_lock;
 
-  unordered_map<string, SimulatorVar*> vars;
-  unordered_map<string, Command*> commands;
+  unordered_map<string, SimulatorVar *> vars;
+  unordered_map<string, list<string>* > simulatorToProgramWrapping;
+  unordered_map<string, Command *> commands;
 
+  /**
+   * create the map of the simulator to program vars wrapping with all the sim var names.
+   */
+  void createSimulatorToProgramWrappingMap();
+  /**
+   * create the commands map
+   * @param container the container that should be passed to all the commands
+   */
+  void createCommandsMap(Container *container);
 
  public:
-  SimulatorVar* ReadVar(string key);
+  /**
+   * just call the maps creation function.
+   */
+  MapsContainer(Container *container);
 
+  /**
+   * a getter for a key's value from the vars map
+   */
+  SimulatorVar *ReadVar(string key);
+
+  /**
+   * a setter for a var
+   */
   void WriteVar(string key, double value);
 
+  /**
+   * @param index key to check
+   * @return if index is inside the vars map
+   */
   bool InVars(string index);
+
+  /**
+   * add a new var to the vars map
+   * @param key var's name
+   * @param value var's value
+   */
+  void AddVar(string key, SimulatorVar *value);
+  /**
+   * add a new command to the commands map
+   * @param key command's name
+   * @param value command's value
+   */
+  void AddCommand(string key, Command *value);
+
+  /**
+   * add a new wrapped var to the wrapped vars map
+   * @param simVar the wrapper var from the simulator
+   * @param progVar the wrapped var from the program
+   */
+  void AddWrappedVar(string simVar, string progVar);
+
+  /**
+   * Write a value got from the simulator to all wrapped variables.
+   * @param string simVar the wrapper var from the simulator.
+   * @param value the value to assign, received by the simulator.
+   */
+   void WriteWrappedVar(string simVar, float value);
 };
 
 #endif //EX3__MAPSCONTAINER_H_

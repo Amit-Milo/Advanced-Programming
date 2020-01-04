@@ -3,10 +3,15 @@
 //
 
 #include "LeftArrowVarCommand.h"
+#include "../../Containers/Container.h"
 
-//////////////////////////////////////////should complete
+#define RETURN_VALUE 5
+
 int LeftArrowVarCommand::execute(vector<string> &params, int start) {
-  return 0;
+  arrowCommand(params, start, SIM_TO_PROG);
+  container->maps->AddWrappedVar(params.at(start + DISTANCE_TO_SIM_VAR_NAME_ARROW_COMMAND),
+                                 params.at(start + DISTANCE_TO_PROG_VAR_NAME_ARROW_COMMAND));
+  return RETURN_VALUE;
 }
 
 LeftArrowVarCommand::LeftArrowVarCommand(Container *container) : VarCommand(container) {}

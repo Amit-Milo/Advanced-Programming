@@ -9,6 +9,7 @@
 #include "Command.h"
 #include "../SimulatorVar.h"
 
+
 class VarCommand : public Command {
  public:
   VarCommand(Container *container);

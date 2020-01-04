@@ -3,5 +3,7 @@
 //
 
 #include "VarCommand.h"
+#include "../Containers/Container.h"
 
 VarCommand::VarCommand(Container *container) : Command(container) {}
+

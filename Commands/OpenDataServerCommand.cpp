@@ -63,7 +63,11 @@ void OpenDataServerCommand::run_server(Container *container) {
       continue;
 
     splitValues(buffer, ",", values);
-    // TODO for value in values write(map, value)
+
+    int valuesLength = sizeof(values) / sizeof(*values);
+
+    for (int i = 0; i < valuesLength; ++i)
+      this->container->maps->WriteVar()
   }
 
   free(values);

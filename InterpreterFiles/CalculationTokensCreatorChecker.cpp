@@ -36,12 +36,7 @@ list<pair<string, int>> *CalculationTokensCreatorChecker::createTokensList(strin
   return tokens;
 }
 
-/**
- * splits the string to tokens for the SY algo. if found unary expression = plus/minus sign after opening braces,
- * insert 0 between the brace and the operator to make it binary
- * @param s
- * @param tokens
- */
+
 void CalculationTokensCreatorChecker::tokensSplitter(string s, list<pair<string, int>> *tokens) {
   int i = 0;
   if (isUnaryStart(string(1, s.at(0)))) {
@@ -80,8 +75,6 @@ void CalculationTokensCreatorChecker::tokensSplitter(string s, list<pair<string,
     }
     //the i++ is already in each condition statement
   }
-
-  //printTokensList(tokens);
 }
 
 void CalculationTokensCreatorChecker::printTokensList(list<pair<string, int>> *l) {
@@ -92,12 +85,7 @@ void CalculationTokensCreatorChecker::printTokensList(list<pair<string, int>> *l
   cout << "\n";
 }
 
-/**
- * check if tokens are valid
- * @param tokens
- * @param variables
- * @return
- */
+
 bool CalculationTokensCreatorChecker::checkValidTokens(list<pair<string, int>> *tokens,
                                                        Container *container) {
   return checkBraces(tokens) && checkAdjOperators(tokens) && checkValidVars(tokens, container)
@@ -136,7 +124,7 @@ bool CalculationTokensCreatorChecker::checkAdjOperators(list<pair<string, int>> 
 bool CalculationTokensCreatorChecker::checkValidVars(list<pair<string, int>> *tokens, Container *container) {
   for (const auto &myPair : *tokens) {
     if (myPair.second == VARIABLE) {
-      if (container->maps.vars.count(myPair.first) == 0) {
+      if (container->maps->vars.count(myPair.first) == 0) {
         throw "illegal calculation: var name is illegal or unset";
       }
     }

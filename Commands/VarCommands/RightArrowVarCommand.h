@@ -6,7 +6,6 @@
 #define EX3_COMMANDS_RIGHTARROWVARCOMMAND_H_
 
 #include "../VarCommand.h"
-#define JUMP_VAl 5
 
 class RightArrowVarCommand : public VarCommand {
  public:

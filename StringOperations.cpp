@@ -28,6 +28,4 @@ void splitValues(string data, string delimiter, float target[]) {
     token = data.substr(0, pos);
     target[i] = stof(token);
   }
-
-  return ls;
 }

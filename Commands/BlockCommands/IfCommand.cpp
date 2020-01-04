@@ -5,14 +5,10 @@
 #include "IfCommand.h"
 
 int IfCommand::execute(vector<string> &params, int start) {
+  //if condition is true, execute the if block.
   if (parseCondition(params, start)) {
-
-    while (params.at(start).compare("{") != 0) {
-      start++;
-    }
-    start++;//now start is at first command inside the block
-
-    executeBlock(params, start);
+    executeBlock(params, blockStartIndex(params, start));
   }
+  return returnJump(params, start);
 }
 IfCommand::IfCommand(Container *container) : BlockCommand(container) {}

@@ -22,15 +22,23 @@
 
 class Interpreter {
  private:
-  Container* container;
+  Container *container;
  public:
   Interpreter(Container *container);
-  /////////main func
+  /**
+   * the main function. interpret and calculate it.
+   * @param s the expression as a string.
+   * @return the expression's value.
+   */
   double evaluate(string s);
-  void setVariables(string s);
-  /////////
+  /**
+   * convert the input expression as a string to an expression object.
+   * @param s the input expression as a string
+   * @return s as an expression object
+   */
   Expression *interpret(string s);
-  void printVariables();
+
+  void setVariables(string s); //TODO delete this func and all its related files
 };
 
 #endif //EX1__INTERPRETER_H_

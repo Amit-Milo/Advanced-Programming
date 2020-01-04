@@ -3,10 +3,14 @@
 //
 
 #include "ChangeValueCommand.h"
+#include "../../Containers/Container.h"
+#define RETURN_VALUE 3
 
-
-//////////////////////////////////////////should complete
 int ChangeValueCommand::execute(vector<string> &params, int start) {
-  return 0;
+  //get the new var value
+  double newVal = stod(params.at(start+DISTANCE_TO_NEW_VAL));
+  //set the new value
+  container->maps->WriteVar(params.at(start),newVal);
+  return RETURN_VALUE;
 }
 ChangeValueCommand::ChangeValueCommand(Container *container) : VarCommand(container) {}

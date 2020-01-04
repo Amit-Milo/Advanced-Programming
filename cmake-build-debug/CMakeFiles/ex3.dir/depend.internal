@@ -5,6 +5,22 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
  /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
  /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp
@@ -31,39 +47,135 @@ CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
+ /home/amit/CLionProjects/ex3/StringOperations.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Commands/PrintCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/PrintCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Commands/SleepCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/SleepCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/VarCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/VarCommand.h
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/VarCommand.h
  /home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
- /home/amit/CLionProjects/ex3/Commands/VarCommand.h
- /home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp
- /home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.h
- /home/amit/CLionProjects/ex3/SimulatorVar.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o
- /home/amit/CLionProjects/ex3/Commands/Command.h
- /home/amit/CLionProjects/ex3/Commands/VarCommand.h
- /home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.cpp
- /home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/ContainerCreator.cpp
+ /home/amit/CLionProjects/ex3/Containers/ContainerCreator.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.h
  /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h
+ /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h
+ /home/amit/CLionProjects/ex3/Commands/PrintCommand.h
+ /home/amit/CLionProjects/ex3/Commands/SleepCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.cpp
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Parser.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.cpp
@@ -110,6 +222,10 @@ CMakeFiles/ex3.dir/Expressions/Value.cpp.o
  /home/amit/CLionProjects/ex3/Expressions/Expression.h
  /home/amit/CLionProjects/ex3/Expressions/Value.cpp
  /home/amit/CLionProjects/ex3/Expressions/Value.h
+CMakeFiles/ex3.dir/Expressions/Variable.cpp.o
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.cpp
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
 CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
@@ -173,10 +289,11 @@ CMakeFiles/ex3.dir/Parser.cpp.o
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h
  /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h
  /home/amit/CLionProjects/ex3/Commands/VarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.h
  /home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.h
- /home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.h
- /home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
@@ -186,9 +303,13 @@ CMakeFiles/ex3.dir/Parser.cpp.o
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o
  /home/amit/CLionProjects/ex3/SimulatorVar.cpp
  /home/amit/CLionProjects/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/StringOperations.cpp.o
+ /home/amit/CLionProjects/ex3/StringOperations.cpp
+ /home/amit/CLionProjects/ex3/StringOperations.h
 CMakeFiles/ex3.dir/main.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/ContainerCreator.h
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h

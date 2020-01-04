@@ -13,6 +13,7 @@ class Variable: public Expression{
   double value;
  public:
   double calculate() override;
+  //operators
   Variable(const string &_name, double _value);
   Variable& operator++();
   Variable& operator++(int);
