@@ -85,18 +85,39 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.cpp
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
  /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.cpp
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Div.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Minus.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Mul.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Plus.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/Expression.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/Value.h
+ /home/yoav/CLionProjects/cpp/ex3/Expressions/Variable.h
+ /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/Interpreter.h
+ /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/VarsSetter.h
  /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp
  /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h
+ /home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h
  /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o
  /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h

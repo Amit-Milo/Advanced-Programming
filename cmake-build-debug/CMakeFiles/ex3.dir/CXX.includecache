@@ -113,6 +113,8 @@ Command.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.cpp
 ChangeValueCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.h
+../../Containers/Container.h
+/home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
 
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.h
 ../VarCommand.h
@@ -121,6 +123,10 @@ ChangeValueCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.cpp
 EqualSignVarCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h
+../../Containers/Container.h
+/home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
+../../InterpreterFiles/Interpreter.h
+/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/Interpreter.h
 
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h
 ../VarCommand.h
@@ -129,14 +135,12 @@ EqualSignVarCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp
 LeftArrowVarCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
+../../Containers/Container.h
+/home/yoav/CLionProjects/cpp/ex3/Containers/Container.h
 
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
 ../VarCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h
-
-/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.cpp
-RightArrowVarCommand.h
-/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.h
 
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/RightArrowVarCommand.h
 ../VarCommand.h
@@ -190,6 +194,8 @@ mutex
 string
 -
 unordered_map
+-
+list
 -
 ../Commands/Command.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/Command.h
@@ -417,6 +423,10 @@ Commands/VarCommands/LeftArrowVarCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/LeftArrowVarCommand.h
 Commands/BlockCommand.h
 /home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommand.h
+SimulatorVar.h
+/home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
+
+/home/yoav/CLionProjects/cpp/ex3/SimulatorVar.cpp
 SimulatorVar.h
 /home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h
 

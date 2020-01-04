@@ -84,18 +84,39 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/Co
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommands/ChangeValueCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/Command.h
