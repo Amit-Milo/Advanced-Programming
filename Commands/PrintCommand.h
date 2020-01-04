@@ -6,6 +6,7 @@
 #define EX3_COMMANDS_PRINTCOMMAND_H_
 
 #include "Command.h"
+#define DISTANCE_TO_PRINTED_MESSAGE 1
 
 class PrintCommand:public Command{
  public:

@@ -8,16 +8,21 @@
 #include <vector>
 #include <string>
 
-
 using namespace std;
 
 class Container;
 
-class Command{
+class Command {
  protected:
-  Container* container;
+  Container *container;
  public:
-  virtual int execute(vector<string>& params, int start)=0;
+  /**
+   * the calling to command's execution.
+   * @param params the vector of strings
+   * @param start the index of first string in this command
+   * @return number to jump in the vector
+   */
+  virtual int execute(vector<string> &params, int start) = 0;
   Command(Container *container) : container(container) {}
 };
 

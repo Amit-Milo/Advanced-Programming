@@ -7,6 +7,5 @@
 BinaryOperator::~BinaryOperator() {
   delete this->left;
   delete this->right;
-
 }
 BinaryOperator::BinaryOperator(Expression *_left, Expression *_right) : left(_left), right(_right) {}

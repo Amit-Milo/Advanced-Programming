@@ -8,6 +8,7 @@
 #include "Containers/ContainerCreator.h"
 
 int main() {
+  /*
   Lexer l;
   vector<string> *commands = l.lexer("fly.txt");
 
@@ -17,6 +18,31 @@ int main() {
 
   delete commands;
 
+  return 0;
+   */
+
+  ContainerCreator cc;
+  Container *container = cc.createContainer();
+
+
+  // 6
+  container->SetInterpreter(new Interpreter(container));
+  Expression *e6 = nullptr;
+  try {
+    container->GetInterpreter()->setVariables("x=1.5;y=8.5");
+    e6 = container->GetInterpreter()->interpret("-x-y");
+    std::cout << "6: " << e6->calculate() << std::endl;//-10
+    delete e6;
+    delete container->GetInterpreter();
+  } catch (const char *e) {
+    if (e6 != nullptr) {
+      delete e6;
+    }
+    std::cout << e << std::endl;
+  }
+
+
+  delete container;
   return 0;
 }
 

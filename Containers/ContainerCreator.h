@@ -8,9 +8,13 @@
 #include "Container.h"
 #include "../InterpreterFiles/Interpreter.h"
 
-class ContainerCreator{
+class ContainerCreator {
  public:
-  Container* createContainer();
+  /**
+   * handle the creation of a container which is problematic because of double-sided components
+   * @return the valid container
+   */
+  Container *createContainer();
 };
 
 #endif //EX3__CONTAINERCREATOR_H_

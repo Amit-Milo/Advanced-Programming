@@ -7,10 +7,12 @@
 
 #include "MapsContainer.h"
 #include "SocketsContainer.h"
+#include <iostream>
 
 class Interpreter;
 
 class Container {
+  //classes that should access it's fields
   friend class ConnectControlClientCommand;
   friend class OpenDataServerCommand;
   friend class BlockCommand;
@@ -24,6 +26,8 @@ class Container {
   friend class ChangeValueCommand;
   friend class EqualSignVarCommand;
   friend class LeftArrowVarCommand;
+  friend class RightArrowVarCommand;
+  friend class ArrowVarCommand;
 
   Interpreter *interpreter;
   MapsContainer *maps;

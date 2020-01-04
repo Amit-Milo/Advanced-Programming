@@ -15,7 +15,7 @@ vector<string> *Lexer::lexer(string fileName) {
   /////////////////////////////////
   string line;
   while (getline(f, line)) {
-    addCommands(line, commands);
+    addCommands(line, commands); //each command is in a new line, so handle each line.
   }
   /////////////////////////////////
   f.close();
@@ -53,9 +53,9 @@ void Lexer::addCommands(string s, vector<string> *commands) {
     this->addCommands(s.substr(0, begin), commands);
     commands->push_back(s.substr(begin, end - begin + 1));
     this->addCommands(s.substr(end + 1), commands);
-  } else if (handleArrow(s, commands)) {
+  } else if (handleArrow(s, commands)) { //it is an arrow command
     return;
-  } else if (handleCondition(s, commands)) {
+  } else if (handleCondition(s, commands)) { //it is a condition command
     return;
   } else if (s.find("=") != string::npos) { //add everything after the equal sign with no spaces
     this->addCommands(s.substr(0, s.find("=")), commands);
@@ -64,40 +64,46 @@ void Lexer::addCommands(string s, vector<string> *commands) {
     commands->push_back(noSpaces(s.substr(s.find("=") + 1)));
   } else if (s.find(" ") != string::npos) { //seperate
     handleSpecialSubstr(s, " ", commands, false);
-  } else if (s.find("\t") != string::npos) { //useless indentation
+  } else if (s.find("\t") != string::npos) { //useless indentation, just remove it
     handleSpecialSubstr(s, "\t", commands, false);
-  } else if (s.find("(") != string::npos) {
+  } else if (s.find("(") != string::npos) { //remove braces that are not inside an expression
     handleSpecialSubstr(s, "(", commands, false);
-  } else if (s.find(")") != string::npos) {
+  } else if (s.find(")") != string::npos) { //remove braces that are not inside an expression
     handleSpecialSubstr(s, ")", commands, false);
-  } else if (s.find(",") != string::npos) {
+  } else if (s.find(",") != string::npos) { //remove comma that separates vars in function
     handleSpecialSubstr(s, ",", commands, false);
-  } else if (s.find("{") != string::npos) {
+  } else if (s.find("{") != string::npos) { //add the curly braces of a block
     handleSpecialSubstr(s, "{", commands, true);
-  } else if (s.find("}") != string::npos) {
+  } else if (s.find("}") != string::npos) { //add the curly braces of a block
     handleSpecialSubstr(s, "}", commands, true);
-  } else {
+  } else { //else, it is an expression or a var name, just add it.
     commands->push_back(s);
   }
 }
 
 void Lexer::handleSpecialSubstr(string s, string special, vector<string> *commands, bool shouldAddSpecial) {
+  //add the beggining
   this->addCommands(s.substr(0, s.find(special)), commands);
+  //add the special substring if needed
   if (shouldAddSpecial) {
     commands->push_back(special);
   }
+  //add the rest
   this->addCommands(s.substr(s.find(special) + special.length(), s.length() - (s.find(special) + special.length())),
                     commands);
 }
+
 string Lexer::noSpaces(string s) {
   string result("");
   for (int i = 0; i < s.length(); i++) {
     if (s.at(i) != ' ') {
+      //add the char if it is not a space
       result.append(1, s.at(i));
     }
   }
   return result;
 }
+
 bool Lexer::startsWith(string s, string start) {
   return caseInsensitiveMatch(s.substr(0, start.length()), start);
 }
@@ -118,10 +124,11 @@ bool Lexer::handleCondition(string s, vector<string> *commands) {
     firstWord = "while";
   }
   if (firstWord.compare("") == 0) {
+    //it is not a condition line.
     return false;
   }
   commands->push_back(firstWord);
-
+  //now we now that it is indeed a condition line
   string condition("");
   if (s.find("!=") != string::npos) {
     condition = "!=";
@@ -139,10 +146,12 @@ bool Lexer::handleCondition(string s, vector<string> *commands) {
   if (condition.compare("") == 0) {
     throw "error, line starts with while/if but no condition sign";
   }
+  //add the condition and the sides of the sign
   commands->push_back(noSpaces(s.substr(firstWord.length(), s.find(condition) - firstWord.length())));
   commands->push_back(condition);
   commands->push_back(noSpaces(s.substr(s.find(condition) + condition.length(),
                                         s.find("{") - (s.find(condition) + condition.length()))));
+  //finally, add an opening curly braces.
   commands->push_back(string("{"));
 
   return true;
@@ -156,9 +165,11 @@ bool Lexer::handleArrow(string s, vector<string> *commands) {
     arrow = "->";
   }
   if (arrow.compare("") != 0) {
+    //if it is indeed an arrow
     handleSpecialSubstr(s, arrow, commands, true);
     return true;
   }
+  //it is not an arrow line
   return false;
 }
 

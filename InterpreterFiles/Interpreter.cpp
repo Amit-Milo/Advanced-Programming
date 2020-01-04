@@ -6,11 +6,9 @@
 #include "Interpreter.h"
 
 
-///////////
 double Interpreter::evaluate(string s) {
   return this->interpret(s)->calculate();
 }
-///////////
 
 Expression *Interpreter::interpret(string s) {
   //string to tokens list
@@ -24,21 +22,10 @@ Expression *Interpreter::interpret(string s) {
   return result;
 }
 
-/////////////////////////////////////////////////////////////////////////////////
-
-void Interpreter::printVariables() {
-  for (const auto &myPair : container->maps->vars) {
-    std::cout << myPair.first << "," << myPair.second->GetValue() << "\n";
-  }
-}
 
 Interpreter::Interpreter(Container *container) : container(container) {}
 
 void Interpreter::setVariables(string s) {
   VarsSetter vs;
   vs.setVariables(s, this->container);
-}
-
-Interpreter::~Interpreter() {
-  //DO NOT DELETE THE CONTAINER! LEADS TO INFINITE LOOP.
 }

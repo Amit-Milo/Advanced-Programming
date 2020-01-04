@@ -9,6 +9,8 @@
 
 using namespace std;
 
+//TODO amit comments
+
 void splitValues(string data, string delimiter, float target[]);
 
 #endif //EX3__STRINGOPERATIONS_H_

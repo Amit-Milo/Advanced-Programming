@@ -10,7 +10,7 @@
 int EqualSignVarCommand::execute(vector<string> &params, int start) {
   string varName = params.at(start + DISTANCE_TO_VAR_NAME);
   double value = container->interpreter->evaluate(params.at(start + DISTANCE_TO_VALUE));
-  //wrapping is now transitive, so if i get a value which is a name of a var, it is still a NONE wrapping var
+  //wrapping is not transitive, so if i get a value which is a name of a var, it is still a NONE wrapping var
   container->maps->AddVar(varName, new SimulatorVar(value, varName));
   return RETURN_VALUE;
 }

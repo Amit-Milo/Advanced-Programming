@@ -12,8 +12,8 @@
 #include "../Commands/BlockCommands/IfCommand.h"
 #include "../Commands/VarCommands/ChangeValueCommand.h"
 #include "../Commands/VarCommands/EqualSignVarCommand.h"
-#include "../Commands/VarCommands/RightArrowVarCommand.h"
-#include "../Commands/VarCommands/LeftArrowVarCommand.h"
+#include "../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h"
+#include "../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h"
 #include "../Parser.h"
 
 #define SHOULD_CHANGE_ERROR_AMIT -2
@@ -72,17 +72,16 @@ bool MapsContainer::InVars(string index) {
 }
 
 void MapsContainer::AddVar(string key, SimulatorVar *value) {
+  //TODO amit add mutex
   this->vars.insert({key, value});
 }
 
 void MapsContainer::AddCommand(string key, Command *value) {
+  //TODO amit add mutex
   this->commands.insert({key, value});
 }
 
-void MapsContainer::ChangeVar(string key, double newVal) {
-  this->vars.at(key)->SetValue(newVal);
-}
-
 void MapsContainer::AddWrappedVar(string simVar, string progVar) {
+  //TODO amit add mutex
   simulatorToProgramWrapping.at(simVar).push_back(progVar);
 }
