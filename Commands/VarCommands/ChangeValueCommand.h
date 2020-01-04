@@ -6,6 +6,7 @@
 #define EX3_COMMANDS_CHANGEVALUECOMMAND_H_
 
 #include "../VarCommand.h"
+#define DISTANCE_TO_NEW_VAL 2
 
 class ChangeValueCommand:public VarCommand{
  public:

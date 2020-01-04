@@ -25,6 +25,7 @@ class Interpreter {
   Container* container;
  public:
   Interpreter(Container *container);
+  virtual ~Interpreter();
   /////////main func
   double evaluate(string s);
   void setVariables(string s);

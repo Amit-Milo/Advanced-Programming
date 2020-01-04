@@ -31,8 +31,13 @@ void MapsContainer::createCommandsMap(Container *container) {
   this->AddCommand("<-", new LeftArrowVarCommand(container));
 }
 
+void MapsContainer::createSimulatorToProgramWrappingMap() {
+  //TODO amit hard-code the xml vars
+}
+
 MapsContainer::MapsContainer(Container *container) {
   createCommandsMap(container);
+  createSimulatorToProgramWrappingMap();
 }
 
 SimulatorVar *MapsContainer::ReadVar(string key) {
@@ -72,4 +77,12 @@ void MapsContainer::AddVar(string key, SimulatorVar *value) {
 
 void MapsContainer::AddCommand(string key, Command *value) {
   this->commands.insert({key, value});
+}
+
+void MapsContainer::ChangeVar(string key, double newVal) {
+  this->vars.at(key)->SetValue(newVal);
+}
+
+void MapsContainer::AddWrappedVar(string simVar, string progVar) {
+  simulatorToProgramWrapping.at(simVar).push_back(progVar);
 }

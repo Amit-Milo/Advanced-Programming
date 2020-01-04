@@ -38,3 +38,7 @@ void Interpreter::setVariables(string s) {
   VarsSetter vs;
   vs.setVariables(s, this->container);
 }
+
+Interpreter::~Interpreter() {
+  //DO NOT DELETE THE CONTAINER! LEADS TO INFINITE LOOP.
+}

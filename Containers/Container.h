@@ -21,6 +21,9 @@ class Container {
   friend class VarsSetter;
   friend class PrintCommand;
   friend class VarCommand;
+  friend class ChangeValueCommand;
+  friend class EqualSignVarCommand;
+  friend class LeftArrowVarCommand;
 
   Interpreter *interpreter;
   MapsContainer *maps;
@@ -42,6 +45,10 @@ class Container {
   }
   void SetMaps(MapsContainer *maps) {
     Container::maps = maps;
+  }
+  virtual ~Container() {
+    delete interpreter;
+    delete maps;
   }
 
 };

@@ -8,6 +8,7 @@
 #include <mutex>
 #include <string>
 #include <unordered_map>
+#include <list>
 
 #include "../Commands/Command.h"
 #include "../SimulatorVar.h"
@@ -32,8 +33,10 @@ class MapsContainer {
   mutex writers_lock;
 
   unordered_map<string, SimulatorVar *> vars;
+  unordered_map<string, list<string> > simulatorToProgramWrapping;
   unordered_map<string, Command *> commands;
 
+  void createSimulatorToProgramWrappingMap(); //TODO amit
   void createCommandsMap(Container *container);
 
  public:
@@ -46,7 +49,10 @@ class MapsContainer {
   bool InVars(string index);
 
   void AddVar(string key, SimulatorVar *value);
-  void AddCommand(string key, Command * value);
+  void AddCommand(string key, Command *value);
+  void ChangeVar(string key, double newVal);
+
+  void AddWrappedVar(string simVar, string progVar);
 };
 
 #endif //EX3__MAPSCONTAINER_H_

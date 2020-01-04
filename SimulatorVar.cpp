@@ -7,7 +7,7 @@
 //constructor for var associated with simulator var
 SimulatorVar::SimulatorVar(const string &prog_name, const string &simulator_name, Wrapping wrapping) : progName(
     prog_name), simulatorName(simulator_name), wrapping(wrapping) {
-  /////////////////////////////////////////////////////////set the value to the simulator var value
+  //TODO set the value to the simulator var value
 }
 
 //constructor for var not associated with simulator var, the simulatorName field is empty
