@@ -5,9 +5,9 @@
 #ifndef EX3_COMMANDS_VARCOMMANDS_LEFTARROWVARCOMMAND_H_
 #define EX3_COMMANDS_VARCOMMANDS_LEFTARROWVARCOMMAND_H_
 
-#include "../VarCommand.h"
+#include "../ArrowVarCommand.h"
 
-class LeftArrowVarCommand:public VarCommand{
+class LeftArrowVarCommand:public ArrowVarCommand{
  public:
   int execute(vector<string> &params, int start) override;
   LeftArrowVarCommand(Container *container);

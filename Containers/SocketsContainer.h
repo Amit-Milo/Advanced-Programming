@@ -8,6 +8,8 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 
+//TODO amit comments
+
 class SocketsContainer {
   // Those classes need to use the sockets.
   friend class ConnectControlClientCommand;

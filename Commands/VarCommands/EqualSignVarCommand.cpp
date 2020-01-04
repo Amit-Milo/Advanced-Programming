@@ -3,9 +3,15 @@
 //
 
 #include "EqualSignVarCommand.h"
+#include "../../Containers/Container.h"
+#include "../../InterpreterFiles/Interpreter.h"
+#define RETURN_VALUE 4
 
-//////////////////////////////////////////should complete
 int EqualSignVarCommand::execute(vector<string> &params, int start) {
-  return 0;
+  string varName = params.at(start + DISTANCE_TO_VAR_NAME);
+  double value = container->interpreter->evaluate(params.at(start + DISTANCE_TO_VALUE));
+  //wrapping is not transitive, so if i get a value which is a name of a var, it is still a NONE wrapping var
+  container->maps->AddVar(varName, new SimulatorVar(value, varName));
+  return RETURN_VALUE;
 }
 EqualSignVarCommand::EqualSignVarCommand(Container *container) : VarCommand(container) {}

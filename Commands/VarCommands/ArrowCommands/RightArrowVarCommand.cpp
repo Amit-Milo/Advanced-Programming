@@ -7,8 +7,9 @@
 #define RETURN_VALUE 5
 
 int RightArrowVarCommand::execute(vector<string> &params, int start) {
+  //call the arrow command from VarCommand
   arrowCommand(params, start, PROG_TO_SIM);
   return RETURN_VALUE;
 }
 
-RightArrowVarCommand::RightArrowVarCommand(Container *container) : VarCommand(container) {}
+RightArrowVarCommand::RightArrowVarCommand(Container *container) : ArrowVarCommand(container) {}

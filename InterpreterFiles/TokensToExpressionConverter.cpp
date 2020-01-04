@@ -103,7 +103,15 @@ stack<pair<string, int>> *TokensToExpressionConverter::tokensToStack(list<pair<s
 Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, int>> *calcStack,
                                                            Container* container) {
   if (calcStack->size() == 1) {
-    return new Value(stod(calcStack->top().first));
+    pair<string, int> top = calcStack->top();
+    calcStack->pop();
+    if (top.second == NUMBER) {
+      return new Value(stod(top.first));
+    } else if (top.second == VARIABLE) {
+      return new Variable(top.first, container->maps->vars.at(top.first)->GetValue());
+    } else {
+      throw "error in vars/numbers";
+    }
   }
   if (calcStack->top().second == OPERATOR) {
     //things will work because once the function gets to a dead end it only leaves the other side of the expression
@@ -129,7 +137,7 @@ Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, in
     if (top.second == NUMBER) {
       return new Value(stod(top.first));
     } else if (top.second == VARIABLE) {
-      return new Variable(top.first, container->maps.vars.at(top.first)->GetValue());
+      return new Variable(top.first, container->maps->vars.at(top.first)->GetValue());
     } else {
       throw "error in vars/numbers";
     }
@@ -144,6 +152,7 @@ void TokensToExpressionConverter::printStack(stack<pair<string, int>> *s) {
   }
 
 }
+
 /*
 while there are tokens to be read do:
     read a token.

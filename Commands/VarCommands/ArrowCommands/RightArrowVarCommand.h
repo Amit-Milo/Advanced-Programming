@@ -5,9 +5,9 @@
 #ifndef EX3_COMMANDS_RIGHTARROWVARCOMMAND_H_
 #define EX3_COMMANDS_RIGHTARROWVARCOMMAND_H_
 
-#include "../VarCommand.h"
+#include "../ArrowVarCommand.h"
 
-class RightArrowVarCommand : public VarCommand {
+class RightArrowVarCommand : public ArrowVarCommand {
  public:
   int execute(vector<string> &params, int start) override;
   RightArrowVarCommand(Container *container);

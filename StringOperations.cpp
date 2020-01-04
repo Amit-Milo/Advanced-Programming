@@ -29,5 +29,5 @@ void splitValues(string data, string delimiter, float target[]) {
     target[i] = stof(token);
   }
 
-  return ls;
+  //return ls;
 }
