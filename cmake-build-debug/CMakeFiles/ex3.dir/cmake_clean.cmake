@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o"
+  "CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o"
+  "CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o"
