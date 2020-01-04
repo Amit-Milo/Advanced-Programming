@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/amit/CLionProjects/ex3/cmake-build-debug"/>
+				<Option working_dir="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/amit/CLionProjects/ex3/cmake-build-debug"/>
+				<Option working_dir="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex3">
-				<Option output="/home/amit/CLionProjects/ex3/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amit/CLionProjects/ex3/cmake-build-debug"/>
+				<Option output="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex3/fast">
-				<Option output="/home/amit/CLionProjects/ex3/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/amit/CLionProjects/ex3/cmake-build-debug"/>
+				<Option output="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,213 +67,243 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/amit/CLionProjects/ex3/cmake-build-debug"/>
+				<Option working_dir="/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amit/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/yoav/CLionProjects/cpp/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommands/IfCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommands/IfCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommands/WhileCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/BlockCommands/WhileCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/Command.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/Command.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/ConnectControlClientCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/ConnectControlClientCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/OpenDataServerCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/OpenDataServerCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/PrintCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/PrintCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/SleepCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/SleepCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/LeftArrowVarCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/VarCommands/RightArrowVarCommand.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Containers/Container.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Containers/MapsContainer.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ArrowVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Containers/MapsContainer.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Containers/SocketsContainer.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/ChangeValueCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Containers/SocketsContainer.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Commands/VarCommands/EqualSignVarCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/Container.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/ContainerCreator.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/ContainerCreator.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/MapsContainer.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Containers/SocketsContainer.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/BinaryOperator.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/BinaryOperator.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/ExpressionsIncludes.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Div.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UMinus.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Div.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UMinus.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Minus.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UPlus.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Minus.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UPlus.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Mul.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UnaryOperator.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Mul.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/UnOperators/UnaryOperator.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Plus.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Value.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/BinOperators/Plus.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Expressions/Value.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/ExpressionsIncludes.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/UnOperators/UMinus.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/UnOperators/UMinus.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/UnOperators/UPlus.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/UnOperators/UPlus.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/InterpreterIncludes.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/UnOperators/UnaryOperator.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/UnOperators/UnaryOperator.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/Value.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/Value.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/Variable.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Lexer.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Expressions/Variable.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Lexer.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/CalculationTokensCreatorChecker.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Parser.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Parser.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/Interpreter.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/SimulatorVar.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/Interpreter.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/SimulatorVar.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/InterpreterIncludes.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/StringOperations.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/TokensToExpressionConverter.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/StringOperations.h">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/TokensToExpressionConverter.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/main.cpp">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/VarsSetter.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/CMakeLists.txt">
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/InterpreterFiles/VarsSetter.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Lexer.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Lexer.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Parser.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/Parser.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/SimulatorVar.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/SimulatorVar.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/StringOperations.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/StringOperations.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/main.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/yoav/CLionProjects/cpp/ex3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

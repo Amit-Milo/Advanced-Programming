@@ -4,6 +4,22 @@
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Commands/BlockCommand.cpp
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Commands/BlockCommand.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
+CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/BlockCommand.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/BlockCommands/IfCommand.cpp
@@ -30,39 +46,135 @@ CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Containers/Container
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../StringOperations.h
+
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Commands/PrintCommand.cpp
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Commands/PrintCommand.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
+CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../SimulatorVar.h
+
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/SleepCommand.cpp
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/SleepCommand.h
 
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/VarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../SimulatorVar.h
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../SimulatorVar.h
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../SimulatorVar.h
+
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.cpp
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommands/ChangeValueCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../SimulatorVar.h
 
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/Command.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.cpp
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/LeftArrowVarCommand.cpp.o: ../SimulatorVar.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/ContainerCreator.cpp
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/ContainerCreator.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/VarsSetter.h
+CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../SimulatorVar.h
 
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/Command.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.cpp
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.h
-CMakeFiles/ex3.dir/Commands/VarCommands/RightArrowVarCommand.cpp.o: ../SimulatorVar.h
-
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/IfCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/WhileCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/ConnectControlClientCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/OpenDataServerCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/PrintCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/SleepCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/MapsContainer.cpp
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Parser.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o: ../Containers/SocketsContainer.cpp
@@ -109,6 +221,10 @@ CMakeFiles/ex3.dir/Expressions/UnOperators/UnaryOperator.cpp.o: ../Expressions/U
 CMakeFiles/ex3.dir/Expressions/Value.cpp.o: ../Expressions/Expression.h
 CMakeFiles/ex3.dir/Expressions/Value.cpp.o: ../Expressions/Value.cpp
 CMakeFiles/ex3.dir/Expressions/Value.cpp.o: ../Expressions/Value.h
+
+CMakeFiles/ex3.dir/Expressions/Variable.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Expressions/Variable.cpp.o: ../Expressions/Variable.cpp
+CMakeFiles/ex3.dir/Expressions/Variable.cpp.o: ../Expressions/Variable.h
 
 CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o: ../Containers/Container.h
@@ -172,10 +288,11 @@ CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/OpenDataServerCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
-CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/LeftArrowVarCommand.h
-CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/RightArrowVarCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/SocketsContainer.h
@@ -186,8 +303,12 @@ CMakeFiles/ex3.dir/Parser.cpp.o: ../SimulatorVar.h
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../SimulatorVar.cpp
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../SimulatorVar.h
 
+CMakeFiles/ex3.dir/StringOperations.cpp.o: ../StringOperations.cpp
+CMakeFiles/ex3.dir/StringOperations.cpp.o: ../StringOperations.h
+
 CMakeFiles/ex3.dir/main.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Containers/ContainerCreator.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
