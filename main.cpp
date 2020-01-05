@@ -10,7 +10,7 @@
 int main() {
   /*
   Lexer l;
-  vector<string> *commands = l.lexer("fly.txt");
+  vector<string> *commands = l.lexer("fly_with_func.txt");
 
   for (auto const &i : *commands) {
     std::cout << "*" << i << "*" << endl;
