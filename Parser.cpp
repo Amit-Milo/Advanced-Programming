@@ -6,7 +6,6 @@
 
 Parser::Parser() {}
 
-///////////////////////////////////////////this has a copy in BlockCommand::executeBlock. change if changed
 void Parser::parse(vector<string> *commands, Container *container) {
   int index = 0;
   while (index < commands->size()) { //while there are strings to read:
@@ -20,11 +19,14 @@ void Parser::parse(vector<string> *commands, Container *container) {
         Command *c = container->maps->commands.at(commands->at(index));
         index += c->execute(*commands, index);
       }
+    } else if (commands->at(index + 1).compare("var") == 0) {
+      //current word is not in the commands map and the next word is "var", this is a function declaration
+      container->maps->AddCommand(commands->at(index), new );// TODO
     } else if (container->maps->InVars(commands->at(index))) {
       //should be a var name, so call the change var value command
       Command *c = container->maps->commands.at(NEW_VALUE_COMMAND);
       index += c->execute(*commands, index);
-    } else { //error or something we did not think about
+    } else {//error or something we did not think about
       string message(commands->at(index) + " is not a command");
       throw message.c_str();
     }
