@@ -5,66 +5,82 @@
       <config projectName="ex3" targetName="ex3" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2657903a-887e-482f-acc0-ad0433c1c257" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/ConditionBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionBlock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/ConditionBlock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionBlock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/IfCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/IfCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/BlockCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/BlockCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/FunctionCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/FunctionCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/ArrowVarCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowVarCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Containers/Container.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/Container.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/OpenDataServerCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/OpenDataServerCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/OpenDataServerCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/OpenDataServerCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/SleepCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/SleepCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Containers/MapsContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/MapsContainer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Containers/MapsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/MapsContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Containers/SocketsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/SocketsContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpreterFiles/CalculationTokensCreatorChecker.h" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/CalculationTokensCreatorChecker.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringOperations.h" beforeDir="false" afterPath="$PROJECT_DIR$/StringOperations.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/11" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/12" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/13" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/14" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/16" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/17" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/18" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ex3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ex3.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ex3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ex3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +90,25 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="ProjectId" id="1VOPP908XRCve7P8byoNQnW9Npp" />
+  <component name="ProjectId" id="1VIFXzUsrae9Hio9XwhFyUCh4XX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -89,12 +118,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/InterpreterFiles" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Commands" />
-      <recent name="$PROJECT_DIR$/Containers" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/InterpreterFiles" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands" />
+      <recent name="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands" />
+      <recent name="$PROJECT_DIR$/Containers" />
+      <recent name="$PROJECT_DIR$/Commands" />
+      <recent name="$PROJECT_DIR$/Commands/VarCommands" />
     </key>
   </component>
   <component name="RunManager">
@@ -121,31 +157,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2657903a-887e-482f-acc0-ad0433c1c257" name="Default Changelist" comment="" />
-      <created>1577121141868</created>
+      <changelist id="98ea9103-0d65-4c8d-8908-7b6c1b9f7e7f" name="Default Changelist" comment="" />
+      <created>1576932745710</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1577121141868</updated>
-      <workItem from="1577121144511" duration="1391000" />
-      <workItem from="1577131870435" duration="3003000" />
-      <workItem from="1577174151698" duration="9242000" />
-      <workItem from="1577222485053" duration="1088000" />
-      <workItem from="1577275757668" duration="1629000" />
-      <workItem from="1577347806077" duration="926000" />
-      <workItem from="1577862391997" duration="3333000" />
-      <workItem from="1577868489699" duration="54000" />
-      <workItem from="1577889213841" duration="566000" />
-      <workItem from="1577895861282" duration="3133000" />
-      <workItem from="1577983074163" duration="605000" />
-      <workItem from="1577983979104" duration="440000" />
-      <workItem from="1577984440798" duration="634000" />
-      <workItem from="1577985099556" duration="3282000" />
-      <workItem from="1578053840798" duration="1937000" />
-      <workItem from="1578167074514" duration="57000" />
-      <workItem from="1578167205217" duration="6053000" />
-      <workItem from="1578211080067" duration="653000" />
-      <workItem from="1578216578641" duration="1618000" />
-      <workItem from="1578225552664" duration="8301000" />
+      <updated>1576932745710</updated>
+      <workItem from="1576932748109" duration="8000" />
+      <workItem from="1576932790556" duration="49136000" />
+      <workItem from="1578083536331" duration="4665000" />
+      <workItem from="1578088286023" duration="6168000" />
+      <workItem from="1578134137698" duration="10720000" />
+      <workItem from="1578211570378" duration="5535000" />
     </task>
     <servers />
   </component>
@@ -153,37 +175,91 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="201" width="680" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578167342174">
+    <state x="1233" y="324" width="465" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1578240645667">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1233" y="324" width="465" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1578240645667" />
+    <state x="801" y="241" width="403" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.923@67.27.1853.923" timestamp="1577348138901" />
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577912848952">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577912848952" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576932945628">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576932945628" />
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1578248930354">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="361" y="201" width="680" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1578167342174" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578233119443">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578248930354" />
+    <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
+    <state width="1807" height="364" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875814" />
+    <state width="1807" height="307" key="GridCell.Tab.0.bottom/67.27.1853.923@67.27.1853.923" timestamp="1577275939573" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1578248930354">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1578233119443" />
-    <state x="187" y="85" width="1039" height="622" key="MergeDialog" timestamp="1578167343440">
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578248930354" />
+    <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
+    <state width="1807" height="364" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875813" />
+    <state width="1807" height="307" key="GridCell.Tab.0.center/67.27.1853.923@67.27.1853.923" timestamp="1577275939572" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1578248930354">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="187" y="85" width="1039" height="622" key="MergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1578167343440" />
-    <state x="786" y="129" width="580" height="564" key="MultipleFileMergeDialog" timestamp="1578168017446">
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578248930354" />
+    <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1531.743@67.27.1531.743" timestamp="1578088206534" />
+    <state width="1807" height="364" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875813" />
+    <state width="1807" height="307" key="GridCell.Tab.0.left/67.27.1853.923@67.27.1853.923" timestamp="1577275939572" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1578248930354">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="786" y="129" width="580" height="564" key="MultipleFileMergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1578168017446" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578225553707">
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578248930354" />
+    <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
+    <state width="1807" height="364" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875814" />
+    <state width="1807" height="307" key="GridCell.Tab.0.right/67.27.1853.923@67.27.1853.923" timestamp="1577275939573" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1578241820585">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1531.743@67.27.1531.743" timestamp="1578088206536" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1578241820585">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1578241820585">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1578241820585">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
+    <state x="659" y="198" width="707" height="528" key="find.popup" timestamp="1578254787736">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578225553707" />
-    <state x="484" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577991426686">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="659" y="198" width="707" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1578254787736" />
+    <state x="966" y="270" width="950" height="606" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1578246932460" />
+    <state x="656" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577348086388">
+      <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="484" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1577991426686" />
-    <state x="226" y="27" width="707" height="741" key="find.popup" timestamp="1578233070267">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="226" y="27" width="707" height="741" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1578233070267" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578054375644">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1578054375644" />
+    <state x="656" y="225" width="672" height="678" key="search.everywhere.popup/67.27.1853.923@67.27.1853.923" timestamp="1577348086388" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.cpp</url>
+          <line>47</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Containers/MapsContainer.cpp</url>
+          <line>22</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

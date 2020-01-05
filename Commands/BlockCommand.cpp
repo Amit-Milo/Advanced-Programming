@@ -32,30 +32,6 @@ void BlockCommand::executeBlock(vector<string> &commands, int index) {
   }
 }
 
-bool BlockCommand::parseCondition(vector<string> &commands, int index) {
-  //evaluate the sides of the condition
-  double left = container->interpreter->evaluate(commands.at(index + 1));
-  double right = container->interpreter->evaluate(commands.at(index + 3));
-  //now check the condition and return accordingly:
-  string condition = commands.at(index + 2);
-  if (condition.compare("==") == 0) {
-    return left == right;
-  } else if (condition.compare("!=") == 0) {
-    return left != right;
-  } else if (condition.compare("<=") == 0) {
-    return left <= right;
-  } else if (condition.compare(">=") == 0) {
-    return left >= right;
-  } else if (condition.compare("<") == 0) {
-    return left < right;
-  } else if (condition.compare(">") == 0) {
-    return left > right;
-  } else {
-    string err("error with conditions, expected condition but got: " + condition);
-    throw err.c_str();
-  }
-}
-
 BlockCommand::BlockCommand(Container *container) : Command(container) {}
 
 int BlockCommand::returnJump(vector<string> &commands, int start) {

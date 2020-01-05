@@ -8,9 +8,9 @@
 #include "Containers/ContainerCreator.h"
 
 int main() {
-  /*
+
   Lexer l;
-  vector<string> *commands = l.lexer("fly_with_func.txt");
+  vector<string> *commands = l.lexer("fly.txt");
 
   for (auto const &i : *commands) {
     std::cout << "*" << i << "*" << endl;
@@ -18,9 +18,9 @@ int main() {
 
   delete commands;
 
-  return 0;
-   */
 
+
+/*
   ContainerCreator cc;
   Container *container = cc.createContainer();
 
@@ -33,7 +33,6 @@ int main() {
     e6 = container->GetInterpreter()->interpret("-x-y");
     std::cout << "6: " << e6->calculate() << std::endl;//-10
     delete e6;
-    delete container->GetInterpreter();
   } catch (const char *e) {
     if (e6 != nullptr) {
       delete e6;
@@ -43,6 +42,8 @@ int main() {
 
 
   delete container;
+  */
+
   return 0;
 }
 

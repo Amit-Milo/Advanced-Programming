@@ -11,7 +11,6 @@
 
 using namespace std;
 
-//TODO amit comments
 
 class SocketsContainer {
   // Those classes need to use the sockets.
@@ -31,8 +30,15 @@ class SocketsContainer {
   sockaddr_in client_address;
 
  public:
+  /**
+   * A default constructor.
+   */
   SocketsContainer();
 
+  /**
+   * Send given data to server (the simulator).
+   * @param data the data to send the simulator.
+   */
   void SendToServer(string data);
 };
 

@@ -29,29 +29,55 @@ class MapsContainer {
   friend class BlockCommand;
   friend class Parser;
 
-  mutex vars_readers_lock;
-  mutex vars_writers_lock;
+  mutex vars_lock;
 
-  mutex simulator_readers_lock;
-  mutex simulator_writers_lock;
+  mutex simulator_lock;
 
-  mutex commands_readers_lock;
-  mutex commands_writers_lock;
+  mutex commands_lock;
 
   unordered_map<string, SimulatorVar *> vars;
-  unordered_map<string, list<string>* > simulatorToProgramWrapping;
+  unordered_map<string, list<string> *> simulatorToProgramWrapping;
   unordered_map<string, Command *> commands;
 
   // A list of the names of the variables declared in the simulator.
-  const string names[SIMULATOR_VARS_AMOUNT] = {"sim_vars_amount", "time_warp", "switches_magnetos", "heading-indicator_offset-deg",
-                                         "altimeter_indicated-altitude-ft", "altimeter_pressure-alt-ft", "attitude-indicator_indicated-pitch-deg",
-                                         "attitude-indicator_indicated-roll-deg", "attitude-indicator_internal-pitch-deg", "attitude-indicator_internal-roll-deg",
-                                         "encoder_indicated-altitude-ft", "encoder_pressure-alt-ft", "gps_indicated-altitude-ft", "gps_indicated-ground-speed-kt",
-                                         "gps_indicated-vertical-speed", "indicated-heading-deg", "magnetic-compass_indicated-heading-deg", "slip-skid-ball_indicated-slip-skid",
-                                         "turn-indicator_indicated-turn-rate", "vertical-speed-indicator_indicated-speed-fpm", "flight_aileron", "flight_elevator",
-                                         "flight_rudder", "flight_flaps", "engine_throttle", "current-engine_throttle", "switches_master-avionics", "switches_starter",
-                                         "active-engine_auto-start", "flight_speedbrake", "c172p_brake-parking", "engine_primer", "current-engine_mixture",
-                                         "switches_master-bat", "switches_master-alt", "engine_rpm"};
+  const string names[SIMULATOR_VARS_AMOUNT] = {
+          "/instrumentation/airspeed-indicator/indicated-speed-kt",
+          "/sim/time/warp",
+          "/controls/switches/magnetos",
+          "//instrumentation/heading-indicator/offset-deg",
+          "/instrumentation/altimeter/indicated-altitude-ft",
+          "/instrumentation/altimeter/pressure-alt-ft",
+          "/instrumentation/attitude-indicator/indicated-pitch-deg",
+          "/instrumentation/attitude-indicator/indicated-roll-deg",
+          "/instrumentation/attitude-indicator/internal-pitch-deg",
+          "/instrumentation/attitude-indicator/internal-roll-deg",
+          "/instrumentation/encoder/indicated-altitude-ft",
+          "/instrumentation/encoder/pressure-alt-ft",
+          "/instrumentation/gps/indicated-altitude-ft",
+          "/instrumentation/gps/indicated-ground-speed-kt",
+          "/instrumentation/gps/indicated-vertical-speed",
+          "/instrumentation/heading-indicator/indicated-heading-deg",
+          "/instrumentation/magnetic-compass/indicated-heading-deg",
+          "/instrumentation/slip-skid-ball/indicated-slip-skid",
+          "/instrumentation/turn-indicator/indicated-turn-rate",
+          "/instrumentation/vertical-speed-indicator/indicated-speed-fpm",
+          "/controls/flight/aileron",
+          "/controls/flight/elevator",
+          "/controls/flight/rudder",
+          "/controls/flight/flaps",
+          "/controls/engines/engine/throttle",
+          "/controls/engines/current-engine/throttle",
+          "/controls/switches/master-avionics",
+          "/controls/switches/starter",
+          "/engines/active-engine/auto-start",
+          "/controls/flight/speedbrake",
+          "/sim/model/c172p/brake-parking",
+          "/controls/engines/engine/primer",
+          "/controls/engines/current-engine/mixture",
+          "/controls/switches/master-bat",
+          "/controls/switches/master-alt",
+          "/engines/engine/rpm"
+      };
 
   /**
    * create the map of the simulator to program vars wrapping with all the sim var names.
@@ -92,6 +118,11 @@ class MapsContainer {
    */
   void AddVar(string key, SimulatorVar *value);
   /**
+   * delete the var with the input name from the vars map.
+   * @param key the var to delete.
+   */
+  void DeleteVar(string key);
+  /**
    * add a new command to the commands map
    * @param key command's name
    * @param value command's value
@@ -110,7 +141,7 @@ class MapsContainer {
    * @param string simVar the wrapper var from the simulator.
    * @param value the value to assign, received by the simulator.
    */
-   void WriteWrappedVar(string simVar, float value);
+  void WriteWrappedVar(string simVar, float value);
 };
 
 #endif //EX3__MAPSCONTAINER_H_

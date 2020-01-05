@@ -42,7 +42,7 @@ class CalculationTokensCreatorChecker {
     * check if tokens are valid
     * @param tokens
     * @param variables
-    * @return
+    * @return true if the tokens are valid, false otherwise.
     */
   bool checkValidTokens(list<pair<string, int>> *tokens, Container *container);
   /**

@@ -18,8 +18,6 @@
 
 #include "Command.h"
 
-//TODO amit comments
-
 using namespace std;
 
 class OpenDataServerCommand : public Command {
@@ -33,15 +31,36 @@ class OpenDataServerCommand : public Command {
   // Need to know maximum size to read from the simulator.
   int maxSize;
 
+  /**
+   * A function called by a thread to run as server at the background.
+   * @param container a container which contains all the necessary information.
+   */
   void run_server(Container *container);
 
  public:
+  /**
+   * A constructor for the command.
+   * Set the value of important fields.
+   * @param container  container which contains all the necessary information.
+   * @param sim_vars_amount the maximum amount of variables sent by the simulator.
+   */
   OpenDataServerCommand(Container *container, int sim_vars_amount)
       : Command(container), simVarsAmount(sim_vars_amount) {
-    this->maxSize = this->simVarsAmount * this->maxSize + this->simVarsAmount + 1;
+    /*
+     * Each variables needs at most the maximum digits which float needs.
+     * In addition, to each variable there attached a space or a \n char.
+     * We need a place for the \0 char.
+     */
+    this->maxSize = this->simVarsAmount * this->digitsOfFloat + this->simVarsAmount + 1;
 
   }
 
+  /**
+   * Execute the command. Open a server and run it at the background.
+   * @param params a vector of string contains the parameters  to the command.
+   * @param start the index of the first parameter to use.
+   * @return how many jumps should be taken.
+   */
   int execute(vector<string> &params, int start);
 };
 

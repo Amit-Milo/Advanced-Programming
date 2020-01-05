@@ -15,7 +15,7 @@ int FunctionCommand::execute(vector<string> &params, int start) {
   //call the execution of the function, go to the line it was declared and execute it until it is done.
   executeBlock(params, blockStartIndex(params, funcStartInLexer));
   //now we finished running the function, remove the new var from the map.
-  container->maps->DeleteVar(inputVarName) //TODO write function
+  container->maps->DeleteVar(inputVarName);
   return RETURN_VALUE_FROM_FUNCTION_CALL;
 }
 

@@ -19,13 +19,6 @@ class BlockCommand : public Command {
    */
   void executeBlock(vector<string> &commands, int index);
   /**
-   * parse the condition of the block and return the result
-   * @param commands vector of commands.
-   * @param index the index of the while/if word.
-   * @return true/false according to the condition.
-   */
-  bool parseCondition(vector<string> &commands, int index);
-  /**
    * @return number to jump to next command after this block.
    */
   int returnJump(vector<string> &commands, int start);

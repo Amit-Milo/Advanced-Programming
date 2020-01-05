@@ -7,11 +7,20 @@
 
 #include "Command.h"
 
-//TODO amit comments
-
 class SleepCommand : public Command {
  public:
+  /**
+   * Execute the command. Block the execute of the current thread for a given time.
+   * @param params a vector of parameters used by the command.
+   * @param start index implying where to start reading from the vector.
+   * @return how many jumps should be taken.
+   */
   int execute(vector<string> &params, int start) override;
+
+  /**
+   * A constructor.
+   * @param container contains important information about the program and related members.
+   */
   SleepCommand(Container *container);
 };
 

@@ -67,7 +67,21 @@ CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/Comma
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/ConnectControlClientCommand.cpp
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
+CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/OpenDataServerCommand.cpp
@@ -75,6 +89,18 @@ CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/OpenDataSer
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../StringOperations.h
 

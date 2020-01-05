@@ -17,12 +17,9 @@
 #include "../Parser.h"
 
 void MapsContainer::createCommandsMap(Container *container) {
-  // Nobody should access the map when we edit it.
-  this->commands_readers_lock.lock();
-  this->commands_writers_lock.lock();
 
-  this->AddCommand("openDataServer", new OpenDataServerCommand(container, SIMULATOR_VARS_AMOUNT));
-  this->AddCommand("connectControlClient", new ConnectControlClientCommand(container));
+  //this->AddCommand("openDataServer", new OpenDataServerCommand(container, SIMULATOR_VARS_AMOUNT));
+  //this->AddCommand("connectControlClient", new ConnectControlClientCommand(container));
   this->AddCommand("Sleep", new SleepCommand(container));
   this->AddCommand("Print", new PrintCommand(container));
   this->AddCommand("while", new WhileCommand(container));
@@ -31,22 +28,17 @@ void MapsContainer::createCommandsMap(Container *container) {
   this->AddCommand("=", new EqualSignVarCommand(container));
   this->AddCommand("->", new RightArrowVarCommand(container));
   this->AddCommand("<-", new LeftArrowVarCommand(container));
-
-  this->commands_writers_lock.unlock();
-  this->commands_readers_lock.unlock();
 }
 
 void MapsContainer::createSimulatorToProgramWrappingMap() {
   // Nobody should access the map when we edit it.
-  this->simulator_readers_lock.lock();
-  this->simulator_writers_lock.lock();
+  this->simulator_lock.lock();
 
   for (int i = 0; i < SIMULATOR_VARS_AMOUNT; ++i)
     // Add all the variables declared in the simulator to a map used by the manager.
     this->simulatorToProgramWrapping.insert({MapsContainer::names[i], new list<string>});
 
-  this->simulator_writers_lock.unlock();
-  this->simulator_readers_lock.unlock();
+  this->simulator_lock.unlock();
 }
 
 MapsContainer::MapsContainer(Container *container) {
@@ -55,76 +47,80 @@ MapsContainer::MapsContainer(Container *container) {
 }
 
 SimulatorVar *MapsContainer::ReadVar(string key) {
-  // We want to prevent only writers from changing our map. Readers are accepted.
-  this->vars_writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   SimulatorVar *returnValue = this->vars[key];
 
-  this->vars_writers_lock.unlock();
+  this->vars_lock.unlock();
   return returnValue;
 }
 
 void MapsContainer::WriteVar(string key, double value) {
-  // Nobody should access the map when we edit it.
-  this->vars_readers_lock.lock();
-  this->vars_writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   this->vars[key]->SetValue(value);
 
-  this->vars_writers_lock.unlock();
-  this->vars_readers_lock.unlock();
+  this->vars_lock.unlock();
 }
 
 bool MapsContainer::InVars(string index) {
-  // We want to prevent only writers from changing our map. Readers are accepted.
-  this->vars_writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   bool inVars = this->vars.count(index);
 
-  this->vars_writers_lock.unlock();
+  this->vars_lock.unlock();
   return inVars;
 }
 
 void MapsContainer::AddVar(string key, SimulatorVar *value) {
-  // Nobody should access the map when we edit it.
-  this->vars_readers_lock.lock();
-  this->vars_writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   this->vars.insert({key, value});
 
-  this->vars_writers_lock.unlock();
-  this->vars_readers_lock.unlock();
+  this->vars_lock.unlock();
+}
+
+void MapsContainer::DeleteVar(string key) {
+  // Nobody else should access the map.
+  this->vars_lock.lock();
+
+  this->vars.erase(key);
+
+  this->vars_lock.unlock();
 }
 
 void MapsContainer::AddCommand(string key, Command *value) {
   // Nobody should access the map when we edit it.
-  this->commands_readers_lock.lock();
-  this->commands_writers_lock.lock();
+  this->commands_lock.lock();
 
   this->commands.insert({key, value});
 
-  this->commands_writers_lock.unlock();
-  this->commands_readers_lock.unlock();
+  this->commands_lock.unlock();
 }
 
 void MapsContainer::AddWrappedVar(string simVar, string progVar) {
   // Nobody should access the map when we edit it.
-  this->simulator_readers_lock.lock();
-  this->simulator_writers_lock.lock();
+  this->simulator_lock.lock();
 
   // Add the new variable wrapped by the simulator to a list of variables which should be updated when simulator changes value.
   // Observer design pattern.
   simulatorToProgramWrapping.at(simVar)->push_back(progVar);
 
-  this->simulator_writers_lock.unlock();
-  this->simulator_readers_lock.unlock();
+  this->simulator_lock.unlock();
 }
 
 void MapsContainer::WriteWrappedVar(string simVar, float value) {
   auto it = this->simulatorToProgramWrapping[simVar]->begin();
 
   while (it != this->simulatorToProgramWrapping[simVar]->end()) {
+    // Update the value of the next variable wrapped by the simulator var.
     this->WriteVar(*it, value);
+
+    // Increment the iterator.
     ++it;
   }
 }
