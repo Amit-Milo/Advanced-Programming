@@ -35,7 +35,11 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VIFXzUsrae9Hio9XwhFyUCh4XX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -93,7 +97,7 @@
       <workItem from="1578083536331" duration="4665000" />
       <workItem from="1578088286023" duration="6168000" />
       <workItem from="1578134137698" duration="10720000" />
-      <workItem from="1578211570378" duration="4363000" />
+      <workItem from="1578211570378" duration="5017000" />
     </task>
     <servers />
   </component>
@@ -179,16 +183,6 @@
           <url>file://$PROJECT_DIR$/Containers/MapsContainer.cpp</url>
           <line>22</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Containers/MapsContainer.cpp</url>
-          <line>108</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Containers/MapsContainer.cpp</url>
-          <line>104</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
