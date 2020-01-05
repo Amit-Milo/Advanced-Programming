@@ -4,6 +4,8 @@
 
 #include "CalculationTokensCreatorChecker.h"
 
+#include "../Containers/MapsContainer.h"
+
 bool CalculationTokensCreatorChecker::isOperator(string s) {
   if (s.length() > 1) {
     return false;

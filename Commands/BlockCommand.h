@@ -9,7 +9,6 @@
 #define NEW_VALUE_COMMAND string("newValueCommand")
 #define VAR_KEYWORD string("var")
 
-class Container;
 
 class BlockCommand : public Command {
  public:

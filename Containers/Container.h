@@ -5,22 +5,23 @@
 #ifndef EX3_CMAKE_BUILD_DEBUG_CONTAINER_H_
 #define EX3_CMAKE_BUILD_DEBUG_CONTAINER_H_
 
-#include "MapsContainer.h"
+
 #include "SocketsContainer.h"
 #include <iostream>
 
 class Interpreter;
+class MapsContainer;
 
 class Container {
   //classes that should access it's fields
   friend class ConnectControlClientCommand;
   friend class OpenDataServerCommand;
   friend class BlockCommand;
-  friend class Parser;
   friend class Interpreter;
   friend class CalculationTokensCreatorChecker;
   friend class TokensToExpressionConverter;
   friend class VarsSetter;
+  friend class Parser;
   friend class PrintCommand;
   friend class VarCommand;
   friend class ChangeValueCommand;
@@ -28,6 +29,7 @@ class Container {
   friend class LeftArrowVarCommand;
   friend class RightArrowVarCommand;
   friend class ArrowVarCommand;
+  friend class SimulatorVar;
 
   Interpreter *interpreter;
   MapsContainer *maps;

@@ -5,6 +5,7 @@
 #ifndef EX3__OPENDATASERVERCOMMAND_H_
 #define EX3__OPENDATASERVERCOMMAND_H_
 
+#include <cstring>
 #include <math.h>
 #include <netinet/in.h>
 #include <string>

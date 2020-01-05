@@ -3,6 +3,7 @@
 //
 
 #include "Parser.h"
+#include "Commands/BlockCommands/FunctionCommand.h"
 
 Parser::Parser() {}
 
@@ -21,7 +22,7 @@ void Parser::parse(vector<string> *commands, Container *container) {
       }
     } else if (commands->at(index + 1).compare("var") == 0) {
       //current word is not in the commands map and the next word is "var", this is a function declaration
-      container->maps->AddCommand(commands->at(index), new );// TODO
+      container->maps->AddCommand(commands->at(index), new FunctionCommand(container, index));// TODO
     } else if (container->maps->InVars(commands->at(index))) {
       //should be a var name, so call the change var value command
       Command *c = container->maps->commands.at(NEW_VALUE_COMMAND);

@@ -12,119 +12,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2657903a-887e-482f-acc0-ad0433c1c257" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Commands/PrintCommand.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/PrintCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/SleepCommand.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/SleepCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowVarCommand.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowVarCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Containers/ContainerCreator.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Containers/ContainerCreator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/Variable.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Lexer.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/StringOperations.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/ex3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/fly.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommand.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommand.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/ConditionBlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionBlock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/ConditionBlock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionBlock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/ConditionCommands/IfCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/IfCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/ConditionCommands/IfCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/IfCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/ConditionCommands/WhileCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/ConditionCommands/WhileCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/ConditionCommands/WhileCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/FunctionCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/FunctionCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockCommands/FunctionCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/FunctionCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/BlockCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommand.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/IfCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/IfCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/WhileCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/BlockCommands/WhileCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/Command.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/IfCommand.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/IfCommand.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/WhileCommand.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/BlockCommands/WhileCommand.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/OpenDataServerCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/OpenDataServerCommand.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/OpenDataServerCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/OpenDataServerCommand.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/VarCommands/ChangeValueCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/ChangeValueCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/ChangeValueCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/ChangeValueCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/VarCommands/EqualSignVarCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/EqualSignVarCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/EqualSignVarCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/EqualSignVarCommand.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/LeftArrowVarCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/LeftArrowVarCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/LeftArrowVarCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/LeftArrowVarCommand.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/RightArrowVarCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/RightArrowVarCommand.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/VarCommands/RightArrowVarCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/VarCommands/RightArrowVarCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Containers/Container.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/Container.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Containers/MapsContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/MapsContainer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Containers/MapsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/MapsContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Containers/SocketsContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/SocketsContainer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Containers/SocketsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/SocketsContainer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expressions/BinOperators/BinaryOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Expressions/BinOperators/BinaryOperator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expressions/BinOperators/Div.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Expressions/BinOperators/Div.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expressions/BinOperators/Plus.h" beforeDir="false" afterPath="$PROJECT_DIR$/Expressions/BinOperators/Plus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expressions/Expression.h" beforeDir="false" afterPath="$PROJECT_DIR$/Expressions/Expression.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Expressions/Variable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Expressions/Variable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterpreterFiles/CalculationTokensCreatorChecker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/CalculationTokensCreatorChecker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterpreterFiles/CalculationTokensCreatorChecker.h" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/CalculationTokensCreatorChecker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterpreterFiles/Interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/Interpreter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterpreterFiles/Interpreter.h" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/Interpreter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.h" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterpreterFiles/VarsSetter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InterpreterFiles/VarsSetter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lexer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lexer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lexer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lexer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorVar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorVar.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorVar.h" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorVar.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StringOperations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/StringOperations.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StringOperations.h" beforeDir="false" afterPath="$PROJECT_DIR$/StringOperations.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/35" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/BinaryOperator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/BinaryOperator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Div.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Div.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Minus.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Minus.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Mul.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Mul.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Plus.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/BinOperators/Plus.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UMinus.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UMinus.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UPlus.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UPlus.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UnaryOperator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/UnOperators/UnaryOperator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/Value.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Expressions/Value.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/StringOperations.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ex3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ex3.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +153,9 @@
       <workItem from="1578053840798" duration="1937000" />
       <workItem from="1578167074514" duration="57000" />
       <workItem from="1578167205217" duration="6053000" />
+      <workItem from="1578211080067" duration="653000" />
+      <workItem from="1578216578641" duration="1618000" />
+      <workItem from="1578225552664" duration="7469000" />
     </task>
     <servers />
   </component>
@@ -214,10 +167,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="361" y="201" width="680" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1578167342174" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577174275940">
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578233119443">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1577174275940" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1578233119443" />
     <state x="187" y="85" width="1039" height="622" key="MergeDialog" timestamp="1578167343440">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -226,14 +179,18 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="786" y="129" width="580" height="564" key="MultipleFileMergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1578168017446" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578167211521">
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578225553707">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578167211521" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578225553707" />
     <state x="484" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577991426686">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="484" y="316" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1577991426686" />
+    <state x="226" y="27" width="707" height="741" key="find.popup" timestamp="1578233070267">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="226" y="27" width="707" height="741" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1578233070267" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578054375644">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

@@ -18,6 +18,8 @@ int ConnectControlClientCommand::execute(vector<string> &params, int start) {
   // Set port as given by the parameters.
   container->sockets.client_address.sin_port = htons(stoi(params[start + 1]));
 
+  thread(&ConnectControlClientCommand::ConnectToServer, this, container).detach();
+
   return RETURN_VALUE;
 }
 

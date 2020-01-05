@@ -6,7 +6,10 @@
 #define EX3__SOCKETSCONTAINER_H_
 
 #include <netinet/in.h>
+#include <string>
 #include <sys/socket.h>
+
+using namespace std;
 
 //TODO amit comments
 
@@ -29,6 +32,8 @@ class SocketsContainer {
 
  public:
   SocketsContainer();
+
+  void SendToServer(string data);
 };
 
 #endif //EX3__SOCKETSCONTAINER_H_

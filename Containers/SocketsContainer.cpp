@@ -12,3 +12,9 @@ SocketsContainer::SocketsContainer() {
   if (!(server_socket + 1) * (client_socket + 1))
     throw "Couldn't allocate socket.";
 }
+
+
+void SocketsContainer::SendToServer(string data) {
+  // Send data to the server.
+  send(this->client_socket, data.c_str(), data.length(), 0);
+}

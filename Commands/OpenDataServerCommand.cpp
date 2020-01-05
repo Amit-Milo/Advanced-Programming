@@ -45,6 +45,14 @@ void OpenDataServerCommand::run_server(Container *container) {
   // A vector of values of vars.
   float *values = (float *) malloc(sizeof(float) * this->simVarsAmount);
 
+  // A reminder from the last time the simulator sent a message.
+  char *reminder = (char *) malloc(sizeof(char) * this->maxSize);
+
+  // A concat of reminder and buffer;
+  char *result;
+
+  int firstValue = 0;
+
   int server_socket = container->sockets.server_socket;
   sockaddr_in server_address = container->sockets.server_address;
 
@@ -62,14 +70,24 @@ void OpenDataServerCommand::run_server(Container *container) {
     if (dataSize < 1)
       continue;
 
-    splitValues(buffer, ",", values);
+    result = strcat(reminder, buffer);
+
+    int nextStart = splitValues(result, ",", values);
+
+    reminder = result + nextStart;
 
     int valuesLength = sizeof(values) / sizeof(*values);
 
-    for (int i = 0; i < valuesLength; ++i)
-      this->container->maps->WriteVar()
+    for (int i = firstValue; i - firstValue < valuesLength; ++i)
+      this->container->maps->WriteWrappedVar(this->container->maps->names[i], values[i]);
+
+    if (result[nextStart - 1] == '\n')
+      firstValue = 0;
+    else
+      firstValue += valuesLength;
   }
 
+  free(reminder);
   free(values);
   free(buffer);
 }

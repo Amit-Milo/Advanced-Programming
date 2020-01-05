@@ -22,23 +22,13 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o
- /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
- /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp
- /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.h
- /home/amit/CLionProjects/ex3/Commands/Command.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o
- /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
- /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp
- /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.h
- /home/amit/CLionProjects/ex3/Commands/Command.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
- /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
- /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.cpp
@@ -77,7 +67,6 @@ CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/VarCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommand.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
- /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o
@@ -96,6 +85,8 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
@@ -103,7 +94,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
- /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
@@ -158,8 +148,6 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
- /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.h
- /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.h
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h
  /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h
@@ -285,6 +273,7 @@ CMakeFiles/ex3.dir/Lexer.cpp.o
  /home/amit/CLionProjects/ex3/Lexer.h
 CMakeFiles/ex3.dir/Parser.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.h
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h
  /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h
@@ -301,6 +290,10 @@ CMakeFiles/ex3.dir/Parser.cpp.o
  /home/amit/CLionProjects/ex3/Parser.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.cpp
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/StringOperations.cpp.o

@@ -4,6 +4,8 @@
 
 #include "ChangeValueCommand.h"
 #include "../../Containers/Container.h"
+#include "../../Containers/MapsContainer.h"
+
 #define RETURN_VALUE 3
 
 int ChangeValueCommand::execute(vector<string> &params, int start) {

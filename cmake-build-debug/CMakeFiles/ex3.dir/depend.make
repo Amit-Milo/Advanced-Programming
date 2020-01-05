@@ -21,23 +21,13 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/TokensToExpr
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../SimulatorVar.h
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/BlockCommand.h
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/BlockCommands/IfCommand.cpp
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/BlockCommands/IfCommand.h
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/Command.h
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o: ../Commands/BlockCommand.h
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/WhileCommand.cpp
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/WhileCommand.h
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o: ../Commands/Command.h
 
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/ConnectControlClientCommand.cpp
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Containers/Container.h
-CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Containers/SocketsContainer.h
-CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/OpenDataServerCommand.cpp
@@ -76,7 +66,6 @@ CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/VarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/VarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/Container.h
-CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../SimulatorVar.h
 
@@ -95,6 +84,8 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/Command.h
@@ -102,7 +93,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCo
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/Container.h
-CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../SimulatorVar.h
 
@@ -157,8 +147,6 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/VarsSe
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommand.h
-CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/IfCommand.h
-CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/WhileCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/OpenDataServerCommand.h
@@ -284,6 +272,7 @@ CMakeFiles/ex3.dir/Lexer.cpp.o: ../Lexer.cpp
 CMakeFiles/ex3.dir/Lexer.cpp.o: ../Lexer.h
 
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/BlockCommands/FunctionCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/OpenDataServerCommand.h
@@ -300,6 +289,10 @@ CMakeFiles/ex3.dir/Parser.cpp.o: ../Parser.cpp
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Parser.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../SimulatorVar.h
 
+CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../SimulatorVar.cpp
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../SimulatorVar.h
 

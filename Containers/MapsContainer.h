@@ -13,28 +13,45 @@
 #include "../Commands/Command.h"
 #include "../SimulatorVar.h"
 
-using namespace std;
+#define SIMULATOR_VARS_AMOUNT 36
 
-class Container;
+using namespace std;
 
 class MapsContainer {
   // Those classes need to use the maps
   friend class ConnectControlClientCommand;
   friend class Interpreter;
   friend class OpenDataServerCommand;
-  friend class Parser;
   friend class VarCommand;
   friend class CalculationTokensCreatorChecker;
   friend class TokensToExpressionConverter;
   friend class VarsSetter;
   friend class BlockCommand;
+  friend class Parser;
 
-  mutex readers_lock;
-  mutex writers_lock;
+  mutex vars_readers_lock;
+  mutex vars_writers_lock;
+
+  mutex simulator_readers_lock;
+  mutex simulator_writers_lock;
+
+  mutex commands_readers_lock;
+  mutex commands_writers_lock;
 
   unordered_map<string, SimulatorVar *> vars;
   unordered_map<string, list<string>* > simulatorToProgramWrapping;
   unordered_map<string, Command *> commands;
+
+  // A list of the names of the variables declared in the simulator.
+  const string names[SIMULATOR_VARS_AMOUNT] = {"sim_vars_amount", "time_warp", "switches_magnetos", "heading-indicator_offset-deg",
+                                         "altimeter_indicated-altitude-ft", "altimeter_pressure-alt-ft", "attitude-indicator_indicated-pitch-deg",
+                                         "attitude-indicator_indicated-roll-deg", "attitude-indicator_internal-pitch-deg", "attitude-indicator_internal-roll-deg",
+                                         "encoder_indicated-altitude-ft", "encoder_pressure-alt-ft", "gps_indicated-altitude-ft", "gps_indicated-ground-speed-kt",
+                                         "gps_indicated-vertical-speed", "indicated-heading-deg", "magnetic-compass_indicated-heading-deg", "slip-skid-ball_indicated-slip-skid",
+                                         "turn-indicator_indicated-turn-rate", "vertical-speed-indicator_indicated-speed-fpm", "flight_aileron", "flight_elevator",
+                                         "flight_rudder", "flight_flaps", "engine_throttle", "current-engine_throttle", "switches_master-avionics", "switches_starter",
+                                         "active-engine_auto-start", "flight_speedbrake", "c172p_brake-parking", "engine_primer", "current-engine_mixture",
+                                         "switches_master-bat", "switches_master-alt", "engine_rpm"};
 
   /**
    * create the map of the simulator to program vars wrapping with all the sim var names.
