@@ -144,14 +144,6 @@ Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, in
   }
 }
 
-void TokensToExpressionConverter::printStack(stack<pair<string, int>> *s) {
-  while (!s->empty()) {
-    string ss = s->top().first;
-    std::cout << ss << "," << std::flush;
-    s->pop();
-  }
-
-}
 
 /*
 while there are tokens to be read do:

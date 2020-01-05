@@ -36,7 +36,6 @@ class CalculationTokensCreatorChecker {
   bool isUnaryStart(string s);
   bool isBraces(string s);
   bool isNumber(string s);
-  void printTokensList(list<pair<string, int>> *l);
   //check valid list
   /**
     * check if tokens are valid

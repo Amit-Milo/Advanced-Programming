@@ -6,43 +6,22 @@
 #include "InterpreterFiles/InterpreterIncludes.h"
 #include "Lexer.h"
 #include "Containers/ContainerCreator.h"
+#include "Parser.h"
 
 int main() {
+
+  ContainerCreator cc;
+  Container *container = cc.createContainer();
 
   Lexer l;
   vector<string> *commands = l.lexer("fly.txt");
 
-  for (auto const &i : *commands) {
-    std::cout << "*" << i << "*" << endl;
-  }
+  Parser p;
+  p.parse(commands,container);
 
   delete commands;
-
-
-
-/*
-  ContainerCreator cc;
-  Container *container = cc.createContainer();
-
-
-  // 6
-  container->SetInterpreter(new Interpreter(container));
-  Expression *e6 = nullptr;
-  try {
-    container->GetInterpreter()->setVariables("x=1.5;y=8.5");
-    e6 = container->GetInterpreter()->interpret("-x-y");
-    std::cout << "6: " << e6->calculate() << std::endl;//-10
-    delete e6;
-  } catch (const char *e) {
-    if (e6 != nullptr) {
-      delete e6;
-    }
-    std::cout << e << std::endl;
-  }
-
-
   delete container;
-  */
+
 
   return 0;
 }

@@ -40,7 +40,6 @@ class TokensToExpressionConverter {
    * compare which operator is stronger
    */
   int compareOperators(string s1, string s2);
-  void printStack(stack<pair<string,int>>* s);
 };
 
 

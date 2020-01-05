@@ -79,14 +79,6 @@ void CalculationTokensCreatorChecker::tokensSplitter(string s, list<pair<string,
   }
 }
 
-void CalculationTokensCreatorChecker::printTokensList(list<pair<string, int>> *l) {
-  std::cout << "the tokens list: ";
-  for (const auto &myPair : *l) {
-    std::cout << myPair.first << ",";
-  }
-  cout << "\n";
-}
-
 
 bool CalculationTokensCreatorChecker::checkValidTokens(list<pair<string, int>> *tokens,
                                                        Container *container) {

@@ -18,8 +18,8 @@
 
 void MapsContainer::createCommandsMap(Container *container) {
 
-  //this->AddCommand("openDataServer", new OpenDataServerCommand(container, SIMULATOR_VARS_AMOUNT));
-  //this->AddCommand("connectControlClient", new ConnectControlClientCommand(container));
+  this->AddCommand("openDataServer", new OpenDataServerCommand(container, SIMULATOR_VARS_AMOUNT));
+  this->AddCommand("connectControlClient", new ConnectControlClientCommand(container));
   this->AddCommand("Sleep", new SleepCommand(container));
   this->AddCommand("Print", new PrintCommand(container));
   this->AddCommand("while", new WhileCommand(container));

@@ -44,7 +44,7 @@ class MapsContainer {
           "/instrumentation/airspeed-indicator/indicated-speed-kt",
           "/sim/time/warp",
           "/controls/switches/magnetos",
-          "//instrumentation/heading-indicator/offset-deg",
+          "/instrumentation/heading-indicator/offset-deg",
           "/instrumentation/altimeter/indicated-altitude-ft",
           "/instrumentation/altimeter/pressure-alt-ft",
           "/instrumentation/attitude-indicator/indicated-pitch-deg",

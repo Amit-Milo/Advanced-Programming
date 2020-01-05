@@ -5,8 +5,8 @@
 #ifndef EX3__LEXER_H_
 #define EX3__LEXER_H_
 
-#define CONNECT_CONTROL_CLIENT "ConnectControlClient"
-#define OPEN_DATA_SERVER "OpenDataServer"
+#define CONNECT_CONTROL_CLIENT "connectControlClient"
+#define OPEN_DATA_SERVER "openDataServer"
 
 #include <string>
 #include <vector>

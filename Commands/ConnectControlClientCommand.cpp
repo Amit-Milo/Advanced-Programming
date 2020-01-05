@@ -31,9 +31,9 @@ void ConnectControlClientCommand::ConnectToServer(Container *container) {
     // Wait until getting alerted that the simulator connected to the server - implying that the simulator is running.
     continue;
 
-  if (!(connect(container->sockets.client_socket,
+  if ((connect(container->sockets.client_socket,
                 (struct sockaddr *) &(container->sockets.client_address),
-                sizeof(container->sockets.client_address)) + 1))
+                sizeof(container->sockets.client_address)) + 1)==-1)
     // Try to connect to the simulator as client. If failed throw an error.
     throw "Couldn't connect to server.";
 }
