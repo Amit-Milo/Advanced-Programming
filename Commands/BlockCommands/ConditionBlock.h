@@ -5,7 +5,7 @@
 #ifndef EX3_COMMANDS_BLOCKCOMMANDS_CONDITIONBLOCK_H_
 #define EX3_COMMANDS_BLOCKCOMMANDS_CONDITIONBLOCK_H_
 
-#include "../../BlockCommand.h"
+#include "../BlockCommand.h"
 
 class ConditionBlock: public BlockCommand{
  public:
@@ -16,6 +16,7 @@ class ConditionBlock: public BlockCommand{
    * @return true/false according to the condition.
    */
   bool parseCondition(vector<string> &commands, int index);
+  ConditionBlock(Container *container);
 };
 
 #endif //EX3_COMMANDS_BLOCKCOMMANDS_CONDITIONBLOCK_H_

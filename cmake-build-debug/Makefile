@@ -150,59 +150,113 @@ Commands/BlockCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.s
 .PHONY : Commands/BlockCommand.cpp.s
 
-Commands/BlockCommands/IfCommand.o: Commands/BlockCommands/IfCommand.cpp.o
+Commands/BlockCommands/ConditionBlock.o: Commands/BlockCommands/ConditionBlock.cpp.o
 
-.PHONY : Commands/BlockCommands/IfCommand.o
-
-# target to build an object file
-Commands/BlockCommands/IfCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o
-.PHONY : Commands/BlockCommands/IfCommand.cpp.o
-
-Commands/BlockCommands/IfCommand.i: Commands/BlockCommands/IfCommand.cpp.i
-
-.PHONY : Commands/BlockCommands/IfCommand.i
-
-# target to preprocess a source file
-Commands/BlockCommands/IfCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.i
-.PHONY : Commands/BlockCommands/IfCommand.cpp.i
-
-Commands/BlockCommands/IfCommand.s: Commands/BlockCommands/IfCommand.cpp.s
-
-.PHONY : Commands/BlockCommands/IfCommand.s
-
-# target to generate assembly for a file
-Commands/BlockCommands/IfCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.s
-.PHONY : Commands/BlockCommands/IfCommand.cpp.s
-
-Commands/BlockCommands/WhileCommand.o: Commands/BlockCommands/WhileCommand.cpp.o
-
-.PHONY : Commands/BlockCommands/WhileCommand.o
+.PHONY : Commands/BlockCommands/ConditionBlock.o
 
 # target to build an object file
-Commands/BlockCommands/WhileCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o
-.PHONY : Commands/BlockCommands/WhileCommand.cpp.o
+Commands/BlockCommands/ConditionBlock.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o
+.PHONY : Commands/BlockCommands/ConditionBlock.cpp.o
 
-Commands/BlockCommands/WhileCommand.i: Commands/BlockCommands/WhileCommand.cpp.i
+Commands/BlockCommands/ConditionBlock.i: Commands/BlockCommands/ConditionBlock.cpp.i
 
-.PHONY : Commands/BlockCommands/WhileCommand.i
+.PHONY : Commands/BlockCommands/ConditionBlock.i
 
 # target to preprocess a source file
-Commands/BlockCommands/WhileCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.i
-.PHONY : Commands/BlockCommands/WhileCommand.cpp.i
+Commands/BlockCommands/ConditionBlock.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.i
+.PHONY : Commands/BlockCommands/ConditionBlock.cpp.i
 
-Commands/BlockCommands/WhileCommand.s: Commands/BlockCommands/WhileCommand.cpp.s
+Commands/BlockCommands/ConditionBlock.s: Commands/BlockCommands/ConditionBlock.cpp.s
 
-.PHONY : Commands/BlockCommands/WhileCommand.s
+.PHONY : Commands/BlockCommands/ConditionBlock.s
 
 # target to generate assembly for a file
-Commands/BlockCommands/WhileCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.s
-.PHONY : Commands/BlockCommands/WhileCommand.cpp.s
+Commands/BlockCommands/ConditionBlock.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.s
+.PHONY : Commands/BlockCommands/ConditionBlock.cpp.s
+
+Commands/BlockCommands/ConditionCommands/IfCommand.o: Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o
+
+.PHONY : Commands/BlockCommands/ConditionCommands/IfCommand.o
+
+# target to build an object file
+Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o
+.PHONY : Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o
+
+Commands/BlockCommands/ConditionCommands/IfCommand.i: Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i
+
+.PHONY : Commands/BlockCommands/ConditionCommands/IfCommand.i
+
+# target to preprocess a source file
+Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i
+.PHONY : Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i
+
+Commands/BlockCommands/ConditionCommands/IfCommand.s: Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s
+
+.PHONY : Commands/BlockCommands/ConditionCommands/IfCommand.s
+
+# target to generate assembly for a file
+Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s
+.PHONY : Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s
+
+Commands/BlockCommands/ConditionCommands/WhileCommand.o: Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o
+
+.PHONY : Commands/BlockCommands/ConditionCommands/WhileCommand.o
+
+# target to build an object file
+Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o
+.PHONY : Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o
+
+Commands/BlockCommands/ConditionCommands/WhileCommand.i: Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i
+
+.PHONY : Commands/BlockCommands/ConditionCommands/WhileCommand.i
+
+# target to preprocess a source file
+Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i
+.PHONY : Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i
+
+Commands/BlockCommands/ConditionCommands/WhileCommand.s: Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s
+
+.PHONY : Commands/BlockCommands/ConditionCommands/WhileCommand.s
+
+# target to generate assembly for a file
+Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s
+.PHONY : Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s
+
+Commands/BlockCommands/FunctionCommand.o: Commands/BlockCommands/FunctionCommand.cpp.o
+
+.PHONY : Commands/BlockCommands/FunctionCommand.o
+
+# target to build an object file
+Commands/BlockCommands/FunctionCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o
+.PHONY : Commands/BlockCommands/FunctionCommand.cpp.o
+
+Commands/BlockCommands/FunctionCommand.i: Commands/BlockCommands/FunctionCommand.cpp.i
+
+.PHONY : Commands/BlockCommands/FunctionCommand.i
+
+# target to preprocess a source file
+Commands/BlockCommands/FunctionCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.i
+.PHONY : Commands/BlockCommands/FunctionCommand.cpp.i
+
+Commands/BlockCommands/FunctionCommand.s: Commands/BlockCommands/FunctionCommand.cpp.s
+
+.PHONY : Commands/BlockCommands/FunctionCommand.s
+
+# target to generate assembly for a file
+Commands/BlockCommands/FunctionCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.s
+.PHONY : Commands/BlockCommands/FunctionCommand.cpp.s
 
 Commands/ConnectControlClientCommand.o: Commands/ConnectControlClientCommand.cpp.o
 
@@ -1080,12 +1134,18 @@ help:
 	@echo "... Commands/BlockCommand.o"
 	@echo "... Commands/BlockCommand.i"
 	@echo "... Commands/BlockCommand.s"
-	@echo "... Commands/BlockCommands/IfCommand.o"
-	@echo "... Commands/BlockCommands/IfCommand.i"
-	@echo "... Commands/BlockCommands/IfCommand.s"
-	@echo "... Commands/BlockCommands/WhileCommand.o"
-	@echo "... Commands/BlockCommands/WhileCommand.i"
-	@echo "... Commands/BlockCommands/WhileCommand.s"
+	@echo "... Commands/BlockCommands/ConditionBlock.o"
+	@echo "... Commands/BlockCommands/ConditionBlock.i"
+	@echo "... Commands/BlockCommands/ConditionBlock.s"
+	@echo "... Commands/BlockCommands/ConditionCommands/IfCommand.o"
+	@echo "... Commands/BlockCommands/ConditionCommands/IfCommand.i"
+	@echo "... Commands/BlockCommands/ConditionCommands/IfCommand.s"
+	@echo "... Commands/BlockCommands/ConditionCommands/WhileCommand.o"
+	@echo "... Commands/BlockCommands/ConditionCommands/WhileCommand.i"
+	@echo "... Commands/BlockCommands/ConditionCommands/WhileCommand.s"
+	@echo "... Commands/BlockCommands/FunctionCommand.o"
+	@echo "... Commands/BlockCommands/FunctionCommand.i"
+	@echo "... Commands/BlockCommands/FunctionCommand.s"
 	@echo "... Commands/ConnectControlClientCommand.o"
 	@echo "... Commands/ConnectControlClientCommand.i"
 	@echo "... Commands/ConnectControlClientCommand.s"

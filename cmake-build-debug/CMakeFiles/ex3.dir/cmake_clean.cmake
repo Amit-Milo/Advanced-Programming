@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o"
-  "CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o"
-  "CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o"
+  "CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o"
+  "CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o"
+  "CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o"
+  "CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o"
   "CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o"

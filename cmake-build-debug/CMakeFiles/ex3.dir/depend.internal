@@ -21,8 +21,48 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.cpp
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.h
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.h
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.h
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o
+ /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.cpp
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.h
+ /home/amit/CLionProjects/ex3/Commands/Command.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.cpp
@@ -94,6 +134,7 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.h
  /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
@@ -148,6 +189,9 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.h
+ /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.h
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.h
  /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.h

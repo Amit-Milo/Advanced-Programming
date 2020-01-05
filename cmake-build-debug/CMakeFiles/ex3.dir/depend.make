@@ -21,7 +21,47 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/TokensToExpr
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../SimulatorVar.h
 
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Commands/BlockCommands/ConditionBlock.cpp
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Commands/BlockCommands/ConditionBlock.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/VarsSetter.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../SimulatorVar.h
 
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/BlockCommands/ConditionBlock.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/BlockCommands/ConditionCommands/IfCommand.cpp
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/BlockCommands/ConditionCommands/IfCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/Command.h
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/ConditionBlock.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/ConditionCommands/WhileCommand.cpp
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/ConditionCommands/WhileCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: ../Commands/Command.h
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Commands/BlockCommands/FunctionCommand.cpp
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Commands/BlockCommands/FunctionCommand.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/ConnectControlClientCommand.cpp
@@ -93,6 +133,7 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCo
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.cpp
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Containers/SocketsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../SimulatorVar.h
 
@@ -147,6 +188,9 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/VarsSe
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/ConditionBlock.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/ConditionCommands/IfCommand.h
+CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommands/ConditionCommands/WhileCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/ConnectControlClientCommand.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/OpenDataServerCommand.h

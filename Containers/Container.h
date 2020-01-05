@@ -30,6 +30,8 @@ class Container {
   friend class RightArrowVarCommand;
   friend class ArrowVarCommand;
   friend class SimulatorVar;
+  friend class ConditionBlock;
+  friend class FunctionCommand;
 
   Interpreter *interpreter;
   MapsContainer *maps;

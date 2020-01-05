@@ -13,4 +13,4 @@ int WhileCommand::execute(vector<string> &params, int start) {
   return returnJump(params, start);
 }
 
-WhileCommand::WhileCommand(Container *container) : BlockCommand(container) {}
+WhileCommand::WhileCommand(Container *container) : ConditionBlock(container) {}

@@ -3,6 +3,8 @@
 //
 
 #include "ConditionBlock.h"
+#include "../../Containers/Container.h"
+#include "../../InterpreterFiles/Interpreter.h"
 
 
 bool ConditionBlock::parseCondition(vector<string> &commands, int index) {
@@ -28,3 +30,4 @@ bool ConditionBlock::parseCondition(vector<string> &commands, int index) {
     throw err.c_str();
   }
 }
+ConditionBlock::ConditionBlock(Container *container) : BlockCommand(container) {}

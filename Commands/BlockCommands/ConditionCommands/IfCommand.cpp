@@ -11,4 +11,4 @@ int IfCommand::execute(vector<string> &params, int start) {
   }
   return returnJump(params, start);
 }
-IfCommand::IfCommand(Container *container) : BlockCommand(container) {}
+IfCommand::IfCommand(Container *container) : ConditionBlock(container) {}
