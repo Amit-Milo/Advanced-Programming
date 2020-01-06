@@ -41,9 +41,21 @@ void MapsContainer::createSimulatorToProgramWrappingMap() {
   this->simulator_lock.unlock();
 }
 
+void MapsContainer::createSimulatorVarsMap() {
+  // Nobody should access the map when we edit it.
+  this->simulator_lock.lock();
+
+  for (int i = 0; i < SIMULATOR_VARS_AMOUNT; ++i)
+    // Add all the variables declared in the simulator to a map and insert default values.
+    this->simulatorToProgramWrapping.insert({MapsContainer::names[i], 0});
+
+  this->simulator_lock.unlock();
+}
+
 MapsContainer::MapsContainer(Container *container) {
   createCommandsMap(container);
   createSimulatorToProgramWrappingMap();
+  createSimulatorVarsMap();
 }
 
 SimulatorVar *MapsContainer::ReadVar(string key) {
@@ -123,4 +135,19 @@ void MapsContainer::WriteWrappedVar(string simVar, float value) {
     // Increment the iterator.
     ++it;
   }
+}
+
+
+void MapsContainer::WriteSimulatorVar(string simVar, float value) {
+  // Nobody should access the map when we edit it.
+  this->simulator_lock.lock();
+
+  this->simulatorVars[simVar] = value;
+
+  this->simulator_lock.unlock();
+}
+
+
+float MapsContainer::ReadSimulatorVar(string simVar) {
+  return this->simulatorVars[simVar];
 }

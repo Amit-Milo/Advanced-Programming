@@ -8,8 +8,10 @@
 
 SimulatorVar::SimulatorVar(const string &prog_name, const string &simulator_name, Wrapping wrapping, Container *container) : progName(
     prog_name), simulatorName(simulator_name), wrapping(wrapping), container(container) {
-  if (wrapping == SIM_TO_PROG)
+  if (wrapping == SIM_TO_PROG) {
     container->maps->AddWrappedVar(simulator_name, progName);
+    this->value = container->maps->ReadSimulatorVar(this->simulatorName);
+  }
 }
 
 SimulatorVar::SimulatorVar(double value, const string &prog_name, Container *container) : value(value), progName(prog_name) {
