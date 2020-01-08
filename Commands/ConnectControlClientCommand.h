@@ -34,7 +34,7 @@ class ConnectControlClientCommand : public Command{
    * A constructor.
    * @param container contains important information of the program.
    */
-  ConnectControlClientCommand(Container *container_) :Command(container_){}
+  ConnectControlClientCommand(Container *container) :Command(container){}
 };
 
 #endif //EX3_COMMANDS_CONNECTCONTROLCLIENTCOMMAND_H_

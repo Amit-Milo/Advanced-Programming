@@ -15,7 +15,7 @@ int PrintCommand::execute(vector<string> &params, int start) {
   if (msg.at(0) == '\"' && msg.at(msg.length() - 1) == '\"') {
     std::cout << msg.substr(1, msg.length() - 2) << std::endl; //print the string without the " at the ends.
   } else { //i think that means that it is an Expression. print its value.
-    std::cout << container->interpreter->evaluate(msg) << std::endl;
+    std::cout << container->GetInterpreter()->evaluate(msg) << std::endl;
   }
   return RETURN_VALUE;
 }

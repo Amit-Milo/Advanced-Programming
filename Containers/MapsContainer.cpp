@@ -137,7 +137,6 @@ void MapsContainer::WriteWrappedVar(string simVar, float value) {
   }
 }
 
-
 void MapsContainer::WriteSimulatorVar(string simVar, float value) {
   // Nobody should access the map when we edit it.
   this->simulator_lock.lock();
@@ -147,7 +146,31 @@ void MapsContainer::WriteSimulatorVar(string simVar, float value) {
   this->simulator_lock.unlock();
 }
 
-
 float MapsContainer::ReadSimulatorVar(string simVar) {
   return this->simulatorVars[simVar];
+}
+
+Command *MapsContainer::ReadCommand(string key) {
+  // Nobody else should access the map.
+  this->commands_lock.lock();
+
+  Command *returnValue = this->commands.at(key);
+
+  this->commands_lock.unlock();
+  return returnValue;
+}
+
+bool MapsContainer::IsACommand(string key) {
+  // Nobody else should access the map.
+  this->commands_lock.lock();
+
+  bool isACommand = this->commands.count(key);
+
+  this->commands_lock.unlock();
+  return isACommand;
+}
+
+
+const string *MapsContainer::GetNames() const {
+  return names;
 }

@@ -12,18 +12,18 @@
 
 int OpenDataServerCommand::execute(vector<string> &params, int start) {
   // Address family.
-  container->sockets.server_address.sin_family = AF_INET;
+  container->GetSockets().server_address.sin_family = AF_INET;
 
   // Equivalent to 0.0.0.0
-  container->sockets.server_address.sin_addr.s_addr = INADDR_ANY;
+  container->GetSockets().server_address.sin_addr.s_addr = INADDR_ANY;
 
   // Set port to listen on.
-  container->sockets.server_address.sin_port = htons(container->interpreter->evaluate(params[start+1]));
+  container->GetSockets().server_address.sin_port = htons(container->GetInterpreter()->evaluate(params[start+1]));
 
   // Try to bind server.
-  if (bind(container->sockets.server_socket,
-           (struct sockaddr *) &(container->sockets.server_address),
-           sizeof(container->sockets.server_address)) != -1) {
+  if (bind(container->GetSockets().server_socket,
+           (struct sockaddr *) &(container->GetSockets().server_address),
+           sizeof(container->GetSockets().server_address)) != -1) {
     cout <<"hi" << endl;
 
     // Run server in a new thread.
@@ -55,8 +55,8 @@ void OpenDataServerCommand::run_server(Container *container) {
   int firstValue = 0;
 
   // Rename some vars.
-  int server_socket = container->sockets.server_socket;
-  sockaddr_in server_address = container->sockets.server_address;
+  int server_socket = container->GetSockets().server_socket;
+  sockaddr_in server_address = container->GetSockets().server_address;
 
 
     if (listen(server_socket, 1) == -1)
@@ -75,7 +75,7 @@ void OpenDataServerCommand::run_server(Container *container) {
     cout << "accepted" << endl;
 
   // We succeeded communicating with the simulator.
-  container->sockets.serverConnected = true;
+  container->GetSockets().serverConnected = true;
 
   while (true) {
     cout << "iiiiii" << endl;
@@ -113,8 +113,8 @@ void OpenDataServerCommand::run_server(Container *container) {
 
     for (int i = firstValue; i - firstValue < valuesLength; ++i) {
       // Write each variable to the map.
-      this->container->maps->WriteSimulatorVar(this->container->maps->names[i], values[i]);
-      this->container->maps->WriteWrappedVar(this->container->maps->names[i], values[i]);
+      this->container->GetMaps()->WriteSimulatorVar(this->container->GetMaps()->GetNames()[i], values[i]);
+      this->container->GetMaps()->WriteWrappedVar(this->container->GetMaps()->GetNames()[i], values[i]);
     }
 
     if (lastEnd == string::npos)

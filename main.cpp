@@ -1,9 +1,6 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 
-#include "Expressions/ExpressionsIncludes.h"
-#include "InterpreterFiles/InterpreterIncludes.h"
 #include "Lexer.h"
 #include "Containers/ContainerCreator.h"
 #include "Parser.h"
@@ -17,7 +14,7 @@ int main(int argc, char *argv[]) {
       Container *container = cc.createContainer();
 
       Lexer l;
-      vector<string> *commands = l.lexer(argv[0]);
+      vector<string> *commands = l.lexer(argv[1]);
 
       Parser p;
       p.parse(commands, container);
@@ -25,9 +22,7 @@ int main(int argc, char *argv[]) {
       delete commands;
       delete container;
     } catch (char *e) {
-      string error("exception: ");
-      error.append(e);
-      cout << error<< endl;
+      cout << strcat("exception: ", e) << endl;
     }
   }
   return 0;

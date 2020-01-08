@@ -18,17 +18,6 @@
 using namespace std;
 
 class MapsContainer {
-  // Those classes need to use the maps
-  friend class ConnectControlClientCommand;
-  friend class Interpreter;
-  friend class OpenDataServerCommand;
-  friend class VarCommand;
-  friend class CalculationTokensCreatorChecker;
-  friend class TokensToExpressionConverter;
-  friend class VarsSetter;
-  friend class BlockCommand;
-  friend class Parser;
-
   mutex vars_lock;
 
   mutex simulator_lock;
@@ -163,6 +152,13 @@ class MapsContainer {
    * @return the value of the simulator variable.
    */
   float ReadSimulatorVar(string simVar);
+
+  Command* ReadCommand(string key);
+
+  bool IsACommand(string key);
+
+  const string *GetNames() const;
+
 };
 
 #endif //EX3__MAPSCONTAINER_H_

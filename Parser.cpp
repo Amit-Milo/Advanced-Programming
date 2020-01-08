@@ -9,21 +9,20 @@
 Parser::Parser() {}
 
 void Parser::parse(vector<string> *commands, Container *container) {
-  unsigned int index = 0;
-  unsigned int commandsSize=commands->size();
-  while (index < commandsSize) { //while there are strings to read:
+  int index = 0;
+  while (index < commands->size()) { //while there are strings to read:
     //if this word is in the commands map
     //if the word is var, call the command that is the sign of the var declaration: = or -> or <-
     if (commands->at(index).compare(VAR_KEYWORD) == 0) {
-      Command *c = container->maps->commands.at(commands->at(index + DISTANCE_TO_VAR_DECLARATION_SIGN));
+      Command *c = container->GetMaps()->ReadCommand(commands->at(index + DISTANCE_TO_VAR_DECLARATION_SIGN));
       index += c->execute(*commands, index);
-    } else if (container->maps->commands.count(commands->at(index)) != 0) {
+    } else if (container->GetMaps()->IsACommand(commands->at(index))) {
       //just run the command/function call
-      Command *c = container->maps->commands.at(commands->at(index));
+      Command *c = container->GetMaps()->ReadCommand(commands->at(index));
       index += c->execute(*commands, index);
     } else if (commands->at(index + 1).compare("var") == 0) {
       //current word is not in the commands map and the next word is "var", this is a function declaration
-      container->maps->AddCommand(commands->at(index), new FunctionCommand(container, index));
+      container->GetMaps()->AddCommand(commands->at(index), new FunctionCommand(container, index));
       /*
        * i wanted to make a loop that increments "index" until found a "}" and then we know
        * the function declaration block is finished, but there might be a block in the function (e.g. while block)
@@ -43,9 +42,9 @@ void Parser::parse(vector<string> *commands, Container *container) {
         index++;
       }
       //now it has stopped because it has seen }, decremented the var,and incremented the index to be the next one.
-    } else if (container->maps->InVars(commands->at(index))) {
+    } else if (container->GetMaps()->InVars(commands->at(index))) {
       //should be a var name, so call the change var value command
-      Command *c = container->maps->commands.at(NEW_VALUE_COMMAND);
+      Command *c = container->GetMaps()->ReadCommand(NEW_VALUE_COMMAND);
       index += c->execute(*commands, index);
     } else {//error or something we did not think about
       string message(commands->at(index) + " is not a command");

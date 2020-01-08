@@ -16,7 +16,7 @@ int LeftArrowVarCommand::execute(vector<string> &params, int start) {
   string progVarName = params.at(start + DISTANCE_TO_PROG_VAR_NAME_ARROW_COMMAND);
   string simVarName = params.at(start + DISTANCE_TO_SIM_VAR_NAME_ARROW_COMMAND);
   simVarName = simVarName.substr(1,simVarName.length()-2); //remove the " from the sides.
-  container->maps->AddWrappedVar(simVarName,progVarName);
+  container->GetMaps()->AddWrappedVar(simVarName,progVarName);
   return RETURN_VALUE;
 }
 

@@ -44,8 +44,8 @@ class OpenDataServerCommand : public Command {
    * @param container  container which contains all the necessary information.
    * @param sim_vars_amount the maximum amount of variables sent by the simulator.
    */
-  OpenDataServerCommand(Container *container_, int sim_vars_amount)
-      : Command(container_), simVarsAmount(sim_vars_amount) {
+  OpenDataServerCommand(Container *container, int sim_vars_amount)
+      : Command(container), simVarsAmount(sim_vars_amount) {
     /*
      * Each variables needs at most the maximum digits which float needs.
      * In addition, to each variable there attached a space or a \n char.

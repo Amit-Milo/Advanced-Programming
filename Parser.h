@@ -26,7 +26,6 @@
 
 using namespace std;
 class Parser {
-  friend class BlockCommand;
  public:
   Parser();
   /**
