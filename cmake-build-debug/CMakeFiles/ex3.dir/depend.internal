@@ -171,6 +171,18 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
  /home/amit/CLionProjects/ex3/Containers/Container.h
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h

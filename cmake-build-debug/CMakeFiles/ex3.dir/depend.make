@@ -170,6 +170,18 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/Va
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/Command.h

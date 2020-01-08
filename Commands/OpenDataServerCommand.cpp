@@ -91,8 +91,16 @@ void OpenDataServerCommand::run_server(Container *container) {
     // Concat the given data with the reminder from previous iteration.
     result = strcat(reminder, buffer);
 
+    pair<int, int> stats = splitValues(result, ",", values);
+
     // Get next index to read from.
-    int lastEnd = splitValues(result, ",", values);
+    int lastEnd = stats.first;
+
+    // Get the amount of vars read.
+    int valuesLength = stats.second;
+
+    cout << "vals_amount";
+    cout << valuesLength << endl;
 
     cout << "next: ";
     cout << lastEnd << endl;
@@ -102,11 +110,6 @@ void OpenDataServerCommand::run_server(Container *container) {
       reminder = result + lastEnd + 1;
     else
       *reminder = '\0';
-
-    // Get the amount of values which have been read.
-    int valuesLength = sizeof(values) / sizeof(*values);
-    cout << "amount: ";
-    cout << valuesLength << endl;
 
     for (int i = firstValue; i - firstValue < valuesLength; ++i) {
       // Write each variable to the map.

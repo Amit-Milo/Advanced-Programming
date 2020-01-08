@@ -7,7 +7,7 @@
 
 
 // Split a string using a delimiter.
-int splitValues(string data, string delimiter, float target[]) {
+pair<int, int> splitValues(string data, string delimiter, float target[]) {
   size_t pos;
   string token;
   int i = 0;
@@ -42,6 +42,6 @@ int splitValues(string data, string delimiter, float target[]) {
     pos = string::npos;
   }
 
-  return pos;
+  return pair<int, int>(pos, ++i);
 
 }
