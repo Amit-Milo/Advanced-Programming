@@ -2,6 +2,7 @@
 // Created by amit on 03/01/2020.
 //
 
+#include <iostream>
 #include "StringOperations.h"
 
 
@@ -11,11 +12,15 @@ int splitValues(string data, string delimiter, float target[]) {
   string token;
   int i = 0;
 
+  cout << "data: " + data << endl;
+
 
   // Find next position of the delimiter.
   while ((pos = data.find(delimiter)) != string::npos && pos < data.find('\n')) {
     // Get the substring bounded by the delimiter.
     token = data.substr(0, pos);
+
+    cout << "token: " + token << endl;
 
     // Add the token to the target array.
     target[i] = stof(token);
@@ -32,6 +37,6 @@ int splitValues(string data, string delimiter, float target[]) {
     target[i] = stof(token);
   }
 
-  return data.find('\n') + 1;
+  return pos;
 
 }

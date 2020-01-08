@@ -2,6 +2,7 @@
 // Created by amit on 23/12/2019.
 //
 
+#include <iostream>
 #include "SocketsContainer.h"
 SocketsContainer::SocketsContainer() {
   // Create an instance of the sockets.
@@ -15,6 +16,12 @@ SocketsContainer::SocketsContainer() {
 
 
 void SocketsContainer::SendToServer(string data) {
+  while (!this->clientConnected) {}
+
+  cout << "Told me connected" << endl;
+
   // Send data to the server.
-  send(this->client_socket, data.c_str(), data.length(), 0);
+  int is_sent = send(this->client_socket, data.c_str(), data.length(), 0);
+  cout << "sent? ";
+  cout << is_sent << endl;
 }

@@ -29,6 +29,9 @@ class SocketsContainer {
   // Address object for the client.
   sockaddr_in client_address;
 
+  bool serverConnected = false;
+  bool clientConnected = false;
+
  public:
   /**
    * A default constructor.

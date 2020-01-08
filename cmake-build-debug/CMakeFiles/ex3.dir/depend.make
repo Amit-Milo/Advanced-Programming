@@ -369,7 +369,16 @@ CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../SimulatorVar.h
 CMakeFiles/ex3.dir/StringOperations.cpp.o: ../StringOperations.cpp
 CMakeFiles/ex3.dir/StringOperations.cpp.o: ../StringOperations.h
 
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/BlockCommand.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Commands/Command.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/ConnectControlClientCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/OpenDataServerCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/VarCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/VarCommands/ArrowVarCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/VarCommands/ChangeValueCommand.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Containers/ContainerCreator.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Containers/MapsContainer.h
@@ -392,6 +401,7 @@ CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/InterpreterIncludes.h
 CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
 CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Lexer.h
+CMakeFiles/ex3.dir/main.cpp.o: ../Parser.h
 CMakeFiles/ex3.dir/main.cpp.o: ../SimulatorVar.h
 CMakeFiles/ex3.dir/main.cpp.o: ../main.cpp
 

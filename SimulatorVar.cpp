@@ -49,7 +49,7 @@ void SimulatorVar::SetWrapping(Wrapping wrapping) {
 
 void SimulatorVar::WriteToSimulator(string name, float value) {
   // Format a message to send to the simulator.
-  string message("set " + name + " " + to_string(value) + "\n");
-  cout<<message<<endl;
+  string message("set " + name + " " + to_string(value) + "\r\n");
+  cout<<"writing: " + message<<endl;
   this->container->sockets.SendToServer(message);
 }

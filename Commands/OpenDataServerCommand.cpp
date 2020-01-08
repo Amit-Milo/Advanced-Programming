@@ -24,12 +24,10 @@ int OpenDataServerCommand::execute(vector<string> &params, int start) {
   if (bind(container->sockets.server_socket,
            (struct sockaddr *) &(container->sockets.server_address),
            sizeof(container->sockets.server_address)) != -1) {
+    cout <<"hi" << endl;
 
     // Run server in a new thread.
     thread(&OpenDataServerCommand::run_server, this, container).detach();
-
-    // We succeeded communicating with the simulator.
-    container->serverConnected = true;
 
     // Return the expected return value.
     return RETURN_VALUE;
@@ -65,16 +63,26 @@ void OpenDataServerCommand::run_server(Container *container) {
       // If can't listen, throw an error.
       throw "Couldn't listen.";
 
+    cout << "listened" << endl;
+
     // Accept the client.
     int client_socket = accept(server_socket, (struct sockaddr *) &server_address, (socklen_t *) &server_address);
 
-    if (client_socket != -1)
+    if (client_socket == -1)
       // If can't accept a client, throw an error.
       throw "Couldn't accept a client.";
 
+    cout << "accepted" << endl;
+
+  // We succeeded communicating with the simulator.
+  container->sockets.serverConnected = true;
+
   while (true) {
+    cout << "iiiiii" << endl;
     // Receive data from the simulator.
     dataSize = read(client_socket, buffer, maxSize);
+
+    cout << "iter: " + dataSize << endl;
 
     if (dataSize < 1)
       // If didn't read nothing, continue to next iteration.
@@ -84,19 +92,27 @@ void OpenDataServerCommand::run_server(Container *container) {
     result = strcat(reminder, buffer);
 
     // Get next index to read from.
-    int nextStart = splitValues(result, ",", values);
+    int lastEnd = splitValues(result, ",", values);
 
-    // Move to the next index to read from.
-    reminder = result + nextStart;
+    cout << "next: ";
+    cout << lastEnd << endl;
+
+    if (lastEnd != -1)
+      // Move to the next index to read from.
+      reminder = result + lastEnd + 1;
+    else
+      *reminder = '\0';
 
     // Get the amount of values which have been read.
     int valuesLength = sizeof(values) / sizeof(*values);
 
-    for (int i = firstValue; i - firstValue < valuesLength; ++i)
+    for (int i = firstValue; i - firstValue < valuesLength; ++i) {
       // Write each variable to the map.
+      this->container->maps->WriteSimulatorVar(this->container->maps->names[i], values[i]);
       this->container->maps->WriteWrappedVar(this->container->maps->names[i], values[i]);
+    }
 
-    if (result[nextStart - 1] == '\n')
+    if (lastEnd == -1)
       // Check if we reached to the end of a message sent by the simulator.
       firstValue = 0;
     else
@@ -105,8 +121,8 @@ void OpenDataServerCommand::run_server(Container *container) {
   }
 
   // Free the dynamically allocated arrays.
-  free(reminder);
+  /*free(reminder);
   free(values);
-  free(buffer);
+  free(buffer);*/
 }
 

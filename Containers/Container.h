@@ -37,8 +37,6 @@ class Container {
   MapsContainer *maps;
   SocketsContainer sockets;
 
-  bool serverConnected = false;
-
  public:
   explicit Container(Interpreter *inter, MapsContainer *maps_container) : interpreter(inter), maps(maps_container) {}
   void SetInterpreter(Interpreter *interpreter) {

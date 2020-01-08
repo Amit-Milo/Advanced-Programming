@@ -9,7 +9,7 @@
 #include "Parser.h"
 
 int main() {
-
+try {
   ContainerCreator cc;
   Container *container = cc.createContainer();
 
@@ -17,11 +17,13 @@ int main() {
   vector<string> *commands = l.lexer("fly.txt");
 
   Parser p;
-  p.parse(commands,container);
+  p.parse(commands, container);
 
   delete commands;
   delete container;
-
+} catch (char* e) {
+  cout << strcat("exception: ", e) <<endl;
+}
 
   return 0;
 }

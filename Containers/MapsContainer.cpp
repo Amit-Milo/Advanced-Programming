@@ -47,7 +47,7 @@ void MapsContainer::createSimulatorVarsMap() {
 
   for (int i = 0; i < SIMULATOR_VARS_AMOUNT; ++i)
     // Add all the variables declared in the simulator to a map and insert default values.
-    this->simulatorToProgramWrapping.insert({MapsContainer::names[i], 0});
+    this->simulatorVars.insert({MapsContainer::names[i], 0});
 
   this->simulator_lock.unlock();
 }

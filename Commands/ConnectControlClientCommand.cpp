@@ -27,13 +27,18 @@ int ConnectControlClientCommand::execute(vector<string> &params, int start) {
 }
 
 void ConnectControlClientCommand::ConnectToServer(Container *container) {
-  while (!container->serverConnected)
+  cout << "start connecting" << endl;
+  while (!container->sockets.serverConnected)
     // Wait until getting alerted that the simulator connected to the server - implying that the simulator is running.
     continue;
 
+  cout << "should connect" <<endl;
+
   if ((connect(container->sockets.client_socket,
                 (struct sockaddr *) &(container->sockets.client_address),
-                sizeof(container->sockets.client_address)) + 1)==-1)
+                sizeof(container->sockets.client_address)) + 1) == -1)
     // Try to connect to the simulator as client. If failed throw an error.
     throw "Couldn't connect to server.";
+
+  container->sockets.clientConnected = true;
 }

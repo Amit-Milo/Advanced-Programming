@@ -13,9 +13,41 @@
   <component name="ChangeListManager">
     <list default="true" id="2657903a-887e-482f-acc0-ad0433c1c257" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/ConnectControlClientCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/OpenDataServerCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/OpenDataServerCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Containers/Container.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/Container.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Containers/MapsContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/MapsContainer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Containers/MapsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/MapsContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Containers/SocketsContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/SocketsContainer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Containers/SocketsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Containers/SocketsContainer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorVar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorVar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringOperations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/StringOperations.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Lexer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Lexer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/StringOperations.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/StringOperations.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ex3.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ex3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ex3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +138,9 @@
       <workItem from="1578260249232" duration="628000" />
       <workItem from="1578262433486" duration="5000" />
       <workItem from="1578338210799" duration="1093000" />
+      <workItem from="1578428326809" duration="3290000" />
+      <workItem from="1578465622334" duration="4489000" />
+      <workItem from="1578478411635" duration="6810000" />
     </task>
     <servers />
   </component>
@@ -126,81 +161,88 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576932945628" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1578258558003">
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1578487331050">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578258558003" />
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578487331050" />
     <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
     <state width="1807" height="364" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875814" />
     <state width="1807" height="307" key="GridCell.Tab.0.bottom/67.27.1853.923@67.27.1853.923" timestamp="1577275939573" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1578258558002">
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1578487331050">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578258558002" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578487331050" />
     <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
     <state width="1807" height="364" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875813" />
     <state width="1807" height="307" key="GridCell.Tab.0.center/67.27.1853.923@67.27.1853.923" timestamp="1577275939572" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1578258557989">
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1578487331049">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578258557989" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578487331049" />
     <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1531.743@67.27.1531.743" timestamp="1578088206534" />
     <state width="1807" height="364" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875813" />
     <state width="1807" height="307" key="GridCell.Tab.0.left/67.27.1853.923@67.27.1853.923" timestamp="1577275939572" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1578258558002">
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1578487331050">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578258558002" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578487331050" />
     <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
     <state width="1807" height="364" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578241875814" />
     <state width="1807" height="307" key="GridCell.Tab.0.right/67.27.1853.923@67.27.1853.923" timestamp="1577275939573" />
-    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1578241820585">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1578487310997">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578487310997" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1531.743@67.27.1531.743" timestamp="1578088206536" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
-    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1578241820585">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1578487310997">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1578487310997" />
     <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
     <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
-    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1578241820585">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1578487310997">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1578487310997" />
     <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
     <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
-    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1578241820585">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1578487310997">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1578487310997" />
     <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1531.743@67.27.1531.743" timestamp="1578088206535" />
     <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578241820585" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578338212269">
+    <state width="649" height="371" key="XDebugger.FullValuePopup" timestamp="1578469753496">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578338212269" />
-    <state x="659" y="198" width="707" height="528" key="find.popup" timestamp="1578254787736">
+    <state width="649" height="371" key="XDebugger.FullValuePopup/67.27.1299.741@67.27.1299.741" timestamp="1578469753496" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578478423199">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="659" y="198" width="707" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1578254787736" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578478423199" />
+    <state x="251" y="135" width="920" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578486484176">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="251" y="135" width="920" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1299.741@67.27.1299.741" timestamp="1578486484176" />
+    <state x="359" y="138" width="707" height="528" key="find.popup" timestamp="1578487224568">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="359" y="138" width="707" height="528" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1578487224568" />
     <state x="966" y="270" width="950" height="606" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1578246932460" />
-    <state x="480" y="186" width="472" height="545" key="search.everywhere.popup" timestamp="1578338428887">
+    <state x="480" y="186" width="672" height="545" key="search.everywhere.popup" timestamp="1578430558432">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="480" y="186" width="472" height="545" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1578338428887" />
+    <state x="480" y="186" width="672" height="545" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1578430558432" />
     <state x="656" y="225" width="672" height="678" key="search.everywhere.popup/67.27.1853.923@67.27.1853.923" timestamp="1577348086388" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/InterpreterFiles/TokensToExpressionConverter.cpp</url>
-          <line>47</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Containers/MapsContainer.cpp</url>
-          <line>22</line>
-          <option name="timeStamp" value="26" />
+          <line>141</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
