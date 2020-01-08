@@ -97,7 +97,7 @@ void OpenDataServerCommand::run_server(Container *container) {
     cout << "next: ";
     cout << lastEnd << endl;
 
-    if (lastEnd != -1)
+    if (lastEnd != string::npos)
       // Move to the next index to read from.
       reminder = result + lastEnd + 1;
     else
@@ -105,6 +105,8 @@ void OpenDataServerCommand::run_server(Container *container) {
 
     // Get the amount of values which have been read.
     int valuesLength = sizeof(values) / sizeof(*values);
+    cout << "amount: ";
+    cout << valuesLength << endl;
 
     for (int i = firstValue; i - firstValue < valuesLength; ++i) {
       // Write each variable to the map.
@@ -112,7 +114,7 @@ void OpenDataServerCommand::run_server(Container *container) {
       this->container->maps->WriteWrappedVar(this->container->maps->names[i], values[i]);
     }
 
-    if (lastEnd == -1)
+    if (lastEnd == string::npos)
       // Check if we reached to the end of a message sent by the simulator.
       firstValue = 0;
     else

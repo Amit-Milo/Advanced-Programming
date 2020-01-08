@@ -31,10 +31,15 @@ int splitValues(string data, string delimiter, float target[]) {
     ++i;
   }
 
+  int newPos = data.find('\n');
+
   // Last substring may appear at the end of the string.
-  if (data.length() > 0 && pos < data.find('\n')) {
-    token = data.substr(0, pos);
+  if (data.length() > 1) {
+    token = data.substr(0, newPos);
     target[i] = stof(token);
+    cout << "error: ";
+    cout << token << endl;
+    pos = string::npos;
   }
 
   return pos;
