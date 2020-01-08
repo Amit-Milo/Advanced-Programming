@@ -6,9 +6,11 @@
 #define EX3__SOCKETSCONTAINER_H_
 
 #include <netinet/in.h>
+#include <string>
 #include <sys/socket.h>
 
-//TODO amit comments
+using namespace std;
+
 
 class SocketsContainer {
   // Those classes need to use the sockets.
@@ -27,8 +29,20 @@ class SocketsContainer {
   // Address object for the client.
   sockaddr_in client_address;
 
+  bool serverConnected = false;
+  bool clientConnected = false;
+
  public:
+  /**
+   * A default constructor.
+   */
   SocketsContainer();
+
+  /**
+   * Send given data to server (the simulator).
+   * @param data the data to send the simulator.
+   */
+  void SendToServer(string data);
 };
 
 #endif //EX3__SOCKETSCONTAINER_H_

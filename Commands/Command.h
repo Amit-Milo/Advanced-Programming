@@ -23,7 +23,8 @@ class Command {
    * @return number to jump in the vector
    */
   virtual int execute(vector<string> &params, int start) = 0;
-  Command(Container *container) : container(container) {}
+  Command(Container *container_) : container(container_) {}
+  virtual ~Command() {} //do not delete the container
 };
 
 #endif //EX3_COMMANDS_COMMAND_H_

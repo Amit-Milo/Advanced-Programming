@@ -8,18 +8,17 @@
 #include "../Commands/OpenDataServerCommand.h"
 #include "../Commands/SleepCommand.h"
 #include "../Commands/PrintCommand.h"
-#include "../Commands/BlockCommands/WhileCommand.h"
-#include "../Commands/BlockCommands/IfCommand.h"
+#include "../Commands/BlockCommands/ConditionCommands/WhileCommand.h"
+#include "../Commands/BlockCommands/ConditionCommands/IfCommand.h"
 #include "../Commands/VarCommands/ChangeValueCommand.h"
 #include "../Commands/VarCommands/EqualSignVarCommand.h"
 #include "../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.h"
 #include "../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.h"
 #include "../Parser.h"
 
-#define SHOULD_CHANGE_ERROR_AMIT -2
-
 void MapsContainer::createCommandsMap(Container *container) {
-  this->AddCommand("openDataServer", new OpenDataServerCommand(container, SHOULD_CHANGE_ERROR_AMIT));
+
+  this->AddCommand("openDataServer", new OpenDataServerCommand(container, SIMULATOR_VARS_AMOUNT));
   this->AddCommand("connectControlClient", new ConnectControlClientCommand(container));
   this->AddCommand("Sleep", new SleepCommand(container));
   this->AddCommand("Print", new PrintCommand(container));
@@ -32,56 +31,123 @@ void MapsContainer::createCommandsMap(Container *container) {
 }
 
 void MapsContainer::createSimulatorToProgramWrappingMap() {
-  //TODO amit hard-code the xml vars
+  // Nobody should access the map when we edit it.
+  this->simulator_lock.lock();
+
+  for (int i = 0; i < SIMULATOR_VARS_AMOUNT; ++i)
+    // Add all the variables declared in the simulator to a map used by the manager.
+    this->simulatorToProgramWrapping.insert({MapsContainer::names[i], new list<string>});
+
+  this->simulator_lock.unlock();
+}
+
+void MapsContainer::createSimulatorVarsMap() {
+  // Nobody should access the map when we edit it.
+  this->simulator_lock.lock();
+
+  for (int i = 0; i < SIMULATOR_VARS_AMOUNT; ++i)
+    // Add all the variables declared in the simulator to a map and insert default values.
+    this->simulatorVars.insert({MapsContainer::names[i], 0});
+
+  this->simulator_lock.unlock();
 }
 
 MapsContainer::MapsContainer(Container *container) {
   createCommandsMap(container);
   createSimulatorToProgramWrappingMap();
+  createSimulatorVarsMap();
 }
 
 SimulatorVar *MapsContainer::ReadVar(string key) {
-  // We want to prevent only writers from changing our map. Readers are accepted.
-  this->writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   SimulatorVar *returnValue = this->vars[key];
 
-  this->writers_lock.unlock();
+  this->vars_lock.unlock();
   return returnValue;
 }
 
 void MapsContainer::WriteVar(string key, double value) {
-  // Nobody should access the map when we edit it.
-  this->readers_lock.lock();
-  this->writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   this->vars[key]->SetValue(value);
 
-  this->writers_lock.unlock();
-  this->readers_lock.unlock();
+  this->vars_lock.unlock();
 }
 
 bool MapsContainer::InVars(string index) {
-  // We want to prevent only writers from changing our map. Readers are accepted.
-  this->writers_lock.lock();
+  // Nobody else should access the map.
+  this->vars_lock.lock();
 
   bool inVars = this->vars.count(index);
 
-  this->writers_lock.unlock();
+  this->vars_lock.unlock();
   return inVars;
 }
 
 void MapsContainer::AddVar(string key, SimulatorVar *value) {
-  //TODO amit add mutex
+  // Nobody else should access the map.
+  this->vars_lock.lock();
+
   this->vars.insert({key, value});
+
+  this->vars_lock.unlock();
+}
+
+void MapsContainer::DeleteVar(string key) {
+  // Nobody else should access the map.
+  this->vars_lock.lock();
+
+  this->vars.erase(key);
+
+  this->vars_lock.unlock();
 }
 
 void MapsContainer::AddCommand(string key, Command *value) {
-  //TODO amit add mutex
+  // Nobody should access the map when we edit it.
+  this->commands_lock.lock();
+
   this->commands.insert({key, value});
+
+  this->commands_lock.unlock();
 }
 
 void MapsContainer::AddWrappedVar(string simVar, string progVar) {
-  //TODO amit add mutex
-  simulatorToProgramWrapping.at(simVar).push_back(progVar);
+  // Nobody should access the map when we edit it.
+  this->simulator_lock.lock();
+
+  // Add the new variable wrapped by the simulator to a list of variables which should be updated when simulator changes value.
+  // Observer design pattern.
+  simulatorToProgramWrapping.at(simVar)->push_back(progVar);
+
+  this->simulator_lock.unlock();
+}
+
+void MapsContainer::WriteWrappedVar(string simVar, float value) {
+  auto it = this->simulatorToProgramWrapping[simVar]->begin();
+
+  while (it != this->simulatorToProgramWrapping[simVar]->end()) {
+    // Update the value of the next variable wrapped by the simulator var.
+    this->WriteVar(*it, value);
+
+    // Increment the iterator.
+    ++it;
+  }
+}
+
+
+void MapsContainer::WriteSimulatorVar(string simVar, float value) {
+  // Nobody should access the map when we edit it.
+  this->simulator_lock.lock();
+
+  this->simulatorVars[simVar] = value;
+
+  this->simulator_lock.unlock();
+}
+
+
+float MapsContainer::ReadSimulatorVar(string simVar) {
+  return this->simulatorVars[simVar];
 }

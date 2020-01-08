@@ -4,6 +4,8 @@
 
 #include "CalculationTokensCreatorChecker.h"
 
+#include "../Containers/MapsContainer.h"
+
 bool CalculationTokensCreatorChecker::isOperator(string s) {
   if (s.length() > 1) {
     return false;
@@ -75,14 +77,6 @@ void CalculationTokensCreatorChecker::tokensSplitter(string s, list<pair<string,
     }
     //the i++ is already in each condition statement
   }
-}
-
-void CalculationTokensCreatorChecker::printTokensList(list<pair<string, int>> *l) {
-  std::cout << "the tokens list: ";
-  for (const auto &myPair : *l) {
-    std::cout << myPair.first << ",";
-  }
-  cout << "\n";
 }
 
 

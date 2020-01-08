@@ -54,7 +54,7 @@ Expression *TokensToExpressionConverter::tokensToExpression(list<pair<string, in
 /**
  * just implementation of shunting-yard algorithm from wikipedia
  * @param tokens
- * @return
+ * @return a stack representing the expression.
  */
 stack<pair<string, int>> *TokensToExpressionConverter::tokensToStack(list<pair<string, int>> *tokens) {
   stack<pair<string, int>> operatorsStack;
@@ -144,14 +144,6 @@ Expression *TokensToExpressionConverter::stackToExpression(stack<pair<string, in
   }
 }
 
-void TokensToExpressionConverter::printStack(stack<pair<string, int>> *s) {
-  while (!s->empty()) {
-    string ss = s->top().first;
-    std::cout << ss << "," << std::flush;
-    s->pop();
-  }
-
-}
 
 /*
 while there are tokens to be read do:

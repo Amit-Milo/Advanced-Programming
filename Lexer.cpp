@@ -46,7 +46,7 @@ void Lexer::addCommands(string s, vector<string> *commands) {
     //now the rest:
   else if (s.find("\"") != string::npos) { //add the string of the quotes
     int begin = s.find("\"");
-    int end = s.find("\"", begin + 1);
+    unsigned long end = s.find("\"", begin + 1);
     if (end == string::npos) {
       throw "illegal quotes";
     }
@@ -95,7 +95,8 @@ void Lexer::handleSpecialSubstr(string s, string special, vector<string> *comman
 
 string Lexer::noSpaces(string s) {
   string result("");
-  for (int i = 0; i < s.length(); i++) {
+  unsigned int sLength = s.length();
+  for (unsigned int i = 0; i < sLength; i++) {
     if (s.at(i) != ' ') {
       //add the char if it is not a space
       result.append(1, s.at(i));
