@@ -11,7 +11,6 @@ Parser::Parser() {}
 void Parser::parse(vector<string> *commands, Container *container) {
   int index = 0;
   while (index < commands->size()) { //while there are strings to read:
-    //if this word is in the commands map
     //if the word is var, call the command that is the sign of the var declaration: = or -> or <-
     if (commands->at(index).compare(VAR_KEYWORD) == 0) {
       Command *c = container->GetMaps()->ReadCommand(commands->at(index + DISTANCE_TO_VAR_DECLARATION_SIGN));
