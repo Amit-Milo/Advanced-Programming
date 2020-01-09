@@ -21,31 +21,57 @@ class Container {
 
  public:
   explicit Container(Interpreter *inter, MapsContainer *maps_container) : interpreter(inter), maps(maps_container) {}
+
   void SetInterpreter(Interpreter *interpreter) {
     Container::interpreter = interpreter;
   }
+
   Interpreter *GetInterpreter() const {
     return interpreter;
   }
+
   MapsContainer *GetMaps() const {
     return maps;
   }
+
   void SetMaps(MapsContainer *maps) {
     Container::maps = maps;
   }
+
   SocketsContainer &GetSockets() {
     return sockets;
   }
+
   virtual ~Container() {
     delete interpreter;
     delete maps;
   }
 
+  /**
+  * Notify that a new thread was created.
+  */
   void AddThread() {this->open_threads++;}
+  
+  /**
+  * Notify that a thread has finished.
+  */
   void ReleaseThread() {this->open_threads--;}
+  
+  /**
+  * Are any threads open?
+  * @return true if there are open threads, false otherwise.
+  */
   bool ThreadsOpen() {return this->open_threads > 0;}
 
+  /**
+  * Is the program running?
+  * @return true if the program is still running, false otherwise.
+  */
   bool ProgramRuns() {return this->program_runs;}
+  
+  /**
+  * Handle finishing of the program.
+  */
   void TerminateProgram() {
     // Release sockets.
     this->sockets.ReleaseSockets();
