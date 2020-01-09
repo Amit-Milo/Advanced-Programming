@@ -5,7 +5,6 @@
 #ifndef EX3_CMAKE_BUILD_DEBUG_CONTAINER_H_
 #define EX3_CMAKE_BUILD_DEBUG_CONTAINER_H_
 
-
 #include "SocketsContainer.h"
 #include <iostream>
 
@@ -13,29 +12,12 @@ class Interpreter;
 class MapsContainer;
 
 class Container {
-  //classes that should access it's fields
-  friend class ConnectControlClientCommand;
-  friend class OpenDataServerCommand;
-  friend class BlockCommand;
-  friend class Interpreter;
-  friend class CalculationTokensCreatorChecker;
-  friend class TokensToExpressionConverter;
-  friend class VarsSetter;
-  friend class Parser;
-  friend class PrintCommand;
-  friend class VarCommand;
-  friend class ChangeValueCommand;
-  friend class EqualSignVarCommand;
-  friend class LeftArrowVarCommand;
-  friend class RightArrowVarCommand;
-  friend class ArrowVarCommand;
-  friend class SimulatorVar;
-  friend class ConditionBlock;
-  friend class FunctionCommand;
-
   Interpreter *interpreter;
   MapsContainer *maps;
   SocketsContainer sockets;
+
+  int open_threads = 0;
+  bool program_runs = true;
 
  public:
   explicit Container(Interpreter *inter, MapsContainer *maps_container) : interpreter(inter), maps(maps_container) {}
@@ -51,11 +33,26 @@ class Container {
   void SetMaps(MapsContainer *maps) {
     Container::maps = maps;
   }
+  SocketsContainer &GetSockets() {
+    return sockets;
+  }
   virtual ~Container() {
     delete interpreter;
     delete maps;
   }
 
+  void AddThread() {this->open_threads++;}
+  void ReleaseThread() {this->open_threads--;}
+  bool ThreadsOpen() {return this->open_threads > 0;}
+
+  bool ProgramRuns() {return this->program_runs;}
+  void TerminateProgram() {
+    // Release sockets.
+    this->sockets.ReleaseSockets();
+
+    // Set the program runs variable to false in order to tell all threads that program has finished.
+    this->program_runs = false;
+  }
 };
 
 #endif //EX3_CMAKE_BUILD_DEBUG_CONTAINER_H_

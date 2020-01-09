@@ -6,15 +6,19 @@
 
 #include "Containers/MapsContainer.h"
 
-SimulatorVar::SimulatorVar(const string &prog_name, const string &simulator_name, Wrapping wrapping, Container *container) : progName(
+SimulatorVar::SimulatorVar(const string &prog_name,
+                           const string &simulator_name,
+                           Wrapping wrapping,
+                           Container *container) : progName(
     prog_name), simulatorName(simulator_name), wrapping(wrapping), container(container) {
   if (wrapping == SIM_TO_PROG) {
-    container->maps->AddWrappedVar(simulator_name, progName);
-    this->value = container->maps->ReadSimulatorVar(this->simulatorName);
+    container->GetMaps()->AddWrappedVar(simulator_name, progName);
+    this->value = container->GetMaps()->ReadSimulatorVar(this->simulatorName);
   }
 }
 
-SimulatorVar::SimulatorVar(double value, const string &prog_name, Container *container) : value(value), progName(prog_name) {
+SimulatorVar::SimulatorVar(double value, const string &prog_name, Container *container)
+    : value(value), progName(prog_name) {
   wrapping = NONE;
 }
 double SimulatorVar::GetValue() const {
@@ -48,8 +52,14 @@ void SimulatorVar::SetWrapping(Wrapping wrapping) {
 }
 
 void SimulatorVar::WriteToSimulator(string name, float value) {
-  // Format a message to send to the simulator.
-  string message("set " + name + " " + to_string(value) + "\r\n");
-  cout<<"writing: " + message<<endl;
-  this->container->sockets.SendToServer(message);
+  if (container->ProgramRuns()) {
+
+    container->AddThread();
+
+    // Format a message to send to the simulator.
+    string message("set " + name + " " + to_string(value) + "\r\n");
+    this->container->GetSockets().SendToServer(message);
+
+    container->ReleaseThread();
+  }
 }

@@ -3,7 +3,10 @@
 //
 
 #include <iostream>
+#include <unistd.h>
 #include "SocketsContainer.h"
+
+
 SocketsContainer::SocketsContainer() {
   // Create an instance of the sockets.
   this->server_socket = socket(AF_INET, SOCK_STREAM, 0);
@@ -18,10 +21,20 @@ SocketsContainer::SocketsContainer() {
 void SocketsContainer::SendToServer(string data) {
   while (!this->clientConnected) {}
 
-  cout << "Told me connected" << endl;
-
   // Send data to the server.
-  int is_sent = send(this->client_socket, data.c_str(), data.length(), 0);
-  cout << "sent? ";
-  cout << is_sent << endl;
+  send(this->client_socket, data.c_str(), data.length(), 0);
+}
+
+
+void SocketsContainer::ReleaseSockets() {
+  // Shut down both sockets, both for read and write.
+  shutdown(this->server_socket, SHUT_RD);
+  shutdown(this->client_socket, SHUT_RD);
+
+  shutdown(this->server_socket, SHUT_WR);
+  shutdown(this->client_socket, SHUT_WR);
+
+  // CLose the sockets.
+  close(this->server_socket);
+  close(this->client_socket);
 }

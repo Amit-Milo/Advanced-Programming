@@ -19,7 +19,6 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
@@ -40,7 +39,6 @@ CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
@@ -62,6 +60,17 @@ CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o
  /home/amit/CLionProjects/ex3/Containers/Container.h
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
@@ -81,7 +90,6 @@ CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
@@ -101,7 +109,6 @@ CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
  /home/amit/CLionProjects/ex3/StringOperations.h
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o
@@ -122,12 +129,26 @@ CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/SleepCommand.cpp
  /home/amit/CLionProjects/ex3/Commands/SleepCommand.h
+ /home/amit/CLionProjects/ex3/Containers/Container.h
+ /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
+ /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
+ /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
  /home/amit/CLionProjects/ex3/Commands/VarCommand.cpp
@@ -182,7 +203,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
@@ -203,7 +223,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
@@ -223,7 +242,6 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o
  /home/amit/CLionProjects/ex3/Commands/BlockCommand.h
@@ -322,7 +340,6 @@ CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.cpp
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o
  /home/amit/CLionProjects/ex3/Commands/Command.h
@@ -340,15 +357,6 @@ CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.cpp
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/SimulatorVar.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o
- /home/amit/CLionProjects/ex3/Commands/Command.h
- /home/amit/CLionProjects/ex3/Containers/Container.h
- /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
- /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
- /home/amit/CLionProjects/ex3/Expressions/Expression.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
 CMakeFiles/ex3.dir/Lexer.cpp.o
  /home/amit/CLionProjects/ex3/Lexer.cpp
@@ -368,6 +376,17 @@ CMakeFiles/ex3.dir/Parser.cpp.o
  /home/amit/CLionProjects/ex3/Containers/Container.h
  /home/amit/CLionProjects/ex3/Containers/MapsContainer.h
  /home/amit/CLionProjects/ex3/Containers/SocketsContainer.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/BinaryOperator.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Div.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Minus.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
+ /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
+ /home/amit/CLionProjects/ex3/Expressions/Expression.h
+ /home/amit/CLionProjects/ex3/Expressions/Value.h
+ /home/amit/CLionProjects/ex3/Expressions/Variable.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
+ /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
  /home/amit/CLionProjects/ex3/Parser.cpp
  /home/amit/CLionProjects/ex3/Parser.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h
@@ -402,17 +421,11 @@ CMakeFiles/ex3.dir/main.cpp.o
  /home/amit/CLionProjects/ex3/Expressions/BinOperators/Mul.h
  /home/amit/CLionProjects/ex3/Expressions/BinOperators/Plus.h
  /home/amit/CLionProjects/ex3/Expressions/Expression.h
- /home/amit/CLionProjects/ex3/Expressions/ExpressionsIncludes.h
- /home/amit/CLionProjects/ex3/Expressions/UnOperators/UMinus.h
- /home/amit/CLionProjects/ex3/Expressions/UnOperators/UPlus.h
- /home/amit/CLionProjects/ex3/Expressions/UnOperators/UnaryOperator.h
  /home/amit/CLionProjects/ex3/Expressions/Value.h
  /home/amit/CLionProjects/ex3/Expressions/Variable.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/InterpreterIncludes.h
  /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h
- /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h
  /home/amit/CLionProjects/ex3/Lexer.h
  /home/amit/CLionProjects/ex3/Parser.h
  /home/amit/CLionProjects/ex3/SimulatorVar.h

@@ -18,7 +18,6 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Expressions/Variable.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Commands/BlockCommand.h
@@ -39,7 +38,6 @@ CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Expressions/V
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/BlockCommand.h
@@ -61,6 +59,17 @@ CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Commands/Com
 CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
 CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/Command.h
@@ -80,7 +89,6 @@ CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Expressions/Va
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/Command.h
@@ -100,7 +108,6 @@ CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Expressions/Variable
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../SimulatorVar.h
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../StringOperations.h
 
@@ -121,12 +128,26 @@ CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Expressions/Variable.h
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/SleepCommand.cpp
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/SleepCommand.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Containers/Container.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Containers/MapsContainer.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
+CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/VarCommand.cpp
@@ -181,7 +202,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Expressions
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/Command.h
@@ -202,7 +222,6 @@ CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Expression
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Commands/Command.h
@@ -222,7 +241,6 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Expressions/Variable.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Commands/BlockCommand.h
@@ -321,7 +339,6 @@ CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o: ../InterpreterFiles/Calcu
 CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o: ../InterpreterFiles/Interpreter.cpp
 CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o: ../InterpreterFiles/Interpreter.h
 CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o: ../SimulatorVar.h
 
 CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o: ../Commands/Command.h
@@ -341,15 +358,6 @@ CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o: ../Interp
 CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
 CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o: ../SimulatorVar.h
 
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../Commands/Command.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../Containers/Container.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../Containers/MapsContainer.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../Containers/SocketsContainer.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../Expressions/Expression.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../InterpreterFiles/VarsSetter.cpp
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../InterpreterFiles/VarsSetter.h
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../SimulatorVar.h
-
 CMakeFiles/ex3.dir/Lexer.cpp.o: ../Lexer.cpp
 CMakeFiles/ex3.dir/Lexer.cpp.o: ../Lexer.h
 
@@ -367,6 +375,17 @@ CMakeFiles/ex3.dir/Parser.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/Container.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/MapsContainer.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Containers/SocketsContainer.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/BinOperators/BinaryOperator.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/BinOperators/Div.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/BinOperators/Minus.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/BinOperators/Mul.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/BinOperators/Plus.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/Expression.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/Value.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../Expressions/Variable.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../InterpreterFiles/Interpreter.h
+CMakeFiles/ex3.dir/Parser.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Parser.cpp
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Parser.h
 CMakeFiles/ex3.dir/Parser.cpp.o: ../SimulatorVar.h
@@ -401,17 +420,11 @@ CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/BinOperators/Minus.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/BinOperators/Mul.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/BinOperators/Plus.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/Expression.h
-CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/ExpressionsIncludes.h
-CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/UnOperators/UMinus.h
-CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/UnOperators/UPlus.h
-CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/UnOperators/UnaryOperator.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/Value.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Expressions/Variable.h
 CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/CalculationTokensCreatorChecker.h
 CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/Interpreter.h
-CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/InterpreterIncludes.h
 CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/TokensToExpressionConverter.h
-CMakeFiles/ex3.dir/main.cpp.o: ../InterpreterFiles/VarsSetter.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Lexer.h
 CMakeFiles/ex3.dir/main.cpp.o: ../Parser.h
 CMakeFiles/ex3.dir/main.cpp.o: ../SimulatorVar.h

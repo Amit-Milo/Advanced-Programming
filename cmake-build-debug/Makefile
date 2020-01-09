@@ -960,33 +960,6 @@ InterpreterFiles/TokensToExpressionConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.s
 .PHONY : InterpreterFiles/TokensToExpressionConverter.cpp.s
 
-InterpreterFiles/VarsSetter.o: InterpreterFiles/VarsSetter.cpp.o
-
-.PHONY : InterpreterFiles/VarsSetter.o
-
-# target to build an object file
-InterpreterFiles/VarsSetter.cpp.o:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o
-.PHONY : InterpreterFiles/VarsSetter.cpp.o
-
-InterpreterFiles/VarsSetter.i: InterpreterFiles/VarsSetter.cpp.i
-
-.PHONY : InterpreterFiles/VarsSetter.i
-
-# target to preprocess a source file
-InterpreterFiles/VarsSetter.cpp.i:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.i
-.PHONY : InterpreterFiles/VarsSetter.cpp.i
-
-InterpreterFiles/VarsSetter.s: InterpreterFiles/VarsSetter.cpp.s
-
-.PHONY : InterpreterFiles/VarsSetter.s
-
-# target to generate assembly for a file
-InterpreterFiles/VarsSetter.cpp.s:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.s
-.PHONY : InterpreterFiles/VarsSetter.cpp.s
-
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -1224,9 +1197,6 @@ help:
 	@echo "... InterpreterFiles/TokensToExpressionConverter.o"
 	@echo "... InterpreterFiles/TokensToExpressionConverter.i"
 	@echo "... InterpreterFiles/TokensToExpressionConverter.s"
-	@echo "... InterpreterFiles/VarsSetter.o"
-	@echo "... InterpreterFiles/VarsSetter.i"
-	@echo "... InterpreterFiles/VarsSetter.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"

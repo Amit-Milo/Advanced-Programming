@@ -282,12 +282,6 @@
 		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h">
-			<Option target="ex3"/>
-		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Lexer.cpp">
 			<Option target="ex3"/>
 		</Unit>

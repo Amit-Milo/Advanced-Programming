@@ -18,17 +18,6 @@
 using namespace std;
 
 class MapsContainer {
-  // Those classes need to use the maps
-  friend class ConnectControlClientCommand;
-  friend class Interpreter;
-  friend class OpenDataServerCommand;
-  friend class VarCommand;
-  friend class CalculationTokensCreatorChecker;
-  friend class TokensToExpressionConverter;
-  friend class VarsSetter;
-  friend class BlockCommand;
-  friend class Parser;
-
   mutex vars_lock;
 
   mutex simulator_lock;
@@ -78,7 +67,7 @@ class MapsContainer {
       "/controls/switches/master-bat",
       "/controls/switches/master-alt",
       "/engines/engine/rpm"
-      };
+  };
 
   /**
    * create the map of the simulator to program vars wrapping with all the sim var names.
@@ -88,7 +77,7 @@ class MapsContainer {
   /**
    * Create a map which maps simulator vars to their value.
    */
-   void createSimulatorVarsMap();
+  void createSimulatorVarsMap();
 
   /**
    * create the commands map
@@ -163,6 +152,24 @@ class MapsContainer {
    * @return the value of the simulator variable.
    */
   float ReadSimulatorVar(string simVar);
+
+  /**
+   * a getter for a command
+   * @param key the command name
+   */
+  Command *ReadCommand(string key);
+
+  /**
+   * checks if a key is a command in the maps command
+   * @param key the key to check
+   */
+  bool IsACommand(string key);
+
+  /**
+   * a getter for the simulator vars names array
+   */
+  const string *GetNames() const;
+
 };
 
 #endif //EX3__MAPSCONTAINER_H_

@@ -16,6 +16,6 @@ void ArrowVarCommand::arrowCommand(vector<string> &params, int start, Wrapping w
   //a simulator var with a wrapping.
   SimulatorVar *value = new SimulatorVar(progVarName, simVarName, wrapping, container);
 
-  container->maps->AddVar(progVarName, value);
+  container->GetMaps()->AddVar(progVarName, value);
 }
 

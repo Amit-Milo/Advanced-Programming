@@ -30,7 +30,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o"
   "CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o"
   "CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o"
-  "CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o"
   "CMakeFiles/ex3.dir/Lexer.cpp.o"
   "CMakeFiles/ex3.dir/Parser.cpp.o"
   "CMakeFiles/ex3.dir/SimulatorVar.cpp.o"

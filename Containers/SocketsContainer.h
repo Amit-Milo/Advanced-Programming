@@ -43,6 +43,12 @@ class SocketsContainer {
    * @param data the data to send the simulator.
    */
   void SendToServer(string data);
+
+
+  /**
+   * Release all sockets.
+   */
+   void ReleaseSockets();
 };
 
 #endif //EX3__SOCKETSCONTAINER_H_

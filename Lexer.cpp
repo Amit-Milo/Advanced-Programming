@@ -95,7 +95,8 @@ void Lexer::handleSpecialSubstr(string s, string special, vector<string> *comman
 
 string Lexer::noSpaces(string s) {
   string result("");
-  for (int i = 0; i < s.length(); i++) {
+  int sLength = s.length();
+  for (int i = 0; i < sLength; i++) {
     if (s.at(i) != ' ') {
       //add the char if it is not a space
       result.append(1, s.at(i));

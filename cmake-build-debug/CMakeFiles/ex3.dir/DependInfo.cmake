@@ -35,7 +35,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amit/CLionProjects/ex3/InterpreterFiles/CalculationTokensCreatorChecker.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o"
   "/home/amit/CLionProjects/ex3/InterpreterFiles/Interpreter.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o"
   "/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o"
-  "/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o"
   "/home/amit/CLionProjects/ex3/Lexer.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Lexer.cpp.o"
   "/home/amit/CLionProjects/ex3/Parser.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/Parser.cpp.o"
   "/home/amit/CLionProjects/ex3/SimulatorVar.cpp" "/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3.dir/SimulatorVar.cpp.o"

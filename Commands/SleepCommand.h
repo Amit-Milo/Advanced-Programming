@@ -5,6 +5,7 @@
 #ifndef EX3_COMMANDS_SLEEPCOMMAND_H_
 #define EX3_COMMANDS_SLEEPCOMMAND_H_
 
+#define DIStANCE_TO_SLEEP_VALUE 1
 #include "Command.h"
 
 class SleepCommand : public Command {

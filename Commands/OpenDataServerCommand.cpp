@@ -12,19 +12,18 @@
 
 int OpenDataServerCommand::execute(vector<string> &params, int start) {
   // Address family.
-  container->sockets.server_address.sin_family = AF_INET;
+  container->GetSockets().server_address.sin_family = AF_INET;
 
   // Equivalent to 0.0.0.0
-  container->sockets.server_address.sin_addr.s_addr = INADDR_ANY;
+  container->GetSockets().server_address.sin_addr.s_addr = INADDR_ANY;
 
   // Set port to listen on.
-  container->sockets.server_address.sin_port = htons(container->interpreter->evaluate(params[start+1]));
+  container->GetSockets().server_address.sin_port = htons(container->GetInterpreter()->evaluate(params[start+1]));
 
   // Try to bind server.
-  if (bind(container->sockets.server_socket,
-           (struct sockaddr *) &(container->sockets.server_address),
-           sizeof(container->sockets.server_address)) != -1) {
-    cout <<"hi" << endl;
+  if (bind(container->GetSockets().server_socket,
+           (struct sockaddr *) &(container->GetSockets().server_address),
+           sizeof(container->GetSockets().server_address)) != -1) {
 
     // Run server in a new thread.
     thread(&OpenDataServerCommand::run_server, this, container).detach();
@@ -36,8 +35,16 @@ int OpenDataServerCommand::execute(vector<string> &params, int start) {
   }
 }
 void OpenDataServerCommand::run_server(Container *container) {
+  container->AddThread();
+
   // A buffer for reading data sent from the simulator.
   char *buffer = (char *) malloc(sizeof(char) * this->maxSize);
+
+  if (buffer == NULL) {
+    // Check if allocation succeed.
+    container->ReleaseThread();
+    throw "Allocation problem.";
+  }
 
   // Receive the amount of data sent by the simulator.
   int dataSize;
@@ -45,8 +52,20 @@ void OpenDataServerCommand::run_server(Container *container) {
   // A vector of values of vars.
   float *values = (float *) malloc(sizeof(float) * this->simVarsAmount);
 
+  if (values == NULL) {
+    // Check if allocation succeed.
+    container->ReleaseThread();
+    throw "Allocation problem.";
+  }
+
   // A reminder from the last time the simulator sent a message.
   char *reminder = (char *) malloc(sizeof(char) * this->maxSize);
+
+  if (reminder == NULL) {
+    // Check if allocation succeed.
+    container->ReleaseThread();
+    throw "Allocation problem.";
+  }
 
   // A concat of reminder and buffer;
   char *result;
@@ -55,15 +74,13 @@ void OpenDataServerCommand::run_server(Container *container) {
   int firstValue = 0;
 
   // Rename some vars.
-  int server_socket = container->sockets.server_socket;
-  sockaddr_in server_address = container->sockets.server_address;
+  int server_socket = container->GetSockets().server_socket;
+  sockaddr_in server_address = container->GetSockets().server_address;
 
 
     if (listen(server_socket, 1) == -1)
       // If can't listen, throw an error.
       throw "Couldn't listen.";
-
-    cout << "listened" << endl;
 
     // Accept the client.
     int client_socket = accept(server_socket, (struct sockaddr *) &server_address, (socklen_t *) &server_address);
@@ -72,17 +89,12 @@ void OpenDataServerCommand::run_server(Container *container) {
       // If can't accept a client, throw an error.
       throw "Couldn't accept a client.";
 
-    cout << "accepted" << endl;
-
   // We succeeded communicating with the simulator.
-  container->sockets.serverConnected = true;
+  container->GetSockets().serverConnected = true;
 
-  while (true) {
-    cout << "iiiiii" << endl;
+  while (container->ProgramRuns()) {
     // Receive data from the simulator.
     dataSize = read(client_socket, buffer, maxSize);
-
-    cout << "iter: " + dataSize << endl;
 
     if (dataSize < 1)
       // If didn't read nothing, continue to next iteration.
@@ -99,12 +111,6 @@ void OpenDataServerCommand::run_server(Container *container) {
     // Get the amount of vars read.
     int valuesLength = stats.second;
 
-    cout << "vals_amount";
-    cout << valuesLength << endl;
-
-    cout << "next: ";
-    cout << lastEnd << endl;
-
     if (lastEnd != string::npos)
       // Move to the next index to read from.
       reminder = result + lastEnd + 1;
@@ -113,8 +119,8 @@ void OpenDataServerCommand::run_server(Container *container) {
 
     for (int i = firstValue; i - firstValue < valuesLength; ++i) {
       // Write each variable to the map.
-      this->container->maps->WriteSimulatorVar(this->container->maps->names[i], values[i]);
-      this->container->maps->WriteWrappedVar(this->container->maps->names[i], values[i]);
+      this->container->GetMaps()->WriteSimulatorVar(this->container->GetMaps()->GetNames()[i], values[i]);
+      this->container->GetMaps()->WriteWrappedVar(this->container->GetMaps()->GetNames()[i], values[i]);
     }
 
     if (lastEnd == string::npos)
@@ -126,8 +132,10 @@ void OpenDataServerCommand::run_server(Container *container) {
   }
 
   // Free the dynamically allocated arrays.
-  /*free(reminder);
+  free(reminder);
   free(values);
-  free(buffer);*/
+  free(buffer);
+
+  container->ReleaseThread();
 }
 

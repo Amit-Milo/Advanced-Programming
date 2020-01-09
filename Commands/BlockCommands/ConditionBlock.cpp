@@ -9,8 +9,8 @@
 
 bool ConditionBlock::parseCondition(vector<string> &commands, int index) {
   //evaluate the sides of the condition
-  double left = container->interpreter->evaluate(commands.at(index + 1));
-  double right = container->interpreter->evaluate(commands.at(index + 3));
+  double left = container->GetInterpreter()->evaluate(commands.at(index + 1));
+  double right = container->GetInterpreter()->evaluate(commands.at(index + 3));
   //now check the condition and return accordingly:
   string condition = commands.at(index + 2);
   if (condition.compare("==") == 0) {
