@@ -3,14 +3,15 @@
 ## goal of project
 
 In this project, we impelemented a mechanism that gets a text file that contains flight simulator's commands, formatted like a new coding language.
-our project interprets the file - first, we build a "lexer" that converts the file to a list of commands, and then a "parser" runs the commands, while communicating with the simulator.
+Our project interprets the file - first, we build a "lexer" that converts the file to a list of commands, and then a "parser" runs the commands, while communicating with the simulator.
 
 ## installing and running
 
-in order to run out program, you first need to [install](https://sourceforge.net/projects/flightgear/) the flight simulator.
-then, *איך מקשרים בין הסימולטור לתכנית*
-finally, provide a commands file and run our program with the file's path as an argument.
-you should run this on linux *זה נכון?*
+In order to run out program, you first need to [install](https://sourceforge.net/projects/flightgear/) the flight simulator.
+Then, add the fllowing settings to the Additional Settings section:
+ 1. --generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
+ 2. --telnet=socket,in,10,127.0.0.1,5402,tcp --httpd=8080
+Finally, provide a commands file and run our program with the file's path as an argument.
 
 ## Built with
 
