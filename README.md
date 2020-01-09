@@ -10,7 +10,8 @@ Our project interprets the file - first, we build a "lexer" that converts the fi
 In order to run out program, you first need to [install](https://sourceforge.net/projects/flightgear/) the flight simulator.
 Then, add the fllowing settings to the Additional Settings section:
  1. --generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
- 2. --telnet=socket,in,10,127.0.0.1,5402,tcp --httpd=8080\n
+ 2. --telnet=socket,in,10,127.0.0.1,5402,tcp --httpd=8080
+
 Finally, provide a commands file and run our program with the file's path as an argument.
 
 ## Built With
