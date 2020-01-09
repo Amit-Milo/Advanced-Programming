@@ -11,16 +11,10 @@
 void BlockCommand::executeBlock(vector<string> &commands, int index) {
   int commandsSize = commands.size();
   while (index < commandsSize && commands.at(index).compare("}") != 0) { //while there are strings to read:
-    //if this word is in the commands map
     if (container->GetMaps()->IsACommand(commands.at(index))) {
-      //if the word is var, call the command that is the sign of the var declaration: = or -> or <-
-      if (commands.at(index).compare(VAR_KEYWORD) == 0) {
-        Command *c = container->GetMaps()->ReadCommand(commands.at(index + 2));
-        index += c->execute(commands, index);
-      } else { //just run the command
-        Command *c = container->GetMaps()->ReadCommand(commands.at(index));
-        index += c->execute(commands, index);
-      }
+      //if this word is in the commands map, just run the command
+      Command *c = container->GetMaps()->ReadCommand(commands.at(index));
+      index += c->execute(commands, index);
     } else if (container->GetMaps()->InVars(commands.at(index))) {
       //should be a var name, so call the change var value command
       Command *c = container->GetMaps()->ReadCommand(NEW_VALUE_COMMAND);
