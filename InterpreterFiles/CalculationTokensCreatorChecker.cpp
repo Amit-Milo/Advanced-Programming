@@ -4,6 +4,8 @@
 
 #include "CalculationTokensCreatorChecker.h"
 
+#include "../Containers/MapsContainer.h"
+
 bool CalculationTokensCreatorChecker::isOperator(string s) {
   if (s.length() > 1) {
     return false;
@@ -77,14 +79,6 @@ void CalculationTokensCreatorChecker::tokensSplitter(string s, list<pair<string,
   }
 }
 
-void CalculationTokensCreatorChecker::printTokensList(list<pair<string, int>> *l) {
-  std::cout << "the tokens list: ";
-  for (const auto &myPair : *l) {
-    std::cout << myPair.first << ",";
-  }
-  cout << "\n";
-}
-
 
 bool CalculationTokensCreatorChecker::checkValidTokens(list<pair<string, int>> *tokens,
                                                        Container *container) {
@@ -124,7 +118,7 @@ bool CalculationTokensCreatorChecker::checkAdjOperators(list<pair<string, int>> 
 bool CalculationTokensCreatorChecker::checkValidVars(list<pair<string, int>> *tokens, Container *container) {
   for (const auto &myPair : *tokens) {
     if (myPair.second == VARIABLE) {
-      if (container->maps->vars.count(myPair.first) == 0) {
+      if (!container->GetMaps()->InVars(myPair.first)) {
         throw "illegal calculation: var name is illegal or unset";
       }
     }

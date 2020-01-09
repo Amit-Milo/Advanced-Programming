@@ -6,6 +6,10 @@
 #define EX3__SIMULATORVAR_H_
 
 #include <string>
+#include <thread>
+
+#include "Containers/Container.h"
+
 enum Wrapping { SIM_TO_PROG, PROG_TO_SIM, NONE };
 
 
@@ -15,6 +19,11 @@ class SimulatorVar {
   string progName;
   string simulatorName;
   Wrapping wrapping;
+
+  Container *container;
+
+  void WriteToSimulator(string name, float value);
+
  public:
   /**
    * constructor for var associated with simulator var
@@ -23,14 +32,14 @@ class SimulatorVar {
    * @param wrapping the wrappinf side
    * set the value of to the simulator var's value
    */
-  SimulatorVar(const string &prog_name, const string &simulator_name, Wrapping wrapping);
+  SimulatorVar(const string &prog_name, const string &simulator_name, Wrapping wrapping, Container *container);
   /**
    * constructor for var not associated with simulator var.
    * the simulatorName field is empty, the wrapping is NONE.
    * @param value the var's value
    * @param prog_name the var's name.
    */
-  SimulatorVar(double value, const string &prog_name);
+  SimulatorVar(double value, const string &prog_name, Container *container);
 
   //getters and setters:
   double GetValue() const;

@@ -4,30 +4,32 @@
 
 #include "SimulatorVar.h"
 
-SimulatorVar::SimulatorVar(const string &prog_name, const string &simulator_name, Wrapping wrapping) : progName(
-    prog_name), simulatorName(simulator_name), wrapping(wrapping) {
-  //TODO set the value to the simulator var value
+#include "Containers/MapsContainer.h"
+
+SimulatorVar::SimulatorVar(const string &prog_name,
+                           const string &simulator_name,
+                           Wrapping wrapping,
+                           Container *container) : progName(
+    prog_name), simulatorName(simulator_name), wrapping(wrapping), container(container) {
+  if (wrapping == SIM_TO_PROG) {
+    container->GetMaps()->AddWrappedVar(simulator_name, progName);
+    this->value = container->GetMaps()->ReadSimulatorVar(this->simulatorName);
+  }
 }
 
-SimulatorVar::SimulatorVar(double value, const string &prog_name) : value(value), progName(prog_name) {
+SimulatorVar::SimulatorVar(double value, const string &prog_name, Container *container)
+    : value(value), progName(prog_name) {
   wrapping = NONE;
 }
 double SimulatorVar::GetValue() const {
   return value;
 }
 void SimulatorVar::SetValue(double value) {
-  if (SimulatorVar::wrapping == NONE) {
-    //if not realted to simulator, just change the value
-    SimulatorVar::value = value;
-  } else if (SimulatorVar::wrapping == PROG_TO_SIM) {
+  this->value = value;
+
+  if (SimulatorVar::wrapping == PROG_TO_SIM) {
     //change the sim var too.
-    SimulatorVar::value = value;
-    // TODO also change the var value in the simulator
-  } else if (SimulatorVar::wrapping == SIM_TO_PROG) {
-    //then the simulator changes the prog var, so just change the value.
-    SimulatorVar::value = value;
-  } else {
-    throw "error with SimulatorVar.SetValue";
+    thread(&SimulatorVar::WriteToSimulator, this, simulatorName, value).detach();
   }
 }
 const string &SimulatorVar::GetProgName() const {
@@ -49,6 +51,15 @@ void SimulatorVar::SetWrapping(Wrapping wrapping) {
   SimulatorVar::wrapping = wrapping;
 }
 
+void SimulatorVar::WriteToSimulator(string name, float value) {
+  if (container->ProgramRuns()) {
 
+    container->AddThread();
 
+    // Format a message to send to the simulator.
+    string message("set " + name + " " + to_string(value) + "\r\n");
+    this->container->GetSockets().SendToServer(message);
 
+    container->ReleaseThread();
+  }
+}

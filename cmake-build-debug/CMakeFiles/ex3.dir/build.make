@@ -239,22 +239,9 @@ CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.cpp -o CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.s
 
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o: ../InterpreterFiles/VarsSetter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o -c /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp
-
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp > CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.i
-
-CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp -o CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.s
-
 CMakeFiles/ex3.dir/Lexer.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Lexer.cpp.o: ../Lexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex3.dir/Lexer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ex3.dir/Lexer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Lexer.cpp.o -c /home/amit/CLionProjects/ex3/Lexer.cpp
 
 CMakeFiles/ex3.dir/Lexer.cpp.i: cmake_force
@@ -267,7 +254,7 @@ CMakeFiles/ex3.dir/Lexer.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Parser.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Parser.cpp.o: ../Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex3.dir/Parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ex3.dir/Parser.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Parser.cpp.o -c /home/amit/CLionProjects/ex3/Parser.cpp
 
 CMakeFiles/ex3.dir/Parser.cpp.i: cmake_force
@@ -280,7 +267,7 @@ CMakeFiles/ex3.dir/Parser.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o: ../Commands/OpenDataServerCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/OpenDataServerCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o: ../Commands/ConnectControlClientCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/ConnectControlClientCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/ex3.dir/Commands/ConnectControlClientCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o: ../Commands/VarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/VarCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/VarCommand.cpp.i: cmake_force
@@ -319,7 +306,7 @@ CMakeFiles/ex3.dir/Commands/VarCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/SimulatorVar.cpp.o: ../SimulatorVar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ex3.dir/SimulatorVar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ex3.dir/SimulatorVar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/SimulatorVar.cpp.o -c /home/amit/CLionProjects/ex3/SimulatorVar.cpp
 
 CMakeFiles/ex3.dir/SimulatorVar.cpp.i: cmake_force
@@ -332,7 +319,7 @@ CMakeFiles/ex3.dir/SimulatorVar.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.i: cmake_force
@@ -345,7 +332,7 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/RightArrowVarCommand.cpp.s
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.i: cmake_force
@@ -358,7 +345,7 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.cpp.s:
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o: ../Commands/VarCommands/EqualSignVarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/VarCommands/EqualSignVarCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.i: cmake_force
@@ -371,7 +358,7 @@ CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o: ../Commands/VarCommands/ChangeValueCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/VarCommands/ChangeValueCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.i: cmake_force
@@ -384,7 +371,7 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o: ../Commands/BlockCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.i: cmake_force
@@ -395,35 +382,35 @@ CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommand.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.s
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o: ../Commands/BlockCommands/IfCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o: ../Commands/BlockCommands/ConditionCommands/IfCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.cpp
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp > CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.i
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.cpp > CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.i
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.s
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.s
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/WhileCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o: ../Commands/BlockCommands/ConditionCommands/WhileCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp > CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.i
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp > CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.i
 
-CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.s
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.s
 
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o: ../Containers/MapsContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o -c /home/amit/CLionProjects/ex3/Containers/MapsContainer.cpp
 
 CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.i: cmake_force
@@ -436,7 +423,7 @@ CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o: ../Containers/SocketsContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o -c /home/amit/CLionProjects/ex3/Containers/SocketsContainer.cpp
 
 CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.i: cmake_force
@@ -449,7 +436,7 @@ CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/StringOperations.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/StringOperations.cpp.o: ../StringOperations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ex3.dir/StringOperations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ex3.dir/StringOperations.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/StringOperations.cpp.o -c /home/amit/CLionProjects/ex3/StringOperations.cpp
 
 CMakeFiles/ex3.dir/StringOperations.cpp.i: cmake_force
@@ -462,7 +449,7 @@ CMakeFiles/ex3.dir/StringOperations.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o: ../Containers/ContainerCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o -c /home/amit/CLionProjects/ex3/Containers/ContainerCreator.cpp
 
 CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.i: cmake_force
@@ -475,7 +462,7 @@ CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o: ../Commands/SleepCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/SleepCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.i: cmake_force
@@ -488,7 +475,7 @@ CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o: ../Commands/PrintCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/PrintCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.i: cmake_force
@@ -501,7 +488,7 @@ CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.s: cmake_force
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o: ../Commands/VarCommands/ArrowVarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.cpp
 
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.i: cmake_force
@@ -511,6 +498,32 @@ CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.i: cmake_force
 CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/VarCommands/ArrowVarCommand.cpp -o CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.s
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o: ../Commands/BlockCommands/ConditionBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.cpp
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.cpp > CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.i
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.s
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: CMakeFiles/ex3.dir/flags.make
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o: ../Commands/BlockCommands/FunctionCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o -c /home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.cpp
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.cpp > CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.i
+
+CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.cpp -o CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.s
 
 # Object files for target ex3
 ex3_OBJECTS = \
@@ -528,7 +541,6 @@ ex3_OBJECTS = \
 "CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o" \
 "CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o" \
 "CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o" \
-"CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o" \
 "CMakeFiles/ex3.dir/Lexer.cpp.o" \
 "CMakeFiles/ex3.dir/Parser.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o" \
@@ -540,15 +552,17 @@ ex3_OBJECTS = \
 "CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o" \
-"CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o" \
-"CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o" \
 "CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o" \
 "CMakeFiles/ex3.dir/StringOperations.cpp.o" \
 "CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o" \
 "CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o" \
-"CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o"
+"CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o" \
+"CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o"
 
 # External object files for target ex3
 ex3_EXTERNAL_OBJECTS =
@@ -567,7 +581,6 @@ ex3: CMakeFiles/ex3.dir/Expressions/BinOperators/Div.cpp.o
 ex3: CMakeFiles/ex3.dir/InterpreterFiles/Interpreter.cpp.o
 ex3: CMakeFiles/ex3.dir/InterpreterFiles/CalculationTokensCreatorChecker.cpp.o
 ex3: CMakeFiles/ex3.dir/InterpreterFiles/TokensToExpressionConverter.cpp.o
-ex3: CMakeFiles/ex3.dir/InterpreterFiles/VarsSetter.cpp.o
 ex3: CMakeFiles/ex3.dir/Lexer.cpp.o
 ex3: CMakeFiles/ex3.dir/Parser.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/OpenDataServerCommand.cpp.o
@@ -579,8 +592,8 @@ ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ArrowCommands/LeftArrowVarCommand.c
 ex3: CMakeFiles/ex3.dir/Commands/VarCommands/EqualSignVarCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ChangeValueCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/BlockCommand.cpp.o
-ex3: CMakeFiles/ex3.dir/Commands/BlockCommands/IfCommand.cpp.o
-ex3: CMakeFiles/ex3.dir/Commands/BlockCommands/WhileCommand.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/IfCommand.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Containers/MapsContainer.cpp.o
 ex3: CMakeFiles/ex3.dir/Containers/SocketsContainer.cpp.o
 ex3: CMakeFiles/ex3.dir/StringOperations.cpp.o
@@ -588,9 +601,11 @@ ex3: CMakeFiles/ex3.dir/Containers/ContainerCreator.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/SleepCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/PrintCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/Commands/VarCommands/ArrowVarCommand.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/BlockCommands/ConditionBlock.cpp.o
+ex3: CMakeFiles/ex3.dir/Commands/BlockCommands/FunctionCommand.cpp.o
 ex3: CMakeFiles/ex3.dir/build.make
 ex3: CMakeFiles/ex3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amit/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable ex3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

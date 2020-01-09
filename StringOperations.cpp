@@ -2,15 +2,18 @@
 // Created by amit on 03/01/2020.
 //
 
+#include <iostream>
 #include "StringOperations.h"
+
+
 // Split a string using a delimiter.
-void splitValues(string data, string delimiter, float target[]) {
+pair<int, int> splitValues(string data, string delimiter, float target[]) {
   size_t pos;
   string token;
   int i = 0;
 
   // Find next position of the delimiter.
-  while ((pos = data.find(delimiter)) != string::npos) {
+  while ((pos = data.find(delimiter)) != string::npos && pos < data.find('\n')) {
     // Get the substring bounded by the delimiter.
     token = data.substr(0, pos);
 
@@ -23,9 +26,15 @@ void splitValues(string data, string delimiter, float target[]) {
     ++i;
   }
 
+  int newPos = data.find('\n');
+
   // Last substring may appear at the end of the string.
-  if (data.length() > 0) {
-    token = data.substr(0, pos);
+  if (data.length() > 1) {
+    token = data.substr(0, newPos);
     target[i] = stof(token);
+    pos = string::npos;
   }
+
+  return pair<int, int>(pos, ++i);
+
 }

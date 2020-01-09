@@ -6,18 +6,20 @@
 #include "Lexer.h"
 
 vector<string> *Lexer::lexer(string fileName) {
+  //open the file
   ifstream f;
   f.open(fileName);
   if (!f.is_open()) {
     throw "could not open file";
   }
+  //create the tekons list that we will work on, and will be returned at the end
   vector<string> *commands = new vector<string>;
-  /////////////////////////////////
+  //work on the file
   string line;
   while (getline(f, line)) {
     addCommands(line, commands); //each command is in a new line, so handle each line.
   }
-  /////////////////////////////////
+  //finish
   f.close();
   return commands;
 }
@@ -44,7 +46,11 @@ void Lexer::addCommands(string s, vector<string> *commands) {
     commands->push_back(noSpaces(s.substr(twoArgsSeperate + 1, closeBracesIndex - twoArgsSeperate - 1)));
   }
     //now the rest:
-  else if (s.find("\"") != string::npos) { //add the string of the quotes
+  else if (s.find("\"") != string::npos) { 
+    /*
+    this a string and should be added as it is.
+    get the end of the string and add the whole thing to the tokens list.
+    */
     int begin = s.find("\"");
     int end = s.find("\"", begin + 1);
     if (end == string::npos) {
@@ -57,7 +63,12 @@ void Lexer::addCommands(string s, vector<string> *commands) {
     return;
   } else if (handleCondition(s, commands)) { //it is a condition command
     return;
-  } else if (s.find("=") != string::npos) { //add everything after the equal sign with no spaces
+  } else if (s.find("=") != string::npos) {
+    /*
+    the rest is a value that should be taken.
+    add everything after the equal sign with no spaces,
+    so we can interpret it and get its value.
+    */
     this->addCommands(s.substr(0, s.find("=")), commands);
     commands->push_back("=");
     //now handle the rest of the line:
@@ -95,7 +106,8 @@ void Lexer::handleSpecialSubstr(string s, string special, vector<string> *comman
 
 string Lexer::noSpaces(string s) {
   string result("");
-  for (int i = 0; i < s.length(); i++) {
+  int sLength = s.length();
+  for (int i = 0; i < sLength; i++) {
     if (s.at(i) != ' ') {
       //add the char if it is not a space
       result.append(1, s.at(i));

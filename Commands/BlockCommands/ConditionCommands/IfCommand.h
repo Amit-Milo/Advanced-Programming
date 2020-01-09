@@ -5,9 +5,9 @@
 #ifndef EX3_COMMANDS_BLOCKCOMMANDS_IFCOMMAND_H_
 #define EX3_COMMANDS_BLOCKCOMMANDS_IFCOMMAND_H_
 
-#include "../BlockCommand.h"
+#include "../ConditionBlock.h"
 
-class IfCommand:public BlockCommand{
+class IfCommand : public ConditionBlock {
   int execute(vector<string> &params, int start) override;
  public:
   IfCommand(Container *container);

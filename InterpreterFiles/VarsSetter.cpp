@@ -3,6 +3,7 @@
 //
 
 #include "VarsSetter.h"
+#include "../Containers/MapsContainer.h"
 
 void VarsSetter::setVariables(string s, Container *container) {
   if (!checkValidVars(s)) {
@@ -52,9 +53,9 @@ void VarsSetter::addNewVar(string varDef, Container *container) {
   string varName = varDef.substr(0, equalSignIndex);
   double varValue = stod(varDef.substr(equalSignIndex + 1, varDef.length()));
 
-  if (container->maps->vars.count(varName) == 1) {
-    container->maps->vars.at(varName)->SetValue(varValue);
+  if (container->GetMaps()->InVars(varName)) {
+    container->GetMaps()->WriteVar(varName,varValue);
   } else {
-    container->maps->AddVar(varName, new SimulatorVar(varValue, varName));
+    container->GetMaps()->AddVar(varName, new SimulatorVar(varValue, varName, container));
   }
 }

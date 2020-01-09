@@ -90,16 +90,28 @@
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommand.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.cpp">
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/IfCommand.h">
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionBlock.h">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.cpp">
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.cpp">
 			<Option target="ex3"/>
 		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/WhileCommand.h">
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/IfCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/ConditionCommands/WhileCommand.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/amit/CLionProjects/ex3/Commands/BlockCommands/FunctionCommand.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Commands/Command.h">
@@ -268,12 +280,6 @@
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/TokensToExpressionConverter.h">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.cpp">
-			<Option target="ex3"/>
-		</Unit>
-		<Unit filename="/home/amit/CLionProjects/ex3/InterpreterFiles/VarsSetter.h">
 			<Option target="ex3"/>
 		</Unit>
 		<Unit filename="/home/amit/CLionProjects/ex3/Lexer.cpp">

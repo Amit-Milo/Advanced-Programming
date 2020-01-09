@@ -20,13 +20,15 @@
 #include "Commands/BlockCommand.h"
 #include "SimulatorVar.h"
 
+#include "Containers/Container.h"
+#include "Containers/MapsContainer.h"
+
 #define NEW_VALUE_COMMAND string("newValueCommand")
 #define VAR_KEYWORD string("var")
 #define DISTANCE_TO_VAR_DECLARATION_SIGN 2
 
 using namespace std;
 class Parser {
-  friend class BlockCommand;
  public:
   Parser();
   /**
