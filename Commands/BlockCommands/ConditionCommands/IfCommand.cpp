@@ -2,6 +2,7 @@
 // Created by yoav on 25/12/2019.
 //
 
+
 #include "IfCommand.h"
 
 int IfCommand::execute(vector<string> &params, int start) {

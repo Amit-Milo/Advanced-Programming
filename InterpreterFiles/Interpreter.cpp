@@ -24,8 +24,3 @@ Expression *Interpreter::interpret(string s) {
 
 
 Interpreter::Interpreter(Container *container) : container(container) {}
-
-void Interpreter::setVariables(string s) {
-  VarsSetter vs;
-  vs.setVariables(s, this->container);
-}

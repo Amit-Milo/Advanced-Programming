@@ -8,9 +8,9 @@
 #include "../Containers/Container.h"
 #include "../InterpreterFiles/Interpreter.h"
 
-///////////////////////////////////////////this is a copy of Parser::parse. change if changed
 void BlockCommand::executeBlock(vector<string> &commands, int index) {
-  while (index < commands.size() && commands.at(index).compare("}") != 0) { //while there are strings to read:
+  int commandsSize = commands.size();
+  while (index < commandsSize && commands.at(index).compare("}") != 0) { //while there are strings to read:
     //if this word is in the commands map
     if (container->GetMaps()->IsACommand(commands.at(index))) {
       //if the word is var, call the command that is the sign of the var declaration: = or -> or <-

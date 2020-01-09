@@ -24,7 +24,6 @@ int OpenDataServerCommand::execute(vector<string> &params, int start) {
   if (bind(container->GetSockets().server_socket,
            (struct sockaddr *) &(container->GetSockets().server_address),
            sizeof(container->GetSockets().server_address)) != -1) {
-    cout <<"hi" << endl;
 
     // Run server in a new thread.
     thread(&OpenDataServerCommand::run_server, this, container).detach();
@@ -63,8 +62,6 @@ void OpenDataServerCommand::run_server(Container *container) {
       // If can't listen, throw an error.
       throw "Couldn't listen.";
 
-    cout << "listened" << endl;
-
     // Accept the client.
     int client_socket = accept(server_socket, (struct sockaddr *) &server_address, (socklen_t *) &server_address);
 
@@ -72,17 +69,12 @@ void OpenDataServerCommand::run_server(Container *container) {
       // If can't accept a client, throw an error.
       throw "Couldn't accept a client.";
 
-    cout << "accepted" << endl;
-
   // We succeeded communicating with the simulator.
   container->GetSockets().serverConnected = true;
 
   while (true) {
-    cout << "iiiiii" << endl;
     // Receive data from the simulator.
     dataSize = read(client_socket, buffer, maxSize);
-
-    cout << "iter: " + dataSize << endl;
 
     if (dataSize < 1)
       // If didn't read nothing, continue to next iteration.
@@ -98,12 +90,6 @@ void OpenDataServerCommand::run_server(Container *container) {
 
     // Get the amount of vars read.
     int valuesLength = stats.second;
-
-    cout << "vals_amount";
-    cout << valuesLength << endl;
-
-    cout << "next: ";
-    cout << lastEnd << endl;
 
     if (lastEnd != string::npos)
       // Move to the next index to read from.

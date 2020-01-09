@@ -13,7 +13,6 @@
 #include "../Expressions/Expression.h"
 #include "CalculationTokensCreatorChecker.h"
 #include "TokensToExpressionConverter.h"
-#include "VarsSetter.h"
 
 #define BRACE 1
 #define OPERATOR 2
@@ -36,8 +35,6 @@ class Interpreter {
    * @return s as an expression object
    */
   Expression *interpret(string s);
-
-  void setVariables(string s); //TODO delete this func and all its related files
 };
 
 #endif //EX1__INTERPRETER_H_
